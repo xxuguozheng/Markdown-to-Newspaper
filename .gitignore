@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.DS_Store
+data/requests/*.json
+data/receipts/*.json
+data/publish/requests/*.json
+data/publish/receipts/*.json

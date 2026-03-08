@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "2026-03-08.minimal-v1",
+  "kind": "Edition",
+  "id": "edition_idea_inbox_idea_inbox_system_2026_03_07",
+  "projectId": "idea-inbox",
+  "projectSlug": "IDEA-INBOX",
+  "slug": "idea-inbox-system-2026-03-07",
+  "fileName": "idea-inbox-system-2026-03-07.html",
+  "title": "IDEA INBOX",
+  "rawTitle": "idea-inbox-system-2026-03-07",
+  "summary": "IDEA INBOX — 鬼点子收件箱 Staro Desk / Idea Inbox Working Surface · 2026-03-07 鬼点子收件箱已经开始承接真实工作 第 2 版 / Working Surf…",
+  "density": "brief",
+  "densityLabel": "快报 / 小更新",
+  "htmlUrl": "/projects/IDEA-INBOX/idea-inbox-system-2026-03-07.html",
+  "publishedAt": "2026-03-07T17:42:55.654015",
+  "size": 13279,
+  "tags": [],
+  "source": {
+    "importedFrom": "/site/data/portal-index.json",
+    "artifactPath": "projects/IDEA-INBOX/idea-inbox-system-2026-03-07.html",
+    "artifactExists": true
+  }
+}

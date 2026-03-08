@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "2026-03-08.minimal-v1",
+  "kind": "Edition",
+  "id": "edition_openclaw_newspaper_ui_reply_style_newspaper_principles_v2_2026_03_07",
+  "projectId": "openclaw-newspaper-ui",
+  "projectSlug": "OpenClaw-Newspaper-UI",
+  "slug": "reply-style-newspaper-principles-v2-2026-03-07",
+  "fileName": "reply-style-newspaper-principles-v2-2026-03-07.html",
+  "title": "报纸写法 v2",
+  "rawTitle": "reply-style-newspaper-principles-v2-2026-03-07",
+  "summary": "Staro Brief — 高信息密度报纸写法 v2 Staro Brief / Editorial Method v2 High-Density Newspaper Output 高密度报纸写法：短标题，足信息 第 2…",
+  "density": "brief",
+  "densityLabel": "快报 / 小更新",
+  "htmlUrl": "/projects/OpenClaw-Newspaper-UI/reply-style-newspaper-principles-v2-2026-03-07.html",
+  "publishedAt": "2026-03-07T17:42:55.654763",
+  "size": 11981,
+  "tags": [],
+  "source": {
+    "importedFrom": "/site/data/portal-index.json",
+    "artifactPath": "projects/OpenClaw-Newspaper-UI/reply-style-newspaper-principles-v2-2026-03-07.html",
+    "artifactExists": true
+  }
+}

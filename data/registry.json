@@ -1,0 +1,91 @@
+{
+  "schemaVersion": "2026-03-08.minimal-v1",
+  "generatedAt": "2026-03-08T07:38:00+08:00",
+  "source": "/site/data/portal-index.json",
+  "counts": {
+    "projects": 6,
+    "editions": 7
+  },
+  "projects": [
+    {
+      "id": "byoc-openclaw-ui",
+      "slug": "BYOC-OpenClaw-UI",
+      "path": "data/projects/byoc-openclaw-ui.json",
+      "editionCount": 1
+    },
+    {
+      "id": "bio-ai-morning-brief",
+      "slug": "Bio-AI-Morning-Brief",
+      "path": "data/projects/bio-ai-morning-brief.json",
+      "editionCount": 1
+    },
+    {
+      "id": "vibelife",
+      "slug": "VibeLife",
+      "path": "data/projects/vibelife.json",
+      "editionCount": 1
+    },
+    {
+      "id": "idea-inbox",
+      "slug": "IDEA-INBOX",
+      "path": "data/projects/idea-inbox.json",
+      "editionCount": 1
+    },
+    {
+      "id": "openclaw-newspaper-ui",
+      "slug": "OpenClaw-Newspaper-UI",
+      "path": "data/projects/openclaw-newspaper-ui.json",
+      "editionCount": 3
+    },
+    {
+      "id": "zep",
+      "slug": "Zep",
+      "path": "data/projects/zep.json",
+      "editionCount": 0
+    }
+  ],
+  "editions": [
+    {
+      "id": "edition_byoc_openclaw_ui_byoc_morning_brief_2026_03_07",
+      "projectId": "byoc-openclaw-ui",
+      "slug": "byoc-morning-brief-2026-03-07",
+      "path": "data/editions/byoc-openclaw-ui/edition_byoc_openclaw_ui_byoc_morning_brief_2026_03_07.json"
+    },
+    {
+      "id": "edition_bio_ai_morning_brief_bio_ai_morning_brief_2026_03_07",
+      "projectId": "bio-ai-morning-brief",
+      "slug": "bio-ai-morning-brief-2026-03-07",
+      "path": "data/editions/bio-ai-morning-brief/edition_bio_ai_morning_brief_bio_ai_morning_brief_2026_03_07.json"
+    },
+    {
+      "id": "edition_vibelife_ai_website_positioning_2026_03_07",
+      "projectId": "vibelife",
+      "slug": "ai-website-positioning-2026-03-07",
+      "path": "data/editions/vibelife/edition_vibelife_ai_website_positioning_2026_03_07.json"
+    },
+    {
+      "id": "edition_idea_inbox_idea_inbox_system_2026_03_07",
+      "projectId": "idea-inbox",
+      "slug": "idea-inbox-system-2026-03-07",
+      "path": "data/editions/idea-inbox/edition_idea_inbox_idea_inbox_system_2026_03_07.json"
+    },
+    {
+      "id": "edition_openclaw_newspaper_ui_project_status_frontpage_2026_03_08",
+      "projectId": "openclaw-newspaper-ui",
+      "slug": "project-status-frontpage-2026-03-08",
+      "path": "data/editions/openclaw-newspaper-ui/edition_openclaw_newspaper_ui_project_status_frontpage_2026_03_08.json"
+    },
+    {
+      "id": "edition_openclaw_newspaper_ui_reply_style_newspaper_principles_v2_2026_03_07",
+      "projectId": "openclaw-newspaper-ui",
+      "slug": "reply-style-newspaper-principles-v2-2026-03-07",
+      "path": "data/editions/openclaw-newspaper-ui/edition_openclaw_newspaper_ui_reply_style_newspaper_principles_v2_2026_03_07.json"
+    }
+  ],
+  "contracts": {
+    "project": "data/schema/project.schema.json",
+    "edition": "data/schema/edition.schema.json",
+    "publishRequest": "data/schema/publish-request.schema.json",
+    "publishReceipt": "data/schema/publish-receipt.schema.json"
+  }
+}

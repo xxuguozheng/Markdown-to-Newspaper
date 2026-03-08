@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$comment": "Documentation schema for OpenClaw Newspaper source-of-truth. Validation runtime lives in scripts/newspaper_data.py",
+  "title": "PublishReceipt",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "kind",
+    "id",
+    "ok",
+    "projectId",
+    "editionId",
+    "editionUrl",
+    "projectUrl",
+    "portalUrl",
+    "rebuilt",
+    "publishedAt"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "2026-03-08.minimal-v1"
+    },
+    "kind": {
+      "const": "PublishReceipt"
+    },
+    "id": {
+      "type": "string"
+    },
+    "ok": {
+      "type": "boolean"
+    },
+    "projectId": {
+      "type": "string"
+    },
+    "editionId": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "editionUrl": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "projectUrl": {
+      "type": "string"
+    },
+    "portalUrl": {
+      "type": "string"
+    },
+    "rebuilt": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "publishedAt": {
+      "type": "string"
+    },
+    "sourceRequestId": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

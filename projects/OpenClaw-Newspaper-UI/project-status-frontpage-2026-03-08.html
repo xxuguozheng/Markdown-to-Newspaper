@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>项目总况版 — 2026-03-08</title>
+  <style>
+    :root {
+      --paper:#f5f1e8; --ink:#171717; --muted:#665f54; --rule:#1d1d1d; --accent:#7f1111; --accent2:#0e5a50;
+      --sans:"Inter","PingFang SC","Noto Sans CJK SC","Microsoft YaHei",sans-serif;
+      --serif:"Source Han Serif SC","Songti SC","STSong",serif;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:#ddd6c8;color:var(--ink);font-family:var(--serif);line-height:1.45}
+    .page{max-width:1320px;margin:24px auto;background:var(--paper);box-shadow:0 12px 36px rgba(0,0,0,.18);border:1px solid rgba(0,0,0,.16);padding:18px 24px 30px}
+    .masthead{border-bottom:4px double var(--rule);padding-bottom:10px;margin-bottom:14px}
+    .topline{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font:10px/1.35 var(--sans);letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin-bottom:7px}
+    .title{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:end;gap:16px}
+    h1{margin:0;font-size:clamp(30px,4.4vw,60px);line-height:.95;font-weight:900;letter-spacing:-.02em;text-transform:uppercase}
+    .edition{font:10px/1.3 var(--sans);text-align:right;color:var(--muted)}
+    .strap{margin-top:8px;display:flex;flex-wrap:wrap;gap:6px 12px;font:11px/1.4 var(--sans);color:#25201b}
+    .strap span::before{content:"◆ ";color:var(--accent)}
+    .lead{display:grid;grid-template-columns:1.45fr .95fr;gap:18px;border-bottom:1px solid rgba(0,0,0,.78);padding-bottom:14px;margin-bottom:16px}
+    .lead h2{margin:0 0 8px;font-size:clamp(28px,3vw,44px);line-height:1.03}
+    .lead p{margin:0;font-size:15px;line-height:1.56}
+    .summary-card{background:rgba(255,255,255,.45);border-left:4px solid var(--accent);padding:12px 13px}
+    .summary-card small{display:block;font:10px/1.35 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:5px}
+    .summary-card b{display:block;font:800 16px/1.35 var(--sans);margin-bottom:6px}
+    .summary-card p{font:13px/1.65 var(--sans);color:#2b251f}
+    .grid{display:grid;grid-template-columns:1.32fr 1fr 1fr;gap:18px}
+    .story{border-top:1px solid rgba(0,0,0,.72);padding-top:10px;margin-bottom:16px}
+    .story.leadstory{border-top:none;padding-top:0}
+    .kicker{font:10px/1.3 var(--sans);text-transform:uppercase;letter-spacing:.1em;color:var(--accent);font-weight:800;margin-bottom:5px}
+    .headline{margin:0 0 7px;font-size:clamp(24px,2.5vw,38px);line-height:1.03;font-weight:900}
+    .headline.small{font-size:23px;line-height:1.08}
+    .dek{margin:0 0 10px;font-size:15px;line-height:1.45;color:#25201b}
+    .meta{margin-bottom:10px;font:11px/1.45 var(--sans);color:var(--muted)}
+    .body{font-size:14.5px;line-height:1.58;text-align:justify;column-count:2;column-gap:18px}
+    .body.single{column-count:1}
+    .body p{margin:0 0 10px}
+    .briefs{display:grid;gap:10px}
+    .brief{border-left:3px solid var(--rule);padding-left:10px;font-size:12.5px;line-height:1.52}
+    .brief b{display:block;font:700 11px/1.3 var(--sans);letter-spacing:.06em;text-transform:uppercase;margin-bottom:4px}
+    .box{border:1px solid rgba(0,0,0,.75);background:rgba(255,255,255,.28);padding:10px 11px;margin-bottom:16px}
+    .box h3{margin:0 0 8px;font:800 13px/1.35 var(--sans);text-transform:uppercase;letter-spacing:.07em}
+    .list{margin:0;padding-left:18px;font-size:12.5px;line-height:1.5}
+    .list li{margin-bottom:6px}
+    .quote{font-size:16px;line-height:1.32;font-weight:700;padding:10px 0;border-top:1px dashed rgba(0,0,0,.5);border-bottom:1px dashed rgba(0,0,0,.5);margin:10px 0}
+    .tag{display:inline-block;padding:1px 6px;border:1px solid rgba(0,0,0,.6);font:10px/1.35 var(--sans);margin:0 5px 5px 0}
+    .footer{margin-top:16px;padding-top:10px;border-top:3px double var(--rule);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font:10px/1.5 var(--sans);color:var(--muted)}
+    code{font-family:"Iosevka","JetBrains Mono",monospace;font-size:.92em;background:rgba(0,0,0,.05);padding:1px 4px;border-radius:4px}
+    @media (max-width:1024px){.grid{grid-template-columns:1.35fr 1fr}.grid>.col:last-child{grid-column:1/-1}.lead{grid-template-columns:1fr}}
+    @media (max-width:760px){.page{margin:0;min-height:100vh}.title{grid-template-columns:1fr}.edition{text-align:left}.grid{grid-template-columns:1fr}.body{column-count:1}}
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="masthead">
+      <div class="topline">
+        <span>Staro Brief · Project Edition</span>
+        <span>Project Status Front Page · 2026-03-08</span>
+        <span>第 001 版 / Scan First</span>
+      </div>
+      <div class="title">
+        <h1>项目总况版</h1>
+        <div class="edition">把这一轮并发结果压成一张报纸<br/>先扫重点，再决定继续派工</div>
+      </div>
+      <div class="strap">
+        <span>主线项目先收口</span>
+        <span>基础设施先做路线决策</span>
+        <span>成熟副线先验收再扩</span>
+      </div>
+    </header>
+
+    <section class="lead">
+      <div>
+        <div class="kicker">Lead Judgment</div>
+        <h2>现在最值得继续推进的是 VibeLife、Resomate 和报纸系统；Zep 要先拍板路线，Study Suit 与 CSGO 先别重兵压上。</h2>
+        <p>这轮并发勘查已经把局面收清了。VibeLife 和 Resomate 都不是“要不要从零开始”的问题，而是已经有真实产品形态、但还没把叙事、入口、结构和验收收紧。报纸系统也一样，前端阅读壳已经成立，缺的是正式 publish contract。Zep 则从“有没有部署”转成了“到底走 CE、Cloud 还是 Graphiti 直连”。Study Suit 更像母体资产库，CSGO 更像成熟副线，二者此刻最不该做的就是无边界再开新工地。</p>
+      </div>
+      <aside class="summary-card">
+        <small>主编摘要</small>
+        <b>项目盘子已经不是空白，真正缺的是收口顺序。</b>
+        <p>这一轮最重要的变化，不是又多看了几个仓库，而是把每条线的“下一步性质”分开了：有的该收叙事，有的该做验收，有的该做路线裁决，有的该先留作资产库。</p>
+      </aside>
+    </section>
+
+    <section class="grid">
+      <div class="col">
+        <article class="story leadstory">
+          <div class="kicker">头版主文</div>
+          <h2 class="headline">VibeLife 不是技术先卡住，而是新产品名字和旧学习系统心智还缠在一起。</h2>
+          <p class="dek">它的真实形态已经很清楚：FlowStudy/Study-suit 的学习母体上，长出了 Projects、Workbench、QuickCapture 和 OpenClaw 接入层。现在最大的问题不在“跑不跑”，而在“对外到底是谁”。</p>
+          <div class="meta">第一主线 · 适合继续推进</div>
+          <div class="body">
+            <p>VibeLife 这条线最像真正的主推项目，因为它不是空想，也不是单功能原型。前端入口、后端主文件、OpenClaw 路由和项目/采集路由都已经在位，说明产品骨架已经长出来了。问题在于，这个骨架外面裹着的皮还是旧的：README、首屏文案、数据库/目录命名、默认入口都在不断提醒人“这本来是 FlowStudy”。</p>
+            <p>所以它现在最该做的，不是继续盲加功能，而是先把产品定义和默认入口统一。用户打开后应该先见到一个成人版人生/项目/行动中枢，而不是一个还没彻底脱壳的学习平台。等叙事和入口收口以后，再做一次真实启动与链路验收，最后再去清理 `flowstudy.*` 的历史命名债，这样顺序才稳。</p>
+            <p>简化成一句话：VibeLife 已经有“成产品”的条件，当前缺的是把“旧母体仍在说话”这件事压下去。它值得继续派工，但第二轮应围绕叙事、入口、验收，而不是无边界开新模块。</p>
+          </div>
+        </article>
+
+        <article class="story">
+          <div class="kicker">二号主线</div>
+          <h2 class="headline small">Resomate 已经是准生产站点，下一步不是搭建，而是收口、加固、准备上线前闭环。</h2>
+          <p class="dek">它不是 AI demo，而是已经带社区、积分、活动、私信、投稿、影响力和 OpenClaw 接入层的 AI 创作者站点。本轮 typecheck、build、smoke 都过了，说明骨架真的站得住。</p>
+          <div class="meta">第二主线 · 适合继续深挖</div>
+          <div class="body single">
+            <p>Resomate 这轮最大的收获，是确认它已经越过了“概念样机”阶段。运行链、部署链、CloudBase 流程、OpenClaw 集成层都是真实存在的，而且工作树干净、构建通过、smoke 通过。这意味着后续不该再把它当“从零搭站”的项目对待，而应该直接进入产品与工程收口阶段。</p>
+            <p>现在真正要盯的，是 README 还偏模板、运行产物噪音偏多、环境默认回退值偏宽松，以及审核、风控、告警、自动化回归这些上线前闭环尚未补齐。换句话说，它已经到了可以认真做“准生产整理”的位置。</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="col">
+        <article class="story leadstory">
+          <div class="kicker">系统线</div>
+          <h2 class="headline small">报纸系统的主矛盾不在前端，而在 publish contract 还没正式成立。</h2>
+          <p class="dek">现在的 OpenClaw-Newspaper 已经有稳定读壳，但本质上仍偏“静态模板 + 手工索引”。真正最短的默认接入点，不是再打磨页面，而是在主代理最终回复前插入 publish hook。</p>
+          <div class="meta">阅读主界面线 · 现在就该推</div>
+          <div class="briefs">
+            <div class="brief"><b>最缺 1</b>统一发布入口。现在缺少一个明确的 <code>publish_to_newspaper</code> 最小调用面。</div>
+            <div class="brief"><b>最缺 2</b>单一 source-of-truth。项目、版次、发布请求、发布回执还没有收成统一 schema。</div>
+            <div class="brief"><b>最缺 3</b>默认输出分流规则。哪些回复该先落报纸、哪些该留在聊天里，还没真正变成可执行工作流。</div>
+            <div class="brief"><b>最近 3 步</b>先定 schema，再做最小 publish 流水线，再统一项目页模板与导航口径。</div>
+          </div>
+        </article>
+
+        <div class="box">
+          <h3>Zep 当前判断</h3>
+          <ul class="list">
+            <li>问题已经不是“有没有部署”，而是“到底走哪条路线”。</li>
+            <li>Zep CE 已 deprecated，官方主线明显偏向 Cloud + Graphiti。</li>
+            <li>如果重视本地可控与长期维护，当前更像主路的是 <b>Graphiti 直连 + OpenClaw 自建 bridge</b>。</li>
+            <li>CE 更适合作为兼容候选或短期核验对象，不该继续默认押主线。</li>
+          </ul>
+        </div>
+
+        <div class="quote">“这一轮最值得收的不是更多资料，而是每条线到底属于收口、验收、裁决，还是继续扩。”</div>
+
+        <div class="box">
+          <h3>Village AI RPG</h3>
+          <p style="margin:0;font:13px/1.66 var(--sans);color:#2b251f;">这条线已经完成第一轮蓝图收敛：先做单人短闭环原型，验证“观察机制怪 → 设计武器 → 制作 → 战斗验证”。它不是现在最急的收口工程，但已经可以排进下一阶段原型切片。</p>
+        </div>
+      </div>
+
+      <div class="col">
+        <article class="story leadstory">
+          <div class="kicker">快扫栏</div>
+          <h2 class="headline small">Study Suit 先当母体资产库，CSGO 先做玩法验收，别急着重开大工地。</h2>
+          <p class="dek">这两条线都不是废档，但它们当前最值钱的不是继续无边界推进，而是各自守住合适的位置：一个做资产来源，一个做成熟副线验收。</p>
+          <div class="meta">Scan Rail · 快速读完就够用</div>
+        </article>
+
+        <div class="box">
+          <h3>Study Suit</h3>
+          <ul class="list">
+            <li><code>flowstudy</code> 是较完整的 Web 学习平台。</li>
+            <li><code>ArtIflow</code> 更像 Android 伴随端，不是完全独立产品。</li>
+            <li>两边都不是死档，但当前更适合作为 VibeLife 的母体资产与可复用模块库。</li>
+            <li><code>start.sh</code> 还存在旧路径硬编码，说明“一键启动”不能直接信。</li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h3>CSGO</h3>
+          <ul class="list">
+            <li>本地静态服务能起，首页能渲染，说明它不是假活着。</li>
+            <li>当前不确定的是完整玩法链是否顺：Bot、爆破回合、经济、HUD、观战、烟雾火焰。</li>
+            <li>所以最该做的是人工试玩验收，不是再狠狠干工程化，也不是立刻扩玩法内容。</li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h3>下一轮最值得开的 3 条派工</h3>
+          <ol class="list">
+            <li><b>VibeLife 二轮：</b>叙事收口、真实启动验收、命名迁移策略。</li>
+            <li><b>Resomate 二轮：</b>产品信息架构收口、上线前风险清单、OpenClaw 集成层梳理。</li>
+            <li><b>Zep 二轮：</b>Graphiti / CE / Cloud 路线裁决建议书。</li>
+          </ol>
+        </div>
+
+        <div class="box">
+          <h3>标签</h3>
+          <span class="tag">Project Edition</span>
+          <span class="tag">VibeLife</span>
+          <span class="tag">Resomate</span>
+          <span class="tag">Newspaper</span>
+          <span class="tag">Zep</span>
+          <span class="tag">Study Suit</span>
+          <span class="tag">CSGO</span>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div>Edition: <code>project-status-frontpage-2026-03-08.html</code></div>
+      <div>Project slot: <code>OpenClaw-Newspaper-UI</code></div>
+      <div>Purpose: 把并发项目结果压成可扫读版面</div>
+    </footer>
+  </main>
+</body>
+</html>

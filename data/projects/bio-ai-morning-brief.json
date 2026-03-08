@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "2026-03-08.minimal-v1",
+  "kind": "Project",
+  "id": "bio-ai-morning-brief",
+  "slug": "Bio-AI-Morning-Brief",
+  "label": "Bio × AI 晨报",
+  "description": "给想用 AI 玩 biology 的入门者做的连续晨报项目位，强调每日可读、讲人话、能继续上手。",
+  "summary": "给“想用 AI 玩 biology 的入门者”做的连续晨报项目位。",
+  "stage": "样刊入驻完成 / 项目位已接入门户",
+  "blockers": "尚未连到自动抓取或半自动编辑流。",
+  "next": "固定每日选题流程，再补来源卡片与刷新脚本。",
+  "status": "active",
+  "aggregateUrl": "/projects/Bio-AI-Morning-Brief/index.html",
+  "updatedAt": "2026-03-08T07:38:00+08:00",
+  "latestEditionId": "edition_bio_ai_morning_brief_bio_ai_morning_brief_2026_03_07",
+  "editionCount": 1,
+  "source": {
+    "importedFrom": "/site/data/portal-index.json",
+    "portalKey": "Bio-AI-Morning-Brief"
+  }
+}

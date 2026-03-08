@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Staro Brief — 高信息密度报纸写法 v2</title>
+  <style>
+    :root {
+      --paper: #f5f1e8;
+      --ink: #171717;
+      --muted: #666;
+      --rule: #1f1f1f;
+      --accent: #7f1111;
+      --sans: "Inter", "PingFang SC", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif;
+      --serif: "Source Han Serif SC", "Songti SC", "STSong", serif;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #ddd6c8;
+      color: var(--ink);
+      font-family: var(--serif);
+      line-height: 1.45;
+    }
+    .page {
+      max-width: 1280px;
+      margin: 24px auto;
+      background: var(--paper);
+      box-shadow: 0 12px 36px rgba(0,0,0,.18);
+      border: 1px solid rgba(0,0,0,.18);
+      padding: 18px 24px 30px;
+    }
+    .masthead {
+      border-bottom: 4px double var(--rule);
+      padding-bottom: 8px;
+      margin-bottom: 12px;
+    }
+    .topline {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      font: 10px/1.35 var(--sans);
+      letter-spacing: .09em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+    .title {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: end;
+      gap: 12px;
+    }
+    .title h1 {
+      margin: 0;
+      font-size: clamp(30px, 4vw, 52px);
+      line-height: .96;
+      letter-spacing: -.01em;
+      font-weight: 900;
+      font-family: var(--serif);
+    }
+    .edition {
+      text-align: right;
+      font: 10px/1.3 var(--sans);
+      color: var(--muted);
+    }
+    .strap {
+      margin-top: 6px;
+      font: 11px/1.35 var(--sans);
+      color: #222;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px 10px;
+    }
+    .strap span::before { content: "◆ "; color: var(--accent); }
+    .grid {
+      display: grid;
+      grid-template-columns: 2.25fr 1.05fr 1.05fr;
+      gap: 18px;
+    }
+    .story {
+      break-inside: avoid;
+      border-top: 1px solid rgba(0,0,0,.7);
+      padding-top: 10px;
+      margin-bottom: 16px;
+    }
+    .story.lead { border-top: none; padding-top: 0; }
+    .kicker {
+      font: 10px/1.3 var(--sans);
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: .09em;
+      margin-bottom: 5px;
+      font-weight: 700;
+    }
+    .headline {
+      font-size: clamp(25px, 2.8vw, 44px);
+      line-height: .98;
+      margin: 0 0 8px;
+      font-weight: 900;
+    }
+    .headline.small {
+      font-size: 21px;
+      line-height: 1.08;
+    }
+    .dek {
+      font-size: 15px;
+      line-height: 1.42;
+      color: #222;
+      margin: 0 0 10px;
+    }
+    .meta {
+      font: 11px/1.45 var(--sans);
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+    .body {
+      column-count: 2;
+      column-gap: 18px;
+      font-size: 14.5px;
+      line-height: 1.58;
+      text-align: justify;
+      hyphens: auto;
+    }
+    .body.single { column-count: 1; }
+    .body p { margin: 0 0 10px; }
+    .box {
+      border: 1px solid rgba(0,0,0,.75);
+      padding: 10px 11px;
+      background: rgba(255,255,255,.28);
+      margin-bottom: 16px;
+    }
+    .box h3 {
+      margin: 0 0 8px;
+      font: 800 13px/1.3 var(--sans);
+      text-transform: uppercase;
+      letter-spacing: .07em;
+    }
+    .list {
+      margin: 0;
+      padding-left: 18px;
+      font-size: 12.5px;
+      line-height: 1.48;
+    }
+    .list li { margin-bottom: 6px; }
+    .briefs { display: grid; gap: 10px; }
+    .brief {
+      border-left: 3px solid var(--rule);
+      padding-left: 10px;
+      font-size: 12.5px;
+      line-height: 1.48;
+    }
+    .brief b {
+      display: block;
+      font: 700 11px/1.3 var(--sans);
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      margin-bottom: 4px;
+    }
+    .quote {
+      font-size: 16px;
+      line-height: 1.32;
+      font-weight: 700;
+      padding: 9px 0;
+      border-top: 1px dashed rgba(0,0,0,.5);
+      border-bottom: 1px dashed rgba(0,0,0,.5);
+      margin: 8px 0 10px;
+    }
+    .tag {
+      display: inline-block;
+      padding: 1px 6px;
+      border: 1px solid rgba(0,0,0,.65);
+      font: 10px/1.35 var(--sans);
+      margin-right: 5px;
+      margin-bottom: 5px;
+    }
+    .footer {
+      margin-top: 14px;
+      padding-top: 10px;
+      border-top: 3px double var(--rule);
+      font: 10px/1.5 var(--sans);
+      color: var(--muted);
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    @media (max-width: 1024px) {
+      .grid { grid-template-columns: 1.45fr 1fr; }
+      .grid > .col:last-child { grid-column: 1 / -1; }
+    }
+    @media (max-width: 760px) {
+      .page { margin: 0; min-height: 100vh; }
+      .grid { grid-template-columns: 1fr; }
+      .body { column-count: 1; }
+      .title { grid-template-columns: 1fr; }
+      .edition { text-align: left; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="masthead">
+      <div class="topline">
+        <div>Staro Brief / Editorial Method v2</div>
+        <div>High-Density Newspaper Output</div>
+      </div>
+      <div class="title">
+        <h1>高密度报纸写法：短标题，足信息</h1>
+        <div class="edition">
+          第 2 版 / Method Brief<br>
+          时间：08:25 / Saturday / Asia-Shanghai
+        </div>
+      </div>
+      <div class="strap">
+        <span>标题短</span>
+        <span>dek 要稳</span>
+        <span>正文先给结论</span>
+        <span>该具体时必须具体</span>
+      </div>
+    </header>
+
+    <section class="grid">
+      <div class="col">
+        <article class="story lead">
+          <div class="kicker">Lead Story</div>
+          <h2 class="headline">真正要追求的是高信息密度，不是单纯变短</h2>
+          <p class="dek">报纸页要让人一眼能扫，也要让人往下读时拿到真东西。标题可以短，信息不能空；dek 可以收，关键关系不能丢；正文可以更快落地，但细节仍然要撑得住深读。</p>
+          <div class="meta">Staro Desk • 适用对象：长回复 / 方案 / 汇报 / 调研 / 晨报</div>
+          <div class="body">
+            <p>这轮调整之后，风格方向已经基本对了：标题更短，扫读压力更小，页面也更像报纸在说话，而不是 markdown 换壳。但新的风险也已经出现了——如果继续只按“更短”这个单一目标收，页面虽然会更利落，却可能开始失去含量。你刚才点得很准：有些地方该具体描述，还是必须具体描述，否则表面更紧，实质更空。</p>
+            <p>所以后面的标准要改成双目标，而不是单目标。第一目标仍然是可扫读：标题要直给，dek 要短，正文第一句要尽快落地。第二目标则是信息密度：正文里该出现的对象、边界、变化、阻塞、后续动作，都要明确出现，不能只剩抽象判断。换句话说，报纸不是靠字少取胜，而是靠每一寸版面都在说有用的话取胜。</p>
+            <p>具体到执行层，标题应该承担“快速判断”功能，告诉读者这块最值得知道的结论；dek 应该承担“压缩背景”功能，用一两句补足上下文；正文第一句负责把判断钉住；正文后续句则负责把对象、例子、链路、条件讲清楚。这样页面同时拥有两种阅读方式：扫一眼时能抓全局，往下读时能拿到细节。没有这第二层，页面就只剩形式感了。</p>
+            <p>也因此，接下来的优化不该再简单理解成“继续砍字”，而应该理解成“重新分配密度”。左栏正文要保留更强的深读价值，每段第一句先给结论，后面继续补细节；右栏则承担快扫职责，把短讯、状态、判断压得更利落。最终目标不是做一页看起来很报纸的东西，而是做一页真正读起来省力、但信息并没有缩水的东西。</p>
+          </div>
+        </article>
+
+        <article class="story">
+          <div class="kicker">Method</div>
+          <h2 class="headline small">长回复现在要同时满足两个标准</h2>
+          <div class="body single">
+            <p><span class="tag">可扫读</span><span class="tag">高密度</span><span class="tag">标题短</span><span class="tag">正文具体</span><span class="tag">快扫 + 深读</span></p>
+            <p>以后判断一页写得好不好，不只看它短不短，而看它能不能同时满足两件事：第一，读者三秒钟能扫出主线；第二，读者愿意继续往下读时，能拿到具体对象、关系和结论。只有短，没有细节，不行；只有细节，没有扫读，也不行。真正好的版本一定同时兼顾这两层。</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="col">
+        <div class="box">
+          <h3>快扫区 / 新标准</h3>
+          <ul class="list">
+            <li>标题继续短，但不能空</li>
+            <li>dek 负责压缩背景，不负责堆废话</li>
+            <li>正文第一句先给结论</li>
+            <li>该具体时必须具体</li>
+            <li>左栏深读，右栏快扫</li>
+          </ul>
+        </div>
+
+        <article class="story">
+          <div class="kicker">Briefs</div>
+          <h2 class="headline small">哪些地方能砍，哪些地方不能砍</h2>
+          <div class="briefs">
+            <div class="brief"><b>Can Cut</b> 标题里的绕弯、重复限定、空泛铺垫，都可以继续砍。</div>
+            <div class="brief"><b>Must Keep</b> 对象名称、关键关系、阻塞点、本轮变化和下一步动作，不能砍空。</div>
+            <div class="brief"><b>Dek</b> 只保留最关键的背景，不再承担正文说明书的功能。</div>
+            <div class="brief"><b>Body</b> 每段第一句给结论，后续句负责把例子和结构补完整。</div>
+          </div>
+        </article>
+
+        <article class="story">
+          <div class="kicker">Rule</div>
+          <h2 class="headline small">以后不再为短而短</h2>
+          <div class="body single">
+            <p>后面继续优化时，我会优先盯“单位面积信息量”这个指标，而不是只盯字数。页面应该更紧、更利落，但不能变成只剩漂亮判断句。真正有价值的是：每一块都能扫，每一块也都经得起深读。</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="col">
+        <div class="box">
+          <h3>状态框 / 当前理解</h3>
+          <ul class="list">
+            <li>方向已经对了</li>
+            <li>下一步不是继续猛砍</li>
+            <li>重点是重新分配密度</li>
+            <li>正文细节价值要保住</li>
+          </ul>
+        </div>
+
+        <article class="story">
+          <div class="kicker">Quote</div>
+          <div class="quote">“不是一味变短，而是要在可扫读和信息密度之间取最优点。”</div>
+          <div class="meta">这句已经可以当成后续报纸模式的总准则。</div>
+        </article>
+
+        <article class="story">
+          <div class="kicker">Next Step</div>
+          <h2 class="headline small">下一轮该优化密度分布</h2>
+          <div class="body single">
+            <p>如果继续往前推，下一轮最值得做的是：统一 dek 的长度口径；进一步缩短右栏短讯；同时把左栏每段的后半句补得更实，让每个结论后面都能立刻跟上对象、例子或动作。这样页面既不会散，也不会空。</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div>Brief file: <code>workspace/reports/reply-style-newspaper-principles-v2-2026-03-07.html</code></div>
+      <div>关键词：高信息密度 / 标题短 / 细节保留 / 快扫 + 深读</div>
+    </footer>
+  </main>
+</body>
+</html>

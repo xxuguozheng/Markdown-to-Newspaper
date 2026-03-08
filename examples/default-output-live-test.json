@@ -1,0 +1,12 @@
+{
+  "project": "OpenClaw-Newspaper-UI",
+  "title": "默认输出实测：完整发布链验证",
+  "summary": "用当前对话真实内容验证 OpenClaw Newspaper 第一阶段完整流程：准备内容、经 bridge 构造 PublishRequest、调用 publish 流水线、刷新项目页与门户索引，并回给用户可打开的位置。",
+  "density": "longform",
+  "tags": ["test", "publish", "bridge", "default-output", "verification"],
+  "bodyHtml": "<h2>这次验证测了什么</h2><p>这次不是只看页面是否好看，而是走一遍完整链路：先准备一段真实长输出，再通过默认输出 bridge 归一化成 PublishRequest，随后交给 publish_to_newspaper 脚本生成 edition HTML、写入数据真源、刷新项目页、刷新门户索引，最后回到聊天里给出可读位置。</p><h2>为什么这一步关键</h2><p>因为报纸系统能不能成为默认输出面，不取决于页面壳，而取决于发布链能不能稳定工作。只有当一段真实内容能自动变成版次、进入项目页、被门户感知，它才算真正开始接管长输出。</p><h2>当前验证边界</h2><p>本轮验证的是第一阶段可用系统，不是最终完整运行时集成。也就是说，现在已经能通过 bridge 和 publish 流水线完成真实发布，但 finalize publish hook 还没有正式接入 OpenClaw 主运行时，因此还不是每次回复天然自动发布。</p><h2>如果这次发布成功，说明什么</h2><p>说明 OpenClaw Newspaper 已经从“可读原型”迈进到“可工作的长输出承载面”。接下来就只剩两步：把主运行时的 finalize hook 接上，以及做宿主机浏览器验收。那之后，长输出就可以默认先进报纸，再回聊天摘要。</p>",
+  "source": {
+    "sessionId": "public-demo",
+    "channel": "demo"
+  }
+}

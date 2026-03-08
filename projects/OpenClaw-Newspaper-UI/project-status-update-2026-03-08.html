@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>项目总况更新版 — 2026-03-08</title>
+  <style>
+    :root { --paper:#f5f1e8; --ink:#171717; --muted:#665f54; --rule:#1d1d1d; --accent:#7f1111; --sans:"Inter","PingFang SC","Noto Sans CJK SC","Microsoft YaHei",sans-serif; --serif:"Source Han Serif SC","Songti SC","STSong",serif; }
+    *{box-sizing:border-box} body{margin:0;background:#ddd6c8;color:var(--ink);font-family:var(--serif);line-height:1.45}
+    .page{max-width:1320px;margin:24px auto;background:var(--paper);box-shadow:0 12px 36px rgba(0,0,0,.18);border:1px solid rgba(0,0,0,.16);padding:18px 24px 30px}
+    .masthead{border-bottom:4px double var(--rule);padding-bottom:10px;margin-bottom:14px}
+    .topline{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font:10px/1.35 var(--sans);letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin-bottom:7px}
+    .title{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:end;gap:16px}.title h1{margin:0;font-size:clamp(30px,4.4vw,60px);line-height:.95;font-weight:900;letter-spacing:-.02em;text-transform:uppercase}.edition{font:10px/1.3 var(--sans);text-align:right;color:var(--muted)}
+    .strap{margin-top:8px;display:flex;flex-wrap:wrap;gap:6px 12px;font:11px/1.4 var(--sans);color:#25201b}.strap span::before{content:"◆ ";color:var(--accent)}
+    .lead{display:grid;grid-template-columns:1.45fr .95fr;gap:18px;border-bottom:1px solid rgba(0,0,0,.78);padding-bottom:14px;margin-bottom:16px}
+    .lead h2{margin:0 0 8px;font-size:clamp(28px,3vw,44px);line-height:1.03}.lead p{margin:0;font-size:15px;line-height:1.56}
+    .summary-card{background:rgba(255,255,255,.45);border-left:4px solid var(--accent);padding:12px 13px}.summary-card small{display:block;font:10px/1.35 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:5px}.summary-card b{display:block;font:800 16px/1.35 var(--sans);margin-bottom:6px}.summary-card p{font:13px/1.65 var(--sans);color:#2b251f}
+    .grid{display:grid;grid-template-columns:1.32fr 1fr 1fr;gap:18px}.story{border-top:1px solid rgba(0,0,0,.72);padding-top:10px;margin-bottom:16px}.story.leadstory{border-top:none;padding-top:0}
+    .kicker{font:10px/1.3 var(--sans);text-transform:uppercase;letter-spacing:.1em;color:var(--accent);font-weight:800;margin-bottom:5px}.headline{margin:0 0 7px;font-size:clamp(24px,2.5vw,38px);line-height:1.03;font-weight:900}.headline.small{font-size:23px;line-height:1.08}.dek{margin:0 0 10px;font-size:15px;line-height:1.45;color:#25201b}.meta{margin-bottom:10px;font:11px/1.45 var(--sans);color:var(--muted)}
+    .body{font-size:14.5px;line-height:1.58;text-align:justify;column-count:2;column-gap:18px}.body.single{column-count:1}.body p{margin:0 0 10px}
+    .briefs{display:grid;gap:10px}.brief{border-left:3px solid var(--rule);padding-left:10px;font-size:12.5px;line-height:1.52}.brief b{display:block;font:700 11px/1.3 var(--sans);letter-spacing:.06em;text-transform:uppercase;margin-bottom:4px}
+    .box{border:1px solid rgba(0,0,0,.75);background:rgba(255,255,255,.28);padding:10px 11px;margin-bottom:16px}.box h3{margin:0 0 8px;font:800 13px/1.35 var(--sans);text-transform:uppercase;letter-spacing:.07em}.list{margin:0;padding-left:18px;font-size:12.5px;line-height:1.5}.list li{margin-bottom:6px}
+    .quote{font-size:16px;line-height:1.32;font-weight:700;padding:10px 0;border-top:1px dashed rgba(0,0,0,.5);border-bottom:1px dashed rgba(0,0,0,.5);margin:10px 0}.tag{display:inline-block;padding:1px 6px;border:1px solid rgba(0,0,0,.6);font:10px/1.35 var(--sans);margin:0 5px 5px 0}.footer{margin-top:16px;padding-top:10px;border-top:3px double var(--rule);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font:10px/1.5 var(--sans);color:var(--muted)}
+    @media (max-width:1024px){.grid{grid-template-columns:1.35fr 1fr}.grid>.col:last-child{grid-column:1/-1}.lead{grid-template-columns:1fr}} @media (max-width:760px){.page{margin:0;min-height:100vh}.title{grid-template-columns:1fr}.edition{text-align:left}.grid{grid-template-columns:1fr}.body{column-count:1}}
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="masthead">
+      <div class="topline"><span>Staro Brief · Project Edition</span><span>Updated Project Status · 2026-03-08</span><span>第 002 版 / Updated Front Page</span></div>
+      <div class="title"><h1>项目总况更新版</h1><div class="edition">把上午新增推进压成一张新头版<br/>方便你在报纸里连续读</div></div>
+      <div class="strap"><span>报纸完整发布链已实测通过</span><span>语音层路线已收清</span><span>批量 SaaS 母框架 shortlist 已出</span></div>
+    </header>
+
+    <section class="lead">
+      <div>
+        <div class="kicker">Lead Judgment</div>
+        <h2>今天最关键的变化，是报纸已经从“可读原型”进到“可工作的默认长输出承载面”，同时 VibeLife、Resomate、Zep、语音层、SaaS 母框架都开始进入可执行阶段。</h2>
+        <p>现在项目盘子不再是分散的想法堆。报纸已经完成一次真实完整发布链验证；VibeLife 有了叙事收口、验收清单和迁移策略；Resomate 进入准上线整理；Zep 主路定成 Graphiti 直连；语音交互层和批量 SaaS 母框架也分别收到了现实主路线。这意味着你后面给服务器时，我们已经不只是“有项目”，而是开始有“可复制的系统打法”。</p>
+      </div>
+      <aside class="summary-card">
+        <small>主编摘要</small>
+        <b>今天真正成形的，不只是一张报纸，而是一套开始互相接起来的系统骨架。</b>
+        <p>报纸负责长内容承载，语音层准备做自然交互，SaaS 母框架为量产留底盘，VibeLife / Resomate 是最适合继续前推的产品线。</p>
+      </aside>
+    </section>
+
+    <section class="grid">
+      <div class="col">
+        <article class="story leadstory">
+          <div class="kicker">头版主文</div>
+          <h2 class="headline">报纸完整发布链已经真跑通，现在差的不是“能不能发”，而是把自动接线补进主运行时。</h2>
+          <p class="dek">这轮已经用真实对话内容完成了一次全链路实测：准备内容、经 bridge 构造 PublishRequest、调用 publish 流水线、生成版次页、刷新项目页、刷新门户索引，并留下 receipt。它现在已经可以拿来承接重要长输出。</p>
+          <div class="meta">第一主线 · 已进入准默认使用阶段</div>
+          <div class="body">
+            <p>最重要的变化是，这条链不再是“理论上能工作”。现在已经有真实版次页、有项目页刷新、有门户刷新、有发布回执，说明最关键的那段发布骨架是真的站住了。对于你来说，这意味着以后不必在 TUI 里啃长文，我可以优先把重要长输出送进报纸，再在聊天里只留一句短提示。</p>
+            <p>还没完成的那一步也很明确：不是重新做页面，而是把 finalize publish hook 真接进 OpenClaw 主运行时。换句话说，发布系统已经具备可用性，剩下的是自动化接线与宿主机浏览器验收。这已经不是“项目是否成立”的问题，而是“多久把最后一脚踢完”的问题。</p>
+          </div>
+        </article>
+
+        <article class="story">
+          <div class="kicker">产品线推进</div>
+          <h2 class="headline small">VibeLife 与 Resomate 都已经从“现状判断”走进“下一轮可执行动作”。</h2>
+          <p class="dek">这两条线最像真正的产品主线：一个要收产品叙事和入口，一个要收上线前闭环和 OpenClaw 集成层。</p>
+          <div class="meta">主推产品线</div>
+          <div class="body single">
+            <p>VibeLife 这轮最值钱的不是又多看了几眼仓库，而是已经产出三份能直接派工的文档：叙事收口方案、真实启动与链路验收清单、以及 flowstudy 到 VibeLife 的命名迁移策略。这让它从“知道问题在哪”升级成“可以直接发执行单”。</p>
+            <p>Resomate 也类似。它已经不是原型，而是准上线整理阶段。README 重写草案、go-live 风险与运维清单、OpenClaw 集成层结构梳理都已经落地。接下来再推，不该再加新花样，而是把产品叙事、认证审核回滚闭环、以及 cloudfunctions/api 的模块边界收硬。</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="col">
+        <article class="story leadstory">
+          <div class="kicker">基础设施与平台</div>
+          <h2 class="headline small">Zep、语音层和 SaaS 母框架三条平台线，今天都已经不再摇摆。</h2>
+          <p class="dek">一条定了第二记忆层主路，一条定了本地语音闭环主路，一条定了后面批量做 SaaS 时最值得先试的母框架。</p>
+          <div class="meta">平台层判断</div>
+          <div class="briefs">
+            <div class="brief"><b>Zep</b> 主路线已裁决为 <b>Graphiti 直连 + OpenClaw bridge</b>；Zep Cloud 是备选，Zep CE 不再主押。</div>
+            <div class="brief"><b>语音层</b> 先用 <b>openWakeWord + faster-whisper + Piper</b> 跑通闭环，稳定后再升 CosyVoice；Qwen3 TTS 先不主押。</div>
+            <div class="brief"><b>SaaS 母框架</b> 强推荐先看 <b>wasp-lang/open-saas</b>；如果要补后台与 agent 配置中心，可再看 <b>payloadcms/payload</b>。</div>
+          </div>
+        </article>
+
+        <div class="box">
+          <h3>语音交互层当前主判断</h3>
+          <ul class="list">
+            <li>5070 Ti Laptop / 12GB 显存，做单用户本地语音助手足够。</li>
+            <li>当前唯一现实阻塞不是模型，而是还没确认真实麦克风 source。</li>
+            <li>下一步不该先追最炫模型，而该先把最小可用闭环跑通。</li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h3>批量 SaaS 当前主判断</h3>
+          <ul class="list">
+            <li>如果你只先选一条主路线，先看 <b>open-saas</b>。</li>
+            <li>如果后面要做后台/内容/agent 配置中心，再补 <b>payload</b>。</li>
+            <li>如果未来明显偏企业多租户 B2B，再看 <b>bullet_train</b> 或 <b>apptension/saas-boilerplate</b>。</li>
+          </ul>
+        </div>
+
+        <div class="quote">“今天的价值不是项目更多了，而是每条线都开始有了清晰的下一步性质：有的该收口，有的该接线，有的该验收，有的该立平台。”</div>
+      </div>
+
+      <div class="col">
+        <article class="story leadstory">
+          <div class="kicker">快扫栏</div>
+          <h2 class="headline small">Village AI RPG 已经进到原型前任务包；Study Suit 正式退到资产库位。</h2>
+          <p class="dek">这两条线今天也更清楚了：一个适合真正开做原型，一个适合作为上游资产与经验库被引用，而不是抢主线资源。</p>
+          <div class="meta">Scan Rail</div>
+        </article>
+
+        <div class="box">
+          <h3>Village AI RPG</h3>
+          <ul class="list">
+            <li>已产出 `PHASE2-EXECUTABLE-PACK.md`。</li>
+            <li>下一步直接从 <b>壳换虫 × 楔钩枪</b> 最短证明链开始。</li>
+            <li>Godot 所需场景、脚本、资源清单都已经有了。</li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h3>Study Suit</h3>
+          <ul class="list">
+            <li>已产出 `ASSET_MAP.md`。</li>
+            <li>固定表述已成立：<b>Study-suit 是学习系统母体资产库；VibeLife 是从其中抽象出去的泛成长系统。</b></li>
+            <li>适合继承工作台结构、知识关联层、AI 输入/讲解通道、多端同步思路。</li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h3>你现在最该收藏的本地入口</h3>
+          <ul class="list">
+            <li>报纸项目页：<b>固定本地端口 + `/site/index.html`</b></li>
+            <li>项目总况更新版就会挂进 OpenClaw-Newspaper-UI 项目位里。</li>
+            <li>后面你不需要在 TUI 里找长总结，直接去报纸看。</li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h3>标签</h3>
+          <span class="tag">Updated Front Page</span>
+          <span class="tag">Newspaper</span>
+          <span class="tag">VibeLife</span>
+          <span class="tag">Resomate</span>
+          <span class="tag">Graphiti</span>
+          <span class="tag">Voice Layer</span>
+          <span class="tag">Open SaaS</span>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div>Edition: <code>project-status-update-2026-03-08.html</code></div>
+      <div>Project slot: <code>OpenClaw-Newspaper-UI</code></div>
+      <div>Purpose: 把上午新增推进压成更新版头版</div>
+    </footer>
+  </main>
+</body>
+</html>

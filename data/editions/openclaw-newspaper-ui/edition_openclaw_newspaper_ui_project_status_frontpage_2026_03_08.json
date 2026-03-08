@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "2026-03-08.minimal-v1",
+  "kind": "Edition",
+  "id": "edition_openclaw_newspaper_ui_project_status_frontpage_2026_03_08",
+  "projectId": "openclaw-newspaper-ui",
+  "projectSlug": "OpenClaw-Newspaper-UI",
+  "slug": "project-status-frontpage-2026-03-08",
+  "fileName": "project-status-frontpage-2026-03-08.html",
+  "title": "项目总况版",
+  "rawTitle": "project-status-frontpage-2026-03-08",
+  "summary": "把这一轮并发项目结果压成一张可扫读的报纸页：VibeLife、Resomate、报纸系统是当前最值得继续推进的主线，Zep 要先做路线决策，Study Suit 与 CSGO 先别重兵推进。",
+  "density": "longform",
+  "densityLabel": "头版 / 项目总况",
+  "htmlUrl": "/projects/OpenClaw-Newspaper-UI/project-status-frontpage-2026-03-08.html",
+  "publishedAt": "2026-03-08T07:38:00",
+  "size": 10771,
+  "tags": [],
+  "source": {
+    "importedFrom": "/site/data/portal-index.json",
+    "artifactPath": "projects/OpenClaw-Newspaper-UI/project-status-frontpage-2026-03-08.html",
+    "artifactExists": true
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "2026-03-08.minimal-v1",
+  "kind": "Project",
+  "id": "idea-inbox",
+  "slug": "IDEA-INBOX",
+  "label": "IDEA INBOX",
+  "description": "收纳系统想法、结构草图与还没正式立项但值得保留的报纸页。",
+  "summary": "收纳系统想法、结构草图与还没正式立项但值得保留的报纸页。",
+  "stage": "待补充",
+  "blockers": "暂无明确阻塞记录",
+  "next": "继续按当前方向推进。",
+  "status": "active",
+  "aggregateUrl": "/projects/IDEA-INBOX/index.html",
+  "updatedAt": "2026-03-08T07:38:00+08:00",
+  "latestEditionId": "edition_idea_inbox_idea_inbox_system_2026_03_07",
+  "editionCount": 1,
+  "source": {
+    "importedFrom": "/site/data/portal-index.json",
+    "portalKey": "IDEA-INBOX"
+  }
+}

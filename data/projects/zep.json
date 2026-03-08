@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "2026-03-08.minimal-v1",
+  "kind": "Project",
+  "id": "zep",
+  "slug": "Zep",
+  "label": "Zep",
+  "description": "预留给 Zep 相关接入、验证与后续输出。",
+  "summary": "Zep 相关本地记忆接入与路线验证项目位。",
+  "stage": "部署验证完成，路线待决策",
+  "blockers": "需要在 CE / Cloud / Graphiti 间做明确取舍。",
+  "next": "优先做路线裁决，再谈接桥。",
+  "status": "active",
+  "aggregateUrl": "/projects/Zep/index.html",
+  "updatedAt": "2026-03-08T07:38:00+08:00",
+  "latestEditionId": null,
+  "editionCount": 0,
+  "source": {
+    "importedFrom": "/site/data/portal-index.json",
+    "portalKey": "Zep"
+  }
+}

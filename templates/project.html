@@ -1,0 +1,26 @@
+<div class="hover-bar-top" aria-label="项目切换栏">
+  <div class="bar-inner">
+    <div class="bar-title">项目切换</div>
+    <div class="project-switches">$project_switches</div>
+  </div>
+</div>
+<aside class="hover-panel hover-panel-left" aria-label="项目摘要栏">
+  <div class="panel-inner">
+    <a class="backlink" href="/site/index.html">← 返回项目列表</a>
+    <h3>项目摘要</h3>
+    <section class="editor-card editor-lead"><small>本项目</small><b>$label</b><p>$project_summary</p></section>
+    <section class="editor-card"><small>编辑判断</small><b>$editorial_title</b><p>$editorial_body</p></section>
+    <section class="editor-card editor-inline"><small>现场速记</small><b>阶段：$stage</b><p>$quick_note</p></section>
+    <section class="editor-card"><small>阻塞与下手点</small><b>$blockers_title</b><p>$blockers_body</p><p class="follow">下一步：$next_step</p></section>
+  </div>
+</aside>
+<aside class="hover-panel hover-panel-right" aria-label="版次目录">
+  <div class="panel-inner">
+    <h3>版次目录</h3>
+    $toc_html
+  </div>
+</aside>
+<main class="page">
+  $preview_strip
+  <section class="stream">$editions_html</section>
+</main>

@@ -1,0 +1,12 @@
+{
+  "project": "Bio-AI-Morning-Brief",
+  "title": "Bio × AI 晨报：人物雷达版",
+  "summary": "先把 Bio × AI 里最值得长期盯的人物和机构框出来：药物、蛋白、基因编辑、平台化研究各有谁在带方向。",
+  "density": "longform",
+  "tags": ["bio", "ai", "people", "radar", "morning-brief"],
+  "html": "<!doctype html><html><head><meta charset='utf-8'><meta http-equiv='refresh' content='0; url=/projects/Bio-AI-Morning-Brief/bio-ai-people-radar-2026-03-08.html'></head><body></body></html>",
+  "source": {
+    "sessionId": "public-demo",
+    "channel": "demo"
+  }
+}

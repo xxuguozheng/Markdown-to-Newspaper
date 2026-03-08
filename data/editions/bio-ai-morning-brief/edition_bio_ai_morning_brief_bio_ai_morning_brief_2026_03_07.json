@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "2026-03-08.minimal-v1",
+  "kind": "Edition",
+  "id": "edition_bio_ai_morning_brief_bio_ai_morning_brief_2026_03_07",
+  "projectId": "bio-ai-morning-brief",
+  "projectSlug": "Bio-AI-Morning-Brief",
+  "slug": "bio-ai-morning-brief-2026-03-07",
+  "fileName": "bio-ai-morning-brief-2026-03-07.html",
+  "title": "Bio × AI 晨报样刊",
+  "rawTitle": "bio-ai-morning-brief-2026-03-07",
+  "summary": "Bio × AI 晨报样刊把编辑部版、老师版、朋友版三层阅读接进同一张报纸里：先给判断，再补解释，最后翻成今天能开始的动作。",
+  "density": "brief",
+  "densityLabel": "快报 / 样刊",
+  "htmlUrl": "/projects/Bio-AI-Morning-Brief/bio-ai-morning-brief-2026-03-07.html",
+  "publishedAt": "2026-03-07T23:45:00",
+  "size": 16596,
+  "tags": [],
+  "source": {
+    "importedFrom": "/site/data/portal-index.json",
+    "artifactPath": "projects/Bio-AI-Morning-Brief/bio-ai-morning-brief-2026-03-07.html",
+    "artifactExists": true
+  }
+}

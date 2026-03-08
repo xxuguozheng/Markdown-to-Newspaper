@@ -1,0 +1,8 @@
+{
+  "slug": "TEST-Project-Interface-2026-03-08",
+  "summary": "测试项目已完成 update_project_meta 验证，说明最小元数据更新链路可用。",
+  "stage": "接口验证完成",
+  "blockers": "暂无；当前剩余工作主要是把 CLI/JSON 接口接进更高层运行时。",
+  "next": "如需产品化，可继续补真正的后台入口或主运行时调用面。",
+  "status": "active"
+}

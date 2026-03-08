@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>重要长输出自动进报纸的最小接线方案</title>
+  <style>
+    body{margin:0;background:#ddd6c8;color:#171717;font-family:"Source Han Serif SC","Songti SC",serif;}
+    .page{max-width:1100px;margin:24px auto;background:#f5f1e8;padding:24px 28px;box-shadow:0 12px 36px rgba(0,0,0,.18);}
+    .topline{font:11px/1.4 Inter,sans-serif;color:#666;text-transform:uppercase;letter-spacing:.08em;}
+    h1{margin:8px 0 10px;font-size:clamp(32px,4vw,58px);line-height:.95;} .summary{font:16px/1.65 Inter,sans-serif;margin-bottom:18px;color:#2b251f;}
+    .body{font-size:17px;line-height:1.72;} .body h2{margin-top:28px;} .body p{margin:0 0 14px;}
+  </style>
+</head>
+<body>
+  <main class="page">
+    <div class="topline">OpenClaw Newspaper · 2026-03-08T09:07:24+08:00</div>
+    <h1>重要长输出自动进报纸的最小接线方案</h1>
+    <div class="summary">把主代理 finalize 产出的重要长回答，经一层 runtime helper 判定后，命中则发布到报纸并把摘要加链接回到聊天。</div>
+    <article class="body"><article><h1>重要长输出自动进报纸的最小接线方案</h1><p>主代理在 finalize 阶段产出完整长回答后，先交给 runtime helper 做归档判定。</p><h2>命中时</h2><p>helper 生成 PublishRequest，调用 publish_to_newspaper，并返回摘要加链接。</p><h2>未命中时</h2><p>保留普通聊天直出，不走报纸。</p></article></article>
+  </main>
+</body>
+</html>

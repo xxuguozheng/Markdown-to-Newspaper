@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ClawEyes / 虾眼 — 产品草案 v1</title>
+  <style>
+    :root { --paper:#f5f1e8; --ink:#171717; --muted:#665f54; --rule:#1d1d1d; --accent:#124b7a; --accent2:#7f1111; --sans:"Inter","PingFang SC","Noto Sans CJK SC","Microsoft YaHei",sans-serif; --serif:"Source Han Serif SC","Songti SC","STSong",serif; }
+    *{box-sizing:border-box} body{margin:0;background:#ddd6c8;color:var(--ink);font-family:var(--serif);line-height:1.45}
+    .page{max-width:1320px;margin:24px auto;background:var(--paper);box-shadow:0 12px 36px rgba(0,0,0,.18);border:1px solid rgba(0,0,0,.16);padding:18px 24px 30px}
+    .masthead{border-bottom:4px double var(--rule);padding-bottom:10px;margin-bottom:14px}.topline{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font:10px/1.35 var(--sans);letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin-bottom:7px}
+    .title{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:end;gap:16px}.title h1{margin:0;font-size:clamp(32px,4.3vw,60px);line-height:.95;font-weight:900;letter-spacing:-.02em;text-transform:uppercase}.edition{font:10px/1.3 var(--sans);text-align:right;color:var(--muted)}
+    .strap{margin-top:8px;display:flex;flex-wrap:wrap;gap:6px 12px;font:11px/1.4 var(--sans);color:#25201b}.strap span::before{content:"◆ ";color:var(--accent)}
+    .lead{display:grid;grid-template-columns:1.5fr .9fr;gap:18px;border-bottom:1px solid rgba(0,0,0,.78);padding-bottom:14px;margin-bottom:16px}.lead h2{margin:0 0 8px;font-size:clamp(28px,3vw,44px);line-height:1.02}.lead p{margin:0;font-size:15px;line-height:1.56}
+    .summary-card{background:rgba(255,255,255,.45);border-left:4px solid var(--accent);padding:12px 13px}.summary-card small{display:block;font:10px/1.35 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:5px}.summary-card b{display:block;font:800 16px/1.35 var(--sans);margin-bottom:6px}.summary-card p{font:13px/1.65 var(--sans);color:#2b251f}
+    .grid{display:grid;grid-template-columns:1.45fr 1fr 1fr;gap:18px}.story{border-top:1px solid rgba(0,0,0,.72);padding-top:10px;margin-bottom:16px}.story.leadstory{border-top:none;padding-top:0}
+    .kicker{font:10px/1.3 var(--sans);text-transform:uppercase;letter-spacing:.1em;color:var(--accent2);font-weight:800;margin-bottom:5px}.headline{margin:0 0 7px;font-size:clamp(24px,2.5vw,38px);line-height:1.03;font-weight:900}.headline.small{font-size:23px;line-height:1.08}.dek{margin:0 0 10px;font-size:15px;line-height:1.45;color:#25201b}.meta{margin-bottom:10px;font:11px/1.45 var(--sans);color:var(--muted)}
+    .body{font-size:14.5px;line-height:1.58;text-align:justify;column-count:2;column-gap:18px}.body.single{column-count:1}.body p{margin:0 0 10px}
+    .briefs{display:grid;gap:10px}.brief{border-left:3px solid var(--rule);padding-left:10px;font-size:12.5px;line-height:1.52}.brief b{display:block;font:700 11px/1.3 var(--sans);letter-spacing:.06em;text-transform:uppercase;margin-bottom:4px}
+    .box{border:1px solid rgba(0,0,0,.75);background:rgba(255,255,255,.28);padding:10px 11px;margin-bottom:16px}.box h3{margin:0 0 8px;font:800 13px/1.35 var(--sans);text-transform:uppercase;letter-spacing:.07em}.list{margin:0;padding-left:18px;font-size:12.5px;line-height:1.5}.list li{margin-bottom:6px}
+    .quote{font-size:16px;line-height:1.32;font-weight:700;padding:10px 0;border-top:1px dashed rgba(0,0,0,.5);border-bottom:1px dashed rgba(0,0,0,.5);margin:10px 0}.tag{display:inline-block;padding:1px 6px;border:1px solid rgba(0,0,0,.6);font:10px/1.35 var(--sans);margin:0 5px 5px 0}
+    .footer{margin-top:16px;padding-top:10px;border-top:3px double var(--rule);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font:10px/1.5 var(--sans);color:var(--muted)}
+    @media (max-width:1024px){.grid{grid-template-columns:1.35fr 1fr}.grid>.col:last-child{grid-column:1/-1}.lead{grid-template-columns:1fr}} @media (max-width:760px){.page{margin:0;min-height:100vh}.title{grid-template-columns:1fr}.edition{text-align:left}.grid{grid-template-columns:1fr}.body{column-count:1}}
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="masthead">
+      <div class="topline"><span>Staro Brief · Project Edition</span><span>ClawEyes / 虾眼 · Product Draft</span><span>Issue 001</span></div>
+      <div class="title"><h1>CLAWEYES / 虾眼</h1><div class="edition">产品草案 v1<br/>从代理情报网走向分身访问平台</div></div>
+      <div class="strap"><span>先做事件聚合</span><span>再做分身访问</span><span>最后接收益系统</span></div>
+    </header>
+
+    <section class="lead">
+      <div>
+        <div class="kicker">Lead Judgment</div>
+        <h2>ClawEyes 最有价值的地方，不是再做一个新闻站，而是把“小龙虾代理网络”变成可消费、可验证、可访问、可赚钱的信息生态。</h2>
+        <p>它的第一层是情报网络：由各人的小龙虾持续供稿，系统自动聚类、去重、评估可信度，再把碎信息整理成事件流。它的第二层是分身访问平台：企业和用户可以直接访问某个领域的小龙虾分身，按话题、领域、风格、可靠度和服务能力去挑选。等到这两层都站住，ClawEyes 才会从内容平台进化成代理生态平台。</p>
+      </div>
+      <aside class="summary-card">
+        <small>主编摘要</small>
+        <b>第一阶段先做事件聚合，第二阶段再做分身访问与收益闭环。</b>
+        <p>不要一开始就做全能大站。先把“代理上报 → 事件对象 → 可信度辅助 → 可读页面”跑通，再把“分身认领 / 访问 / 订阅 / 分成”接进来。</p>
+      </aside>
+    </section>
+
+    <section class="grid">
+      <div class="col">
+        <article class="story leadstory">
+          <div class="kicker">头版主文</div>
+          <h2 class="headline">虾眼应该先做“事件对象”，再做“分身市场”，不能一开始就把新闻、分身、商业化全搅成一锅。</h2>
+          <p class="dek">如果一上来就想同时做信息流、社交网络、人格分身、访问市场和收益分配，产品会直接炸。更合理的推进是：先建立事件与可信度层，再在此之上长出分身访问层。</p>
+          <div class="meta">产品定义 · MVP 判断 · 主推进顺序</div>
+          <div class="body">
+            <p>ClawEyes 第一阶段最该做的，不是把每个小龙虾都做成会聊天的商业分身，而是先把它们变成稳定的供稿节点。也就是说，一个小龙虾先提供报告、线索、链接、摘要、判断，再由系统把这些内容聚成“事件对象”。只有事件层成立，后面的可信度评估、时间线、观点对照、跨代理交叉验证才有根。</p>
+            <p>等事件层成立以后，第二阶段再长出“分身访问层”。这时用户访问的不是一个凭空冒出来的 AI 角色，而是一个已经长期有供稿记录、可信度轨迹、领域标签、风格特征和历史判断的代理分身。这样它才有市场感，也才值得企业或个人来消费。</p>
+            <p>所以虾眼的顺序必须非常清楚：先做信息网络，再做访问平台，再做收益系统。倒过来做，平台会只有概念；顺着做，它才会慢慢长出网络效应。因为真正的护城河不是“有个聊天框”，而是“这个分身背后已经积累了长期可追踪的信息价值”。</p>
+            <p>对你来说，这个顺序还有一个额外好处：前面那层事件聚合和报纸阅读面，其实已经能借现在的报纸系统经验。也就是说，ClawEyes 并不是从零开始，而是在你已经有的“报纸 + 项目跟踪 + 代理调度”基础上，往外再长一层代理生态。</p>
+          </div>
+        </article>
+
+        <article class="story">
+          <div class="kicker">老师版 · Object Model</div>
+          <h2 class="headline small">这个项目真正该先定的对象，不是帖子，而是 Agent、Report、Event、Evidence、Credibility、Persona。</h2>
+          <p class="dek">如果对象没定清，后面不管是网站、市场、可信度，还是企业访问，都只是散乱功能。</p>
+          <div class="meta">对象层 · 结构先行</div>
+          <div class="body single">
+            <p><strong>Agent</strong> 是小龙虾本体，也就是谁在观察世界、谁在持续供稿。<strong>Report</strong> 是一次上报，可能是一条链接、一段摘要、一条新闻线索。系统要把多个 Report 聚成一个 <strong>Event</strong>，也就是用户真正消费的“事件对象”。每个 Event 下面再挂 <strong>Evidence</strong>，表示支持它的来源、链接、截图、引用和相互印证关系。</p>
+            <p>接下来最关键的是 <strong>Credibility</strong>。它不是 AI 判真理，而是给出一种辅助判断：来源是否多点支持、是否自相矛盾、是否来自高噪音来源、是否有明确证据。最后，到了第二阶段，才在 Agent 之上长出 <strong>Persona / Twin</strong>，也就是企业和用户实际访问、对话、订阅的分身层。</p>
+            <p>有了这套对象之后，ClawEyes 才能同时成为：信息网络、可信度辅助系统、分身访问平台、收益分成平台。否则就会像普通资讯站想硬套一个 AI 壳，或者像普通聊天产品想硬塞一个新闻流。</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="col">
+        <article class="story leadstory">
+          <div class="kicker">朋友版 · What To Build First</div>
+          <h2 class="headline small">如果现在就要开工，先做 3 个页面和 2 个入口。</h2>
+          <p class="dek">MVP 不要做大，只做够用：看事件、看分身、收上报。</p>
+          <div class="meta">MVP 范围</div>
+          <div class="briefs">
+            <div class="brief"><b>页面 1</b> 事件流首页：看最新事件、热点、争议事件、高可信事件。</div>
+            <div class="brief"><b>页面 2</b> 事件详情页：看 AI 摘要、时间线、可信度、支持证据、不同小龙虾的上报。</div>
+            <div class="brief"><b>页面 3</b> 分身页：看某个小龙虾擅长什么、历史供稿、可靠度画像、未来可访问入口。</div>
+            <div class="brief"><b>入口 1</b> 小龙虾上报接口：标题、链接、摘要、标签、来源类型、自身判断。</div>
+            <div class="brief"><b>入口 2</b> AI 聚合处理器：自动去重、聚类、合并为事件。</div>
+          </div>
+        </article>
+
+        <div class="box">
+          <h3>第二阶段再做的东西</h3>
+          <ul class="list">
+            <li>分身认领</li>
+            <li>访问 / 深聊 / 订阅入口</li>
+            <li>企业版访问层</li>
+            <li>收益分配与抽佣</li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h3>商业化入口</h3>
+          <ul class="list">
+            <li>个人付费访问某个小龙虾分身</li>
+            <li>企业订阅某个领域分身</li>
+            <li>长期跟踪委托</li>
+            <li>平台抽佣 + 分身主人分成</li>
+          </ul>
+        </div>
+
+        <div class="quote">“ClawEyes 的护城河不是聊天框，而是每个分身背后积累出来的长期可追踪信息价值。”</div>
+      </div>
+
+      <div class="col">
+        <article class="story leadstory">
+          <div class="kicker">快扫栏 · Radar Rail</div>
+          <h2 class="headline small">这不是普通新闻站，更像代理版情报网 + 分身市场。</h2>
+          <p class="dek">它最像“代理版知乎 + 代理版情报站 + 代理版 Marketplace”的混合体，但前提是先把事件层做实。</p>
+          <div class="meta">产品雷达</div>
+        </article>
+
+        <div class="box">
+          <h3>第一阶段主目标</h3>
+          <ul class="list">
+            <li>事件聚合</li>
+            <li>可信度辅助</li>
+            <li>报纸式阅读</li>
+            <li>人物/代理页</li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h3>关键风险点</h3>
+          <ul class="list">
+            <li>分身真实性验证</li>
+            <li>分身与本人边界</li>
+            <li>收益分配规则</li>
+            <li>低质量分身污染平台</li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h3>标签</h3>
+          <span class="tag">ClawEyes</span>
+          <span class="tag">Agent Network</span>
+          <span class="tag">Event Graph</span>
+          <span class="tag">Persona Access</span>
+          <span class="tag">Revenue Layer</span>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div>Project slot: <code>ClawEyes</code></div>
+      <div>Edition: <code>claweyes-product-draft-v1.html</code></div>
+      <div>Phase: 情报网络 v1 → 分身访问平台 v2</div>
+    </footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BYOC × OpenClaw UI — 晨间早报</title>
+  <style>
+    :root {
+      --paper: #f5f1e8;
+      --ink: #171717;
+      --muted: #666;
+      --rule: #1f1f1f;
+      --accent: #7f1111;
+      --sans: "Inter", "PingFang SC", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif;
+      --serif: "Source Han Serif SC", "Songti SC", "STSong", serif;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #ddd6c8;
+      color: var(--ink);
+      font-family: var(--serif);
+      line-height: 1.45;
+    }
+
+    .page {
+      max-width: 1280px;
+      margin: 24px auto;
+      background: var(--paper);
+      box-shadow: 0 12px 36px rgba(0,0,0,.18);
+      border: 1px solid rgba(0,0,0,.18);
+      padding: 18px 24px 30px;
+    }
+
+    .masthead {
+      border-bottom: 4px double var(--rule);
+      padding-bottom: 8px;
+      margin-bottom: 12px;
+    }
+
+    .topline {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      font: 10px/1.35 var(--sans);
+      letter-spacing: .09em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+
+    .title {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: end;
+      gap: 12px;
+    }
+
+    .title h1 {
+      margin: 0;
+      font-size: clamp(30px, 4.1vw, 54px);
+      line-height: .96;
+      letter-spacing: -.01em;
+      font-weight: 900;
+      text-transform: uppercase;
+      font-family: var(--serif);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .edition {
+      text-align: right;
+      font: 10px/1.3 var(--sans);
+      color: var(--muted);
+    }
+
+    .strap {
+      margin-top: 6px;
+      font: 11px/1.35 var(--sans);
+      color: #222;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px 10px;
+    }
+
+    .strap span::before {
+      content: "◆ ";
+      color: var(--accent);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 2.2fr 1.15fr 1.15fr;
+      gap: 18px;
+    }
+
+    .col {
+      min-width: 0;
+    }
+
+    .story {
+      break-inside: avoid;
+      border-top: 1px solid rgba(0,0,0,.7);
+      padding-top: 10px;
+      margin-bottom: 16px;
+    }
+
+    .story.lead {
+      border-top: none;
+      padding-top: 0;
+    }
+
+    .kicker {
+      font: 10px/1.3 var(--sans);
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: .09em;
+      margin-bottom: 5px;
+      font-weight: 700;
+    }
+
+    .headline {
+      font-size: clamp(25px, 2.9vw, 46px);
+      line-height: .98;
+      margin: 0 0 8px;
+      font-weight: 900;
+    }
+
+    .headline.small {
+      font-size: 22px;
+      line-height: 1.08;
+    }
+
+    .dek {
+      font-size: 15px;
+      line-height: 1.42;
+      color: #222;
+      margin: 0 0 10px;
+    }
+
+    .meta {
+      font: 11px/1.45 var(--sans);
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+
+    .body {
+      column-count: 2;
+      column-gap: 18px;
+      font-size: 14.5px;
+      line-height: 1.56;
+      text-align: justify;
+      hyphens: auto;
+    }
+
+    .body p { margin: 0 0 10px; }
+    .body.single { column-count: 1; }
+
+    .briefs {
+      display: grid;
+      gap: 10px;
+    }
+
+    .brief {
+      border-left: 3px solid var(--rule);
+      padding-left: 10px;
+      font-size: 12.5px;
+      line-height: 1.5;
+    }
+
+    .brief b {
+      display: block;
+      font: 700 11px/1.3 var(--sans);
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      margin-bottom: 4px;
+    }
+
+    .box {
+      border: 1px solid rgba(0,0,0,.75);
+      padding: 10px 11px;
+      background: rgba(255,255,255,.28);
+      margin-bottom: 16px;
+    }
+
+    .box h3 {
+      margin: 0 0 8px;
+      font: 800 13px/1.3 var(--sans);
+      text-transform: uppercase;
+      letter-spacing: .07em;
+    }
+
+    .list {
+      margin: 0;
+      padding-left: 18px;
+      font-size: 12.5px;
+      line-height: 1.48;
+    }
+
+    .list li { margin-bottom: 6px; }
+
+    .quote {
+      font-size: 16px;
+      line-height: 1.3;
+      font-weight: 700;
+      padding: 9px 0;
+      border-top: 1px dashed rgba(0,0,0,.5);
+      border-bottom: 1px dashed rgba(0,0,0,.5);
+      margin: 8px 0 10px;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 1px 6px;
+      border: 1px solid rgba(0,0,0,.65);
+      font: 10px/1.35 var(--sans);
+      margin-right: 5px;
+      margin-bottom: 5px;
+    }
+
+    .footer {
+      margin-top: 14px;
+      padding-top: 10px;
+      border-top: 3px double var(--rule);
+      font: 10px/1.5 var(--sans);
+      color: var(--muted);
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    code {
+      font-family: "Iosevka", "JetBrains Mono", monospace;
+      font-size: .92em;
+      background: rgba(0,0,0,.05);
+      padding: 1px 4px;
+      border-radius: 4px;
+    }
+
+    @media (max-width: 1024px) {
+      .grid { grid-template-columns: 1.5fr 1fr; }
+      .grid > .col:last-child { grid-column: 1 / -1; }
+    }
+
+    @media (max-width: 760px) {
+      .page { margin: 0; min-height: 100vh; }
+      .grid { grid-template-columns: 1fr; }
+      .body { column-count: 1; }
+      .title { grid-template-columns: 1fr; }
+      .edition { text-align: left; }
+      .title h1 { white-space: normal; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="masthead">
+      <div class="topline">
+        <div>Staro Brief / Morning Project Edition</div>
+        <div>BYOC × OpenClaw UI / 2026-03-07</div>
+      </div>
+      <div class="title">
+        <h1>BYOC × OpenClaw UI 进入规格阶段</h1>
+        <div class="edition">
+          第 1 版 / Morning Brief<br>
+          时间：07:59 / Saturday / Asia-Shanghai
+        </div>
+      </div>
+      <div class="strap">
+        <span>高密度</span>
+        <span>可扫读</span>
+        <span>协议草案已成形</span>
+        <span>Weather Demo 已落地</span>
+        <span>下一步进入收敛期</span>
+      </div>
+    </header>
+
+    <section class="grid">
+      <div class="col">
+        <article class="story lead">
+          <div class="kicker">Lead Story</div>
+          <h2 class="headline">BYOC 已进入可演示规格阶段</h2>
+          <p class="dek">网站负责 UI 与协议，OpenClaw 负责本地执行。昨晚这条线已经落到第一版文档和一套真实 demo 样板上。</p>
+          <div class="meta">Staro Desk • 项目阶段：调研 + 收敛 + 原型 • 首个样板：<code>weather</code></div>
+          <div class="body">
+            <p>昨晚这条线已经开始具备实现骨架。网站负责 UI 外壳，OpenClaw 负责能力发现、权限确认、任务执行、事件回传和结果交付，整套分工第一次被压成能对齐实现的结构。</p>
+            <p>第一版文档已经把对象和边界定下来了。昨晚已经形成了产品定义、网站 × OpenClaw 的协议草案，以及 skill → UI 的最小 schema，讨论单位也从“想法对不对”进入到“字段怎么命名、状态怎么流动、页面如何渲染、结果怎么包装”。</p>
+            <p><code>weather</code> 已经成了第一套真实样板。项目已经把 <code>spec</code>、<code>skill-manifest</code>、<code>result-envelope</code>、<code>page-flow</code> 和 mock 文件补齐，<code>manifest → launch form → run events → result envelope → page rendering</code> 这条链路第一次有了可以直接对齐的参照物。</p>
+            <p>BYOC 现在已经有了可扩展骨架。后续无论是写页面级 PRD、细化组件 API，还是再加第二个更复杂 skill 去试边界，都可以直接围绕现有样板继续收敛。</p>
+          </div>
+        </article>
+
+        <article class="story">
+          <div class="kicker">What Moved Last Night</div>
+          <h2 class="headline small">BYOC 已串成第一套样板</h2>
+          <div class="body single">
+            <p><span class="tag">产品定义</span><span class="tag">协议草案</span><span class="tag">skill → UI</span><span class="tag">weather demo</span><span class="tag">result envelope</span><span class="tag">page flow</span></p>
+            <p>昨晚的推进分成四层：产品定义、协议对象、UI 口径、demo 落地。现在它们已经串成一条连续链路。</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="col">
+        <div class="box">
+          <h3>今日速览 / 昨夜产出</h3>
+          <ul class="list">
+            <li>第一版产品定义已完成</li>
+            <li>网站 × OpenClaw 协议草案已成形</li>
+            <li>skill → UI 最小规范已落文档</li>
+            <li><code>weather</code> demo 的关键规格已补齐</li>
+            <li>05:30 左右继续派发下一轮推进</li>
+          </ul>
+        </div>
+
+        <article class="story">
+          <div class="kicker">Briefs</div>
+          <h2 class="headline small">新增文件已定义接口面</h2>
+          <div class="briefs">
+            <div class="brief"><b>Research</b> 产品定义已定下成立条件和 MVP 边界。</div>
+            <div class="brief"><b>Protocol</b> 协议草案已经列出网站 × OpenClaw 的最小对象。</div>
+            <div class="brief"><b>UI Spec</b> launch / run / result 三层 surface 已经成形。</div>
+            <div class="brief"><b>Weather</b> demo 样板文件已经补齐，可直接拿来对齐实现。</div>
+          </div>
+        </article>
+
+        <article class="story">
+          <div class="kicker">Style Note</div>
+          <h2 class="headline small">现在要先收 schema</h2>
+          <div class="body single">
+            <p>BYOC 这条线已经从“脑洞”跨到了“可演示规格”。现在最值钱的，不是继续扩写概念，而是收敛字段口径、补页面层，再用第二个更复杂 demo 去试压结构边界。</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="col">
+        <div class="box">
+          <h3>状态框 / 阻塞点在字段、页面和第二个 demo</h3>
+          <ul class="list">
+            <li>外部参照系的系统化总结仍待补齐</li>
+            <li><code>manifest</code> / <code>skill-ui</code> / <code>result-envelope</code> 口径尚未完全统一</li>
+            <li>页面流已有，但页面级组件树仍不够细</li>
+            <li><code>weather</code> 还不足以压测更复杂 skill</li>
+          </ul>
+        </div>
+
+        <article class="story">
+          <div class="kicker">Quote</div>
+          <div class="quote">“昨晚不是又写了几份文档，而是把 BYOC 从方向讨论推进成了一套已经开始具备实现约束力的规格骨架。”</div>
+          <div class="meta">这句话基本就是今早这页的结论。</div>
+        </article>
+
+        <article class="story">
+          <div class="kicker">Next Step</div>
+          <h2 class="headline small">下一步先收口，再测第二个 demo</h2>
+          <div class="body single">
+            <p>第一，做二轮协议收敛，统一 <code>manifest</code>、<code>skill-ui</code>、<code>result-envelope</code> 三者的字段命名与边界。第二，基于已有 <code>weather</code> 样板补页面级 PRD，把 workspace、skill detail、run detail 三类页面落到组件树。第三，挑一个更复杂的 skill——优先 <code>research-summary</code> 或 <code>browser automation</code>——验证这套结构在更高复杂度下是否依然稳定。</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div>Brief file: <code>workspace/reports/byoc-morning-brief-2026-03-07.html</code></div>
+      <div>关键词：BYOC / OpenClaw / Skill UI / Weather Demo / Protocol Convergence</div>
+    </footer>
+  </main>
+</body>
+</html>

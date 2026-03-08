@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "2026-03-08.minimal-v1",
+  "kind": "Edition",
+  "id": "edition_byoc_openclaw_ui_byoc_morning_brief_2026_03_07",
+  "projectId": "byoc-openclaw-ui",
+  "projectSlug": "BYOC-OpenClaw-UI",
+  "slug": "byoc-morning-brief-2026-03-07",
+  "fileName": "byoc-morning-brief-2026-03-07.html",
+  "title": "BYOC 晨报",
+  "rawTitle": "byoc-morning-brief-2026-03-07",
+  "summary": "BYOC × OpenClaw UI — 晨间早报 Staro Brief / Morning Project Edition BYOC × OpenClaw UI / 2026-03-07 BYOC × OpenCla…",
+  "density": "brief",
+  "densityLabel": "快报 / 小更新",
+  "htmlUrl": "/projects/BYOC-OpenClaw-UI/byoc-morning-brief-2026-03-07.html",
+  "publishedAt": "2026-03-07T17:42:55.652663",
+  "size": 11937,
+  "tags": [],
+  "source": {
+    "importedFrom": "/site/data/portal-index.json",
+    "artifactPath": "projects/BYOC-OpenClaw-UI/byoc-morning-brief-2026-03-07.html",
+    "artifactExists": true
+  }
+}

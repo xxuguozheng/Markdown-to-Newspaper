@@ -1,0 +1,26 @@
+{
+  "project": {
+    "slug": "OpenClaw-Newspaper-UI"
+  },
+  "edition": {
+    "title": "默认输出 bridge 最小落地",
+    "summary": "把一次值得回看的长输出，在 finalize 阶段桥接成 PublishRequest，并交给 publish_to_newspaper 的最小调用面。",
+    "density": "longform",
+    "tags": ["bridge", "default-output", "publish", "example"]
+  },
+  "content": {
+    "text": "这是一段示例长输出。它代表主代理已经完成的研究型或方案型回答。第一阶段 bridge 不负责真正改门户和项目聚合页，只负责把这次长输出标准化成 PublishRequest，并输出可复验的 PublishReceipt。",
+    "html": "<article><h1>默认输出 bridge 最小落地</h1><p>这是一段示例长输出。</p><p>第一阶段只落 contract 和 bridge，不直接改站点入口文件。</p></article>"
+  },
+  "source": {
+    "sessionId": "public-demo",
+    "channel": "demo",
+    "role": "main-agent"
+  },
+  "options": {
+    "dryRun": true,
+    "updateProjectMeta": false,
+    "rebuildPortal": false,
+    "rebuildProjectPage": false
+  }
+}

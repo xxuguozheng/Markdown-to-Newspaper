@@ -1,0 +1,457 @@
+{
+  "generatedAt": "2026-03-08T07:54:00+08:00",
+  "stats": {
+    "projectCount": 8,
+    "editionCount": 15,
+    "publishedProjectCount": 6,
+    "waitingProjectCount": 2,
+    "latestEdition": {
+      "projectSlug": "ClawEyes",
+      "title": "ClawEyes / 虾眼：产品草案 v1",
+      "publishedAt": "2026-03-08T13:37:55+08:00"
+    },
+    "recentlyUpdatedProject": {
+      "slug": "OpenClaw-Newspaper-UI",
+      "label": "OpenClaw 报纸系统",
+      "updatedAt": "2026-03-08T17:08:28+08:00"
+    }
+  },
+  "recentUpdates": [
+    {
+      "projectSlug": "ClawEyes",
+      "projectLabel": "ClawEyes / 虾眼",
+      "title": "ClawEyes / 虾眼：产品草案 v1",
+      "summary": "把 ClawEyes 定义成由小龙虾代理持续供稿、自动聚类和可信度辅助的情报网络，并在第二阶段长出分身访问与收益系统。",
+      "kind": "头版 / 项目总况",
+      "activityAt": "2026-03-08T13:37:55+08:00",
+      "aggregateUrl": "/projects/ClawEyes/index.html"
+    },
+    {
+      "projectSlug": "Bio-AI-Morning-Brief",
+      "projectLabel": "Bio × AI 晨报",
+      "title": "Bio × AI 晨报：人物雷达版",
+      "summary": "先把 Bio × AI 里最值得长期盯的人物和机构框出来：药物、蛋白、基因编辑、平台化研究各有谁在带方向。",
+      "kind": "长分析 / 方案稿",
+      "activityAt": "2026-03-08T12:02:41+08:00",
+      "aggregateUrl": "/projects/Bio-AI-Morning-Brief/index.html"
+    },
+    {
+      "projectSlug": "TEST-Project-Interface-2026-03-08",
+      "projectLabel": "TEST Project Interface 2026-03-08",
+      "title": "尚无归档版次",
+      "summary": "如需产品化，可继续补真正的后台入口或主运行时调用面。",
+      "kind": "项目更新",
+      "activityAt": "2026-03-08T09:19:12+08:00",
+      "aggregateUrl": "/projects/TEST-Project-Interface-2026-03-08/index.html"
+    },
+    {
+      "projectSlug": "OpenClaw-Newspaper-UI",
+      "projectLabel": "OpenClaw 报纸系统",
+      "title": "报纸系统接口现状：项目创建与数据输入",
+      "summary": "回答当前报纸系统有没有完整的新建项目和输入数据接口：结论是发布链已经可用，但“完整项目创建 UI/API”还没有真正做完；现在更像是有数据层、发布接口和渲染链，而缺一个正式的项目管理入口。",
+      "kind": "长分析 / 方案稿",
+      "activityAt": "2026-03-08T09:10:58+08:00",
+      "aggregateUrl": "/projects/OpenClaw-Newspaper-UI/index.html"
+    },
+    {
+      "projectSlug": "Zep",
+      "projectLabel": "Zep",
+      "title": "尚无归档版次",
+      "summary": "优先做路线裁决，再谈接桥。",
+      "kind": "项目更新",
+      "activityAt": "2026-03-08T07:32:00+08:00",
+      "aggregateUrl": "/projects/Zep/index.html"
+    },
+    {
+      "projectSlug": "VibeLife",
+      "projectLabel": "VibeLife",
+      "title": "AI 爆点首页方案",
+      "summary": "AI 爆点首页方案 — 晨报版 Staro Brief / Website Positioning Edition AI Landing Page / 2026-03-07 你的网站需要爆点入口，但不能靠虚火 第 1 版…",
+      "kind": "长分析 / 方案稿",
+      "activityAt": "2026-03-07T17:42:55+08:00",
+      "aggregateUrl": "/projects/VibeLife/index.html"
+    },
+    {
+      "projectSlug": "BYOC-OpenClaw-UI",
+      "projectLabel": "BYOC × OpenClaw UI",
+      "title": "BYOC 晨报",
+      "summary": "BYOC × OpenClaw UI — 晨间早报 Staro Brief / Morning Project Edition BYOC × OpenClaw UI / 2026-03-07 BYOC × OpenCla…",
+      "kind": "快报 / 小更新",
+      "activityAt": "2026-03-07T17:42:55+08:00",
+      "aggregateUrl": "/projects/BYOC-OpenClaw-UI/index.html"
+    },
+    {
+      "projectSlug": "IDEA-INBOX",
+      "projectLabel": "IDEA INBOX",
+      "title": "IDEA INBOX",
+      "summary": "IDEA INBOX — 鬼点子收件箱 Staro Desk / Idea Inbox Working Surface · 2026-03-07 鬼点子收件箱已经开始承接真实工作 第 2 版 / Working Surf…",
+      "kind": "快报 / 小更新",
+      "activityAt": "2026-03-07T17:42:55+08:00",
+      "aggregateUrl": "/projects/IDEA-INBOX/index.html"
+    }
+  ],
+  "projects": {
+    "BYOC-OpenClaw-UI": {
+      "label": "BYOC × OpenClaw UI",
+      "description": "把 BYOC 相关日报、界面实验、交互提案集中到一个连续工作区里。",
+      "items": [
+        {
+          "name": "byoc-morning-brief-2026-03-07.html",
+          "title": "BYOC 晨报",
+          "rawTitle": "byoc-morning-brief-2026-03-07",
+          "summary": "BYOC × OpenClaw UI — 晨间早报 Staro Brief / Morning Project Edition BYOC × OpenClaw UI / 2026-03-07 BYOC × OpenCla…",
+          "url": "/projects/BYOC-OpenClaw-UI/byoc-morning-brief-2026-03-07.html",
+          "publishedAt": "2026-03-07T17:42:55+08:00",
+          "updatedAt": "2026-03-07T17:42:55+08:00",
+          "size": 11937,
+          "density": "brief",
+          "densityLabel": "快报 / 小更新"
+        }
+      ],
+      "aggregateUrl": "/projects/BYOC-OpenClaw-UI/index.html",
+      "recent": {
+        "mode": "edition",
+        "title": "BYOC 晨报",
+        "summary": "BYOC × OpenClaw UI — 晨间早报 Staro Brief / Morning Project Edition BYOC × OpenClaw UI / 2026-03-07 BYOC × OpenCla…",
+        "kind": "快报 / 小更新",
+        "activityAt": "2026-03-07T17:42:55+08:00",
+        "activityAtText": "2026-03-07 17:42",
+        "url": "/projects/BYOC-OpenClaw-UI/byoc-morning-brief-2026-03-07.html"
+      },
+      "info": {
+        "summary": "围绕“网站负责 UI / 协议层 / 分发层，OpenClaw 负责本地执行与 skill runtime”的方向展开调研与原型推进。",
+        "stage": "待补充",
+        "blockers": "外部参照系与 schema 收敛仍待继续整理。",
+        "updated": "2026-03-07 17:42",
+        "next": "继续做协议收敛与页面级 PRD。"
+      }
+    },
+    "Bio-AI-Morning-Brief": {
+      "label": "Bio × AI 晨报",
+      "description": "给想用 AI 玩 biology 的入门者做的连续晨报项目位，强调每日可读、讲人话、能继续上手。",
+      "items": [
+        {
+          "name": "bio-ai-晨报-人物雷达版.html",
+          "title": "Bio × AI 晨报：人物雷达版",
+          "rawTitle": "bio-ai-晨报-人物雷达版",
+          "summary": "先把 Bio × AI 里最值得长期盯的人物和机构框出来：药物、蛋白、基因编辑、平台化研究各有谁在带方向。",
+          "url": "/projects/Bio-AI-Morning-Brief/bio-ai-晨报-人物雷达版.html",
+          "publishedAt": "2026-03-08T12:02:41+08:00",
+          "updatedAt": "2026-03-08T12:02:41+08:00",
+          "size": 1380,
+          "density": "longform",
+          "densityLabel": "长分析 / 方案稿"
+        },
+        {
+          "name": "bio-ai-晨报-2026-03-08.html",
+          "title": "Bio × AI 晨报：2026-03-08",
+          "rawTitle": "bio-ai-晨报-2026-03-08",
+          "summary": "今天先不追求外部新闻洪流，先把 Bio × AI 这条线的方向压清：从样刊走向可持续晨报，关键不是再堆一版页面，而是建立稳定的选题流、栏目模板、来源结构和出刊节奏。",
+          "url": "/projects/Bio-AI-Morning-Brief/bio-ai-晨报-2026-03-08.html",
+          "publishedAt": "2026-03-08T11:20:18+08:00",
+          "updatedAt": "2026-03-08T11:20:18+08:00",
+          "size": 3153,
+          "density": "longform",
+          "densityLabel": "长分析 / 方案稿"
+        },
+        {
+          "name": "bio-ai-morning-brief-2026-03-07.html",
+          "title": "Bio × AI 晨报样刊",
+          "rawTitle": "bio-ai-morning-brief-2026-03-07",
+          "summary": "Bio × AI 晨报样刊把编辑部版、老师版、朋友版三层阅读接进同一张报纸里：先给判断，再补解释，最后翻成今天能开始的动作。",
+          "url": "/projects/Bio-AI-Morning-Brief/bio-ai-morning-brief-2026-03-07.html",
+          "publishedAt": "2026-03-07T23:45:00+08:00",
+          "updatedAt": "2026-03-07T23:45:00+08:00",
+          "size": 16596,
+          "density": "brief",
+          "densityLabel": "快报 / 样刊"
+        }
+      ],
+      "aggregateUrl": "/projects/Bio-AI-Morning-Brief/index.html",
+      "recent": {
+        "mode": "edition",
+        "title": "Bio × AI 晨报：人物雷达版",
+        "summary": "先把 Bio × AI 里最值得长期盯的人物和机构框出来：药物、蛋白、基因编辑、平台化研究各有谁在带方向。",
+        "kind": "长分析 / 方案稿",
+        "activityAt": "2026-03-08T12:02:41+08:00",
+        "activityAtText": "2026-03-08 12:02",
+        "url": "/projects/Bio-AI-Morning-Brief/bio-ai-晨报-人物雷达版.html"
+      },
+      "info": {
+        "summary": "给“想用 AI 玩 biology 的入门者”做的连续晨报项目位。",
+        "stage": "样刊入驻完成 / 项目位已接入门户",
+        "blockers": "尚未连到自动抓取或半自动编辑流。",
+        "updated": "2026-03-08 12:02",
+        "next": "固定每日选题流程，再补来源卡片与刷新脚本。"
+      }
+    },
+    "VibeLife": {
+      "label": "VibeLife",
+      "description": "更适合承接 VibeLife 的定位、栏目、体验方案与后续版次沉淀。",
+      "items": [
+        {
+          "name": "ai-website-positioning-2026-03-07.html",
+          "title": "AI 爆点首页方案",
+          "rawTitle": "ai-website-positioning-2026-03-07",
+          "summary": "AI 爆点首页方案 — 晨报版 Staro Brief / Website Positioning Edition AI Landing Page / 2026-03-07 你的网站需要爆点入口，但不能靠虚火 第 1 版…",
+          "url": "/projects/VibeLife/ai-website-positioning-2026-03-07.html",
+          "publishedAt": "2026-03-07T17:42:55+08:00",
+          "updatedAt": "2026-03-07T17:42:55+08:00",
+          "size": 10860,
+          "density": "longform",
+          "densityLabel": "长分析 / 方案稿"
+        }
+      ],
+      "aggregateUrl": "/projects/VibeLife/index.html",
+      "recent": {
+        "mode": "edition",
+        "title": "AI 爆点首页方案",
+        "summary": "AI 爆点首页方案 — 晨报版 Staro Brief / Website Positioning Edition AI Landing Page / 2026-03-07 你的网站需要爆点入口，但不能靠虚火 第 1 版…",
+        "kind": "长分析 / 方案稿",
+        "activityAt": "2026-03-07T17:42:55+08:00",
+        "activityAtText": "2026-03-07 17:42",
+        "url": "/projects/VibeLife/ai-website-positioning-2026-03-07.html"
+      },
+      "info": {
+        "summary": "VibeLife 是当前主推项目，正在从 Study-suit/FlowStudy 的学习母体向成人版人生/项目/行动中枢演化。",
+        "stage": "混合阶段 / 叙事与入口待收口",
+        "blockers": "新叙事与旧品牌残留并存。",
+        "updated": "2026-03-08 07:32",
+        "next": "统一产品定义、默认入口与命名迁移策略。"
+      }
+    },
+    "IDEA-INBOX": {
+      "label": "IDEA INBOX",
+      "description": "收纳系统想法、结构草图与还没正式立项但值得保留的报纸页。",
+      "items": [
+        {
+          "name": "idea-inbox-system-2026-03-07.html",
+          "title": "IDEA INBOX",
+          "rawTitle": "idea-inbox-system-2026-03-07",
+          "summary": "IDEA INBOX — 鬼点子收件箱 Staro Desk / Idea Inbox Working Surface · 2026-03-07 鬼点子收件箱已经开始承接真实工作 第 2 版 / Working Surf…",
+          "url": "/projects/IDEA-INBOX/idea-inbox-system-2026-03-07.html",
+          "publishedAt": "2026-03-07T17:42:55+08:00",
+          "updatedAt": "2026-03-07T17:42:55+08:00",
+          "size": 13279,
+          "density": "brief",
+          "densityLabel": "快报 / 小更新"
+        }
+      ],
+      "aggregateUrl": "/projects/IDEA-INBOX/index.html",
+      "recent": {
+        "mode": "edition",
+        "title": "IDEA INBOX",
+        "summary": "IDEA INBOX — 鬼点子收件箱 Staro Desk / Idea Inbox Working Surface · 2026-03-07 鬼点子收件箱已经开始承接真实工作 第 2 版 / Working Surf…",
+        "kind": "快报 / 小更新",
+        "activityAt": "2026-03-07T17:42:55+08:00",
+        "activityAtText": "2026-03-07 17:42",
+        "url": "/projects/IDEA-INBOX/idea-inbox-system-2026-03-07.html"
+      },
+      "info": {
+        "summary": "收纳系统想法、结构草图与还没正式立项但值得保留的报纸页。",
+        "stage": "待补充",
+        "blockers": "暂无明确阻塞记录",
+        "updated": "2026-03-07 17:42",
+        "next": "继续按当前方向推进。"
+      }
+    },
+    "OpenClaw-Newspaper-UI": {
+      "label": "OpenClaw 报纸系统",
+      "description": "当前主工作区：持续推进报纸式界面、项目工作区结构与真实链路接入。",
+      "items": [
+        {
+          "name": "报纸系统接口现状-项目创建与数据输入.html",
+          "title": "报纸系统接口现状：项目创建与数据输入",
+          "rawTitle": "报纸系统接口现状-项目创建与数据输入",
+          "summary": "回答当前报纸系统有没有完整的新建项目和输入数据接口：结论是发布链已经可用，但“完整项目创建 UI/API”还没有真正做完；现在更像是有数据层、发布接口和渲染链，而缺一个正式的项目管理入口。",
+          "url": "/projects/OpenClaw-Newspaper-UI/报纸系统接口现状-项目创建与数据输入.html",
+          "publishedAt": "2026-03-08T09:10:58+08:00",
+          "updatedAt": "2026-03-08T09:10:58+08:00",
+          "size": 3726,
+          "density": "longform",
+          "densityLabel": "长分析 / 方案稿"
+        },
+        {
+          "name": "重要长输出自动进报纸的最小接线方案.html",
+          "title": "重要长输出自动进报纸的最小接线方案",
+          "rawTitle": "重要长输出自动进报纸的最小接线方案",
+          "summary": "把主代理 finalize 产出的重要长回答，经一层 runtime helper 判定后，命中则发布到报纸并把摘要加链接回到聊天。",
+          "url": "/projects/OpenClaw-Newspaper-UI/重要长输出自动进报纸的最小接线方案.html",
+          "publishedAt": "2026-03-08T09:07:24+08:00",
+          "updatedAt": "2026-03-08T09:07:24+08:00",
+          "size": 1600,
+          "density": "longform",
+          "densityLabel": "长分析 / 方案稿"
+        },
+        {
+          "name": "项目总况更新版.html",
+          "title": "项目总况更新版",
+          "rawTitle": "项目总况更新版",
+          "summary": "把上午新增推进压成更新版头版：报纸完整发布链已实测通过，VibeLife 与 Resomate 进入可执行阶段，Zep 主路定为 Graphiti 直连，本地语音层与批量 SaaS 母框架也都有了现实主路线。",
+          "url": "/projects/OpenClaw-Newspaper-UI/项目总况更新版.html",
+          "publishedAt": "2026-03-08T08:33:57+08:00",
+          "updatedAt": "2026-03-08T08:33:57+08:00",
+          "size": 2005,
+          "density": "longform",
+          "densityLabel": "长分析 / 方案稿"
+        },
+        {
+          "name": "默认输出实测-完整发布链验证.html",
+          "title": "默认输出实测：完整发布链验证",
+          "rawTitle": "默认输出实测-完整发布链验证",
+          "summary": "用当前对话真实内容验证 OpenClaw Newspaper 第一阶段完整流程：准备内容、经 bridge 构造 PublishRequest、调用 publish 流水线、刷新项目页与门户索引，并回给用户可打开的位置。",
+          "url": "/projects/OpenClaw-Newspaper-UI/默认输出实测-完整发布链验证.html",
+          "publishedAt": "2026-03-08T08:28:28+08:00",
+          "updatedAt": "2026-03-08T08:28:28+08:00",
+          "size": 2600,
+          "density": "longform",
+          "densityLabel": "长分析 / 方案稿"
+        },
+        {
+          "name": "默认输出落报纸示例.html",
+          "title": "默认输出落报纸示例",
+          "rawTitle": "默认输出落报纸示例",
+          "summary": "演示如何把一次长输出转成 PublishRequest 并交给最小发布入口。",
+          "url": "/projects/OpenClaw-Newspaper-UI/默认输出落报纸示例.html",
+          "publishedAt": "2026-03-08T08:08:21+08:00",
+          "updatedAt": "2026-03-08T08:08:21+08:00",
+          "size": 1349,
+          "density": "longform",
+          "densityLabel": "长分析 / 方案稿"
+        },
+        {
+          "name": "默认输出落报纸示例.html",
+          "title": "默认输出落报纸示例",
+          "rawTitle": "默认输出落报纸示例",
+          "summary": "演示如何把一次长输出转成 PublishRequest 并交给最小发布入口。",
+          "url": "/projects/OpenClaw-Newspaper-UI/默认输出落报纸示例.html",
+          "publishedAt": "2026-03-08T08:03:04+08:00",
+          "updatedAt": "2026-03-08T08:03:04+08:00",
+          "size": 1349,
+          "density": "longform",
+          "densityLabel": "长分析 / 方案稿"
+        },
+        {
+          "name": "project-status-frontpage-2026-03-08.html",
+          "title": "项目总况版",
+          "rawTitle": "project-status-frontpage-2026-03-08",
+          "summary": "把这一轮并发项目结果压成一张可扫读的报纸页：VibeLife、Resomate、报纸系统是当前最值得继续推进的主线，Zep 要先做路线决策，Study Suit 与 CSGO 先别重兵推进。",
+          "url": "/projects/OpenClaw-Newspaper-UI/project-status-frontpage-2026-03-08.html",
+          "publishedAt": "2026-03-08T07:38:00+08:00",
+          "updatedAt": "2026-03-08T07:38:00+08:00",
+          "size": 10771,
+          "density": "longform",
+          "densityLabel": "头版 / 项目总况"
+        },
+        {
+          "name": "reply-style-newspaper-principles-v2-2026-03-07.html",
+          "title": "报纸写法 v2",
+          "rawTitle": "reply-style-newspaper-principles-v2-2026-03-07",
+          "summary": "Staro Brief — 高信息密度报纸写法 v2 Staro Brief / Editorial Method v2 High-Density Newspaper Output 高密度报纸写法：短标题，足信息 第 2…",
+          "url": "/projects/OpenClaw-Newspaper-UI/reply-style-newspaper-principles-v2-2026-03-07.html",
+          "publishedAt": "2026-03-07T17:42:55+08:00",
+          "updatedAt": "2026-03-07T17:42:55+08:00",
+          "size": 11981,
+          "density": "brief",
+          "densityLabel": "快报 / 小更新"
+        }
+      ],
+      "aggregateUrl": "/projects/OpenClaw-Newspaper-UI/index.html",
+      "recent": {
+        "mode": "edition",
+        "title": "报纸系统接口现状：项目创建与数据输入",
+        "summary": "回答当前报纸系统有没有完整的新建项目和输入数据接口：结论是发布链已经可用，但“完整项目创建 UI/API”还没有真正做完；现在更像是有数据层、发布接口和渲染链，而缺一个正式的项目管理入口。",
+        "kind": "长分析 / 方案稿",
+        "activityAt": "2026-03-08T09:10:58+08:00",
+        "activityAtText": "2026-03-08 09:10",
+        "url": "/projects/OpenClaw-Newspaper-UI/报纸系统接口现状-项目创建与数据输入.html"
+      },
+      "info": {
+        "summary": "为 Staro 的每次输出生成一版报纸式页面，并逐步把它推进为主对话界面。",
+        "stage": "展示层 → 对话界面过渡阶段",
+        "blockers": "缺正式 publish contract 与主会话 hook / relay。",
+        "updated": "2026-03-08 17:08",
+        "next": "先定最小 publish schema，再做 publish_to_newspaper 流水线。"
+      }
+    },
+    "Zep": {
+      "label": "Zep",
+      "description": "预留给 Zep 相关接入、验证与后续输出。",
+      "items": [],
+      "aggregateUrl": "/projects/Zep/index.html",
+      "recent": {
+        "mode": "project",
+        "title": "尚无归档版次",
+        "summary": "优先做路线裁决，再谈接桥。",
+        "kind": "项目更新",
+        "activityAt": "2026-03-08T07:32:00+08:00",
+        "activityAtText": "2026-03-08 07:32",
+        "url": "/projects/Zep/index.html"
+      },
+      "info": {
+        "summary": "Zep 相关本地记忆接入与路线验证项目位。",
+        "stage": "部署验证完成，路线待决策",
+        "blockers": "需要在 CE / Cloud / Graphiti 间做明确取舍。",
+        "updated": "2026-03-08 07:32",
+        "next": "优先做路线裁决，再谈接桥。"
+      }
+    },
+    "TEST-Project-Interface-2026-03-08": {
+      "label": "TEST Project Interface 2026-03-08",
+      "description": "用于验证 create_project / update_project_meta 的最小测试项目。",
+      "items": [],
+      "aggregateUrl": "/projects/TEST-Project-Interface-2026-03-08/index.html",
+      "recent": {
+        "mode": "project",
+        "title": "尚无归档版次",
+        "summary": "如需产品化，可继续补真正的后台入口或主运行时调用面。",
+        "kind": "项目更新",
+        "activityAt": "2026-03-08T09:19:12+08:00",
+        "activityAtText": "2026-03-08 09:19",
+        "url": "/projects/TEST-Project-Interface-2026-03-08/index.html"
+      },
+      "info": {
+        "summary": "测试项目已完成 update_project_meta 验证，说明最小元数据更新链路可用。",
+        "stage": "接口验证完成",
+        "blockers": "暂无；当前剩余工作主要是把 CLI/JSON 接口接进更高层运行时。",
+        "updated": "2026-03-08 09:19",
+        "next": "如需产品化，可继续补真正的后台入口或主运行时调用面。"
+      }
+    },
+    "ClawEyes": {
+      "label": "ClawEyes / 虾眼",
+      "description": "由小龙虾代理持续供稿、系统自动聚类、比对、评估可信度，再生成可读情报流的 AI 时代信息网络。",
+      "items": [
+        {
+          "name": "claweyes-虾眼-产品草案-v1.html",
+          "title": "ClawEyes / 虾眼：产品草案 v1",
+          "rawTitle": "claweyes-虾眼-产品草案-v1",
+          "summary": "把 ClawEyes 定义成由小龙虾代理持续供稿、自动聚类和可信度辅助的情报网络，并在第二阶段长出分身访问与收益系统。",
+          "url": "/projects/ClawEyes/claweyes-虾眼-产品草案-v1.html",
+          "publishedAt": "2026-03-08T13:37:55+08:00",
+          "updatedAt": "2026-03-08T13:37:55+08:00",
+          "size": 1382,
+          "density": "frontpage",
+          "densityLabel": "头版 / 项目总况"
+        }
+      ],
+      "aggregateUrl": "/projects/ClawEyes/index.html",
+      "recent": {
+        "mode": "edition",
+        "title": "ClawEyes / 虾眼：产品草案 v1",
+        "summary": "把 ClawEyes 定义成由小龙虾代理持续供稿、自动聚类和可信度辅助的情报网络，并在第二阶段长出分身访问与收益系统。",
+        "kind": "头版 / 项目总况",
+        "activityAt": "2026-03-08T13:37:55+08:00",
+        "activityAtText": "2026-03-08 13:37",
+        "url": "/projects/ClawEyes/claweyes-虾眼-产品草案-v1.html"
+      },
+      "info": {
+        "summary": "把代理上报流变成事件对象、可信度辅助和可读情报页面，不是普通新闻站，而是代理驱动的信息网络。",
+        "stage": "概念立项 / MVP 产品定义中",
+        "blockers": "事件模型、可信度辅助模型、代理身份体系、最小上报接口都还待正式定义。",
+        "updated": "2026-03-08 13:37",
+        "next": "先完成产品草案、对象模型和 MVP 页面结构，再决定网站原型技术路线。"
+      }
+    }
+  }
+}

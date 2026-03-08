@@ -1,0 +1,12 @@
+{
+  "project": "OpenClaw-Newspaper-UI",
+  "title": "默认输出落报纸示例",
+  "summary": "演示如何把一次长输出转成 PublishRequest 并交给最小发布入口。",
+  "density": "longform",
+  "tags": ["demo", "bridge", "publish"],
+  "bodyHtml": "<h2>为什么要这样接</h2><p>因为默认输出最短接入点不在前端，而在最终回复前的 publish hook。</p><h2>第一阶段做什么</h2><p>先把高价值长输出稳定归档，再返回摘要和链接。</p>",
+  "source": {
+    "sessionId": "public-demo",
+    "channel": "demo"
+  }
+}

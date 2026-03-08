@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>报纸系统接口现状：项目创建与数据输入</title>
+  <style>
+    body{margin:0;background:#ddd6c8;color:#171717;font-family:"Source Han Serif SC","Songti SC",serif;}
+    .page{max-width:1100px;margin:24px auto;background:#f5f1e8;padding:24px 28px;box-shadow:0 12px 36px rgba(0,0,0,.18);}
+    .topline{font:11px/1.4 Inter,sans-serif;color:#666;text-transform:uppercase;letter-spacing:.08em;}
+    h1{margin:8px 0 10px;font-size:clamp(32px,4vw,58px);line-height:.95;} .summary{font:16px/1.65 Inter,sans-serif;margin-bottom:18px;color:#2b251f;}
+    .body{font-size:17px;line-height:1.72;} .body h2{margin-top:28px;} .body p{margin:0 0 14px;}
+  </style>
+</head>
+<body>
+  <main class="page">
+    <div class="topline">OpenClaw Newspaper · 2026-03-08T09:10:58+08:00</div>
+    <h1>报纸系统接口现状：项目创建与数据输入</h1>
+    <div class="summary">回答当前报纸系统有没有完整的新建项目和输入数据接口：结论是发布链已经可用，但“完整项目创建 UI/API”还没有真正做完；现在更像是有数据层、发布接口和渲染链，而缺一个正式的项目管理入口。</div>
+    <article class="body"><h2>一句话结论</h2><p>现在这套报纸系统已经有<strong>可用的数据层、发布链、渲染链</strong>，但还没有做到<strong>完整的项目创建界面 / 完整项目管理 API</strong>。也就是说，<strong>发版次已经能稳定做</strong>，但<strong>新建项目与管理项目元信息</strong>还没有完全产品化。</p><h2>现在已经有的</h2><p>当前已具备：单一 source-of-truth、`Project / Edition / PublishRequest / PublishReceipt` 这一层 schema、`publish_to_newspaper.py` 发布流水线、项目页与门户页的统一渲染器，以及默认输出 bridge 示例。所以如果我现在要把一篇长输出送进报纸，链路已经能跑通。</p><h2>现在还没有完全做好的</h2><p>目前没有真正完整的“新建项目入口”，也没有一个成熟的项目管理后台或对外稳定 API，让人随手点一下就创建项目、编辑项目描述、管理项目阶段、补 block / next，并自动纳入整套 UI。现阶段更像是：数据模型和渲染系统已经成立，但项目管理入口还停在工程接口层，而不是产品入口层。</p><h2>更准确地说</h2><p>如果问“有没有输入数据接口”，答案是：<strong>有</strong>，而且发布新内容已经能通过 request/bridge 输入。如果问“有没有完整项目创建接口”，答案是：<strong>还不算完整</strong>。现在最适合的下一步，是补一个真正的 <code>create_project</code> 最小入口，至少先做到：新增项目 slug、label、description、summary、stage、blockers、next，然后自动重渲染门户与项目页。</p><h2>我对当前状态的判断</h2><p>现在报纸系统最像的是：<strong>发布系统已经成了，项目管理系统还没完全成。</strong> 所以你要我默认把输出都往报纸里送，这已经可以开始；但如果你要把它当成完整的“项目 CMS / 内容后台”，那还差一轮项目创建与元数据管理入口的补齐。</p><h2>下一步应该补什么</h2><p>最值钱的不是再修 UI 细节，而是补 2 个最小接口：一是 <strong>create_project</strong>，二是 <strong>update_project_meta</strong>。有了这两个，再把它们接进当前 source-of-truth 与渲染器，这套东西才算从“能发报纸”走到“能管理报纸系统里的项目”。</p></article>
+  </main>
+</body>
+</html>

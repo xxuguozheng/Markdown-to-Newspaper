@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bio × AI 晨报 — 2026-03-07 样刊</title>
+  <style>
+    :root {
+      --paper:#f5f1e8;
+      --ink:#171717;
+      --muted:#665f54;
+      --rule:#1d1d1d;
+      --accent:#0d5b52;
+      --accent-2:#7f1111;
+      --sans:"Inter","PingFang SC","Noto Sans CJK SC","Microsoft YaHei",sans-serif;
+      --serif:"Source Han Serif SC","Songti SC","STSong",serif;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:#ddd6c8;color:var(--ink);font-family:var(--serif);line-height:1.45}
+    .page{max-width:1320px;margin:24px auto;background:var(--paper);box-shadow:0 12px 36px rgba(0,0,0,.18);border:1px solid rgba(0,0,0,.16);padding:18px 24px 32px}
+    .masthead{border-bottom:4px double var(--rule);padding-bottom:10px;margin-bottom:14px}
+    .topline{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font:10px/1.35 var(--sans);letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin-bottom:7px}
+    .title{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:end;gap:16px}
+    .title h1{margin:0;font-size:clamp(30px,4.2vw,58px);line-height:.95;font-weight:900;letter-spacing:-.02em;text-transform:uppercase}
+    .edition{font:10px/1.3 var(--sans);text-align:right;color:var(--muted)}
+    .strap{margin-top:8px;display:flex;flex-wrap:wrap;gap:6px 12px;font:11px/1.4 var(--sans);color:#25201b}
+    .strap span::before{content:"◆ ";color:var(--accent)}
+    .lead-banner{display:grid;grid-template-columns:1.55fr .9fr;gap:18px;border-bottom:1px solid rgba(0,0,0,.78);padding-bottom:14px;margin-bottom:16px}
+    .lead-banner h2{margin:0 0 8px;font-size:clamp(28px,3vw,44px);line-height:1.02}
+    .lead-banner p{margin:0;font-size:15px;line-height:1.55}
+    .summary-card{background:rgba(255,255,255,.45);border-left:4px solid var(--accent);padding:12px 13px}
+    .summary-card small{display:block;font:10px/1.35 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:5px}
+    .summary-card b{display:block;font:800 16px/1.35 var(--sans);margin-bottom:6px}
+    .summary-card p{font:13px/1.65 var(--sans);color:#2b251f}
+    .grid{display:grid;grid-template-columns:1.38fr 1fr 1fr;gap:18px}
+    .story{border-top:1px solid rgba(0,0,0,.72);padding-top:10px;margin-bottom:16px}
+    .story.lead{border-top:none;padding-top:0}
+    .kicker{font:10px/1.3 var(--sans);text-transform:uppercase;letter-spacing:.1em;color:var(--accent-2);font-weight:800;margin-bottom:5px}
+    .headline{margin:0 0 7px;font-size:clamp(24px,2.5vw,38px);line-height:1.02;font-weight:900}
+    .headline.small{font-size:23px;line-height:1.08}
+    .dek{margin:0 0 10px;font-size:15px;line-height:1.45;color:#25201b}
+    .meta{margin-bottom:10px;font:11px/1.45 var(--sans);color:var(--muted)}
+    .body{font-size:14.5px;line-height:1.58;text-align:justify;column-count:2;column-gap:18px}
+    .body.single{column-count:1}
+    .body p{margin:0 0 10px}
+    .briefs{display:grid;gap:10px}
+    .brief{border-left:3px solid var(--rule);padding-left:10px;font-size:12.5px;line-height:1.52}
+    .brief b{display:block;font:700 11px/1.3 var(--sans);letter-spacing:.06em;text-transform:uppercase;margin-bottom:4px}
+    .box{border:1px solid rgba(0,0,0,.75);background:rgba(255,255,255,.28);padding:10px 11px;margin-bottom:16px}
+    .box h3{margin:0 0 8px;font:800 13px/1.35 var(--sans);text-transform:uppercase;letter-spacing:.07em}
+    .list{margin:0;padding-left:18px;font-size:12.5px;line-height:1.5}
+    .list li{margin-bottom:6px}
+    .quote{font-size:16px;line-height:1.32;font-weight:700;padding:10px 0;border-top:1px dashed rgba(0,0,0,.5);border-bottom:1px dashed rgba(0,0,0,.5);margin:10px 0}
+    .tags{margin-top:8px}
+    .tag{display:inline-block;padding:1px 6px;border:1px solid rgba(0,0,0,.6);font:10px/1.35 var(--sans);margin:0 5px 5px 0}
+    .footer{margin-top:16px;padding-top:10px;border-top:3px double var(--rule);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font:10px/1.5 var(--sans);color:var(--muted)}
+    code{font-family:"Iosevka","JetBrains Mono",monospace;font-size:.92em;background:rgba(0,0,0,.05);padding:1px 4px;border-radius:4px}
+    @media (max-width:1024px){.grid{grid-template-columns:1.35fr 1fr}.grid>.col:last-child{grid-column:1/-1}.lead-banner{grid-template-columns:1fr}}
+    @media (max-width:760px){.page{margin:0;min-height:100vh}.title{grid-template-columns:1fr}.edition{text-align:left}.grid{grid-template-columns:1fr}.body{column-count:1}}
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="masthead">
+      <div class="topline">
+        <span>Staro Brief · Morning Project Edition</span>
+        <span>Bio × AI Morning Brief · 2026-03-07</span>
+        <span>Sample Issue / 第 001 期</span>
+      </div>
+      <div class="title">
+        <h1>BIO × AI 晨报</h1>
+        <div class="edition">给想用 AI 玩 biology 的人<br/>样刊 / Prototype Front Page</div>
+      </div>
+      <div class="strap">
+        <span>先帮读者完成早晨判断</span>
+        <span>再把概念讲成人话</span>
+        <span>最后把信息翻成今天能做的动作</span>
+      </div>
+    </header>
+
+    <section class="lead-banner">
+      <div>
+        <div class="kicker">Lead Judgment</div>
+        <h2>这份晨报该先建立判断力，再补知识，再给上手入口。</h2>
+        <p>如果 Bio × AI 晨报只堆新闻，它会很快变成术语瀑布；如果只做科普，它又失去“今天发生了什么”的张力。样刊这次把结构直接定成三层阅读：编辑部版先告诉你今天哪件事值得看，老师版把方法和局限讲明白，朋友版再把它翻成 10 分钟内能开始的动作。这样读者不是被动刷资讯，而是在每天积累一点对 biology 与 AI 交叉地带的判断。</p>
+      </div>
+      <aside class="summary-card">
+        <small>本期主编摘要</small>
+        <b>不是做一张好看的科技海报，而是做一份能连续追更的晨报版面。</b>
+        <p>样刊围绕一个虚拟但贴近真实的主讯排版：多模态生物基础模型开始从“只会看序列”走向“同时理解序列、结构和实验现象”。它足够像今天会发生的事，也足够适合拿来验证三层阅读是否成立。</p>
+      </aside>
+    </section>
+
+    <section class="grid">
+      <div class="col">
+        <article class="story lead">
+          <div class="kicker">编辑部版 · Front Page</div>
+          <h2 class="headline">生物基础模型开始往“会读实验语境”走，Bio × AI 终于不只是在卷参数。</h2>
+          <p class="dek">今天最值得知道的变化，不是又多了一个模型名字，而是模型开始把序列、结构和实验结果放进同一张理解地图里。这意味着 Bio × AI 的价值，正从“更会预测”转向“更会连接实验现实”。</p>
+          <div class="meta">头版判断 · 偏交叉突破 · 建议继续点开</div>
+          <div class="body">
+            <p>这条主讯值得放头版，因为它改变的不是单个 benchmark 分数，而是模型与真实 biology 的关系。过去很多模型擅长处理单一对象，比如只看 DNA 序列、只做蛋白结构、或者只在某种数据集上表现好。现在更有代表性的方向，是把这些对象放在同一体系里理解：序列告诉你编码信息，结构提示你空间约束，实验数据补上“在真实细胞里到底发生了什么”。</p>
+            <p>这类进展为什么重要？因为 biology 的难点，从来不是缺一个预测器，而是缺一个能把不同层级信号接起来的解释框架。模型如果只能在单点任务上好看，它对普通读者、甚至对很多研究者来说，都更像锦标赛选手；但如果它开始学会把不同实验语境拼在一起，它就更接近“研究助手”的位置。</p>
+            <p>从晨报编辑的角度看，这种变化也很适合作为日常主讯。它兼具新鲜感和可理解性：新鲜在于多模态生物模型确实正在升温，可理解在于每个人都能马上感受到，biology 不是一个按钮能解完的谜题。把不同来源的证据拼在一起，本来就是生物学家每天在做的事；模型如果开始模仿这件事，它就有了更真实的未来想象。</p>
+            <p>因此今天的头版结论很简单：Bio × AI 的下一段竞争，不只是“谁更大”，而是“谁更会把实验世界读成一张图”。对想入门的人来说，这比追最新术语更值得盯，因为它决定你未来该学的是单点工具，还是一整套连接问题的方式。</p>
+          </div>
+        </article>
+
+        <article class="story">
+          <div class="kicker">老师版 · Explain It</div>
+          <h2 class="headline small">真正的变化是模型不再只看“字面”，而开始吸收 biology 的上下文。</h2>
+          <p class="dek">如果把序列看成字母串、结构看成立体折纸、实验结果看成现实反馈，那么老师版要做的事，就是把三者的关系讲顺，而不是把黑话加倍端上来。</p>
+          <div class="meta">概念拆解 · 默认读者：半入门 / 小白</div>
+          <div class="body single">
+            <p>先把问题说白。为什么只看序列不够？因为同一段生物信息，进入真实系统后会受到折叠方式、环境条件、细胞状态、实验设计等多重影响。你可以把序列理解成“说明书”，但 biology 的现实往往还取决于材料、温度和现场。很多 Bio × AI 模型早期做得不错，是因为它们抓住了说明书；现在往前走，则是想把现场也慢慢读进去。</p>
+            <p>这件事常见的实现路径，是做多模态对齐。也就是让模型同时接触不同类型的数据：例如核酸或蛋白序列、三维结构、表达数据、显微图像、实验标签、文献说明。模型训练的目标，不只是把每种数据分别记住，而是学会它们之间的映射关系。这样它遇到一个新问题时，才有机会从“像不像训练集”升级到“这种现象可能在别的层级上意味着什么”。</p>
+            <p>但这里也最容易被夸大。多模态不等于万能，数据对齐也不等于理解。现实中的 biology 数据非常脏、非常碎，实验条件差一点点，结论都可能变样。因此老师版必须把局限写出来：一是不同模态的样本规模往往不平衡；二是很多高质量实验标签很贵；三是模型学到的相关性，不一定能自动变成可验证机制。所以现在更合理的判断不是“AI 已经懂 biology”，而是“AI 开始学会在 biology 里问更像样的问题”。</p>
+            <p>这也是为什么这类信息适合晨报而不是论文墙。读者并不需要一早就掌握所有训练细节，但需要知道：Bio × AI 的价值正在从单点预测转向问题连接；未来真正有用的工具，多半也会更强调把实验、数据和解释放进同一个工作流里。</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="col">
+        <article class="story lead">
+          <div class="kicker">朋友版 · What To Do Next</div>
+          <h2 class="headline small">如果你今天只想玩 10 分钟，先别碰全套论文，先建立三个收藏夹。</h2>
+          <p class="dek">朋友版不是继续讲大道理，而是把今天这条主讯翻成最轻的行动：看什么、存什么、以后怎么串起来。</p>
+          <div class="meta">行动入口 · 轻量安利 · 今天就能开始</div>
+          <div class="briefs">
+            <div class="brief"><b>第一步</b>建一个“Bio 新闻”清单，只收你能看懂 60% 的生命科学消息，让自己先习惯问题感，而不是先被术语劝退。</div>
+            <div class="brief"><b>第二步</b>建一个“Bio 工具 / Repo”清单，专门留给序列分析、蛋白建模、可视化、实验辅助这类能摸到手的东西。</div>
+            <div class="brief"><b>第三步</b>建一个“AI 方法”清单，只记那些会改变你看 biology 方式的模型思路，比如多模态、agent、foundation model，而不是所有新名词。</div>
+            <div class="brief"><b>今天的感受</b>你不用先变成研究者，先把“biology 不是一堆孤立名词，而是一张互相解释的图”这件事建立起来，后面就会顺很多。</div>
+          </div>
+        </article>
+
+        <div class="box">
+          <h3>今日可玩</h3>
+          <ol class="list">
+            <li>找一个 Bio 开源项目主页，只看它解决什么问题，不急着装环境。</li>
+            <li>把今天看到的一个 biology 术语和一个 AI 术语写成对照卡片。</li>
+            <li>试着用一句人话解释“为什么多模态对 biology 特别重要”。</li>
+          </ol>
+        </div>
+
+        <div class="box">
+          <h3>今天该怎么筛信息</h3>
+          <ul class="list">
+            <li>优先看 Bio × AI 交叉源，其次看生物新闻和开源项目。</li>
+            <li>如果一条消息只有“更强”“更大”但说不清解决什么问题，先降级处理。</li>
+            <li>如果一条内容能让你同时理解 biology 现象和 AI 方法，它更配进头版。</li>
+          </ul>
+        </div>
+
+        <div class="quote">“这份晨报最该给人的，不是结论幻觉，而是继续探索的方向感。”</div>
+
+        <div class="box">
+          <h3>栏目骨架</h3>
+          <ul class="list">
+            <li>头版主讯：今天最值得知道的交叉变化</li>
+            <li>解释区：把一个概念讲成人话</li>
+            <li>今日可玩：把资讯翻成一个小动作</li>
+            <li>一句脑洞：给未来项目留火种</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col">
+        <article class="story lead">
+          <div class="kicker">快扫栏 · News Rail</div>
+          <h2 class="headline small">这份样刊验证的不是资讯真假，而是版面逻辑是否能长期工作。</h2>
+          <p class="dek">本次样刊不依赖外网抓取，而是基于已有策略文档把内容结构落成真正可浏览的报纸页，用来验证项目位、入口关系与三层阅读是否成立。</p>
+          <div class="meta">Prototype Notes · In-System Sample</div>
+        </article>
+
+        <div class="box">
+          <h3>样刊验证点</h3>
+          <ul class="list">
+            <li>项目名固定为 <code>Bio-AI-Morning-Brief</code></li>
+            <li>样刊文件固定为 <code>bio-ai-morning-brief-2026-03-07.html</code></li>
+            <li>项目页通过 iframe 连回样刊，和现有系统保持同构</li>
+            <li>门户层新增卡片，可从项目列表进入</li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h3>给后续真实日报的写法提醒</h3>
+          <ul class="list">
+            <li>编辑部版要先下判断，别先列来源。</li>
+            <li>老师版要把夸大和局限写出来，避免晨报变宣传页。</li>
+            <li>朋友版要给轻动作，不要求读者一早就开复杂环境。</li>
+            <li>每天控制在 5–10 分钟读完，信息密度高但入口轻。</li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h3>一句脑洞</h3>
+          <p style="margin:0;font:13px/1.66 var(--sans);color:#2b251f;">如果以后把晨报页和项目收藏、概念卡片、工具池打通，Bio × AI 晨报就不只是“读一页”，而会慢慢长成一个入门者的研究操作台。</p>
+        </div>
+
+        <div class="box">
+          <h3>标签</h3>
+          <div class="tags">
+            <span class="tag">Bio × AI</span>
+            <span class="tag">Morning Brief</span>
+            <span class="tag">Editorial</span>
+            <span class="tag">Teacher Mode</span>
+            <span class="tag">Friend Mode</span>
+            <span class="tag">Prototype</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div>Generated for project slot <code>Bio-AI-Morning-Brief</code></div>
+      <div>Path: <code>/projects/Bio-AI-Morning-Brief/bio-ai-morning-brief-2026-03-07.html</code></div>
+      <div>Source basis: <code>docs/bio-ai-morning-brief-strategy.md</code></div>
+    </footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bio × AI 晨报 — 2026-03-08</title>
+  <style>
+    :root {
+      --paper:#f5f1e8;
+      --ink:#171717;
+      --muted:#665f54;
+      --rule:#1d1d1d;
+      --accent:#0d5b52;
+      --accent-2:#7f1111;
+      --sans:"Inter","PingFang SC","Noto Sans CJK SC","Microsoft YaHei",sans-serif;
+      --serif:"Source Han Serif SC","Songti SC","STSong",serif;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:#ddd6c8;color:var(--ink);font-family:var(--serif);line-height:1.45}
+    .page{max-width:1320px;margin:24px auto;background:var(--paper);box-shadow:0 12px 36px rgba(0,0,0,.18);border:1px solid rgba(0,0,0,.16);padding:18px 24px 28px}
+    .masthead{border-bottom:4px double var(--rule);padding-bottom:10px;margin-bottom:14px}
+    .topline{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font:10px/1.35 var(--sans);letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin-bottom:7px}
+    .title{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:end;gap:16px}
+    .title h1{margin:0;font-size:clamp(30px,4.2vw,58px);line-height:.95;font-weight:900;letter-spacing:-.02em;text-transform:uppercase}
+    .edition{font:10px/1.3 var(--sans);text-align:right;color:var(--muted)}
+    .strap{margin-top:8px;display:flex;flex-wrap:wrap;gap:6px 12px;font:11px/1.4 var(--sans);color:#25201b}
+    .strap span::before{content:"◆ ";color:var(--accent)}
+    .lead-banner{display:grid;grid-template-columns:1.65fr .9fr;gap:18px;border-bottom:1px solid rgba(0,0,0,.78);padding-bottom:14px;margin-bottom:16px}
+    .lead-banner h2{margin:0 0 8px;font-size:clamp(28px,3vw,44px);line-height:1.02}
+    .lead-banner p{margin:0;font-size:15px;line-height:1.55}
+    .summary-card{background:rgba(255,255,255,.45);border-left:4px solid var(--accent);padding:12px 13px}
+    .summary-card small{display:block;font:10px/1.35 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:5px}
+    .summary-card b{display:block;font:800 16px/1.35 var(--sans);margin-bottom:6px}
+    .summary-card p{font:13px/1.65 var(--sans);color:#2b251f}
+    .grid{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(320px,.95fr);gap:20px;align-items:start}
+    .story{border-top:1px solid rgba(0,0,0,.72);padding-top:10px;margin-bottom:16px}
+    .story.lead{border-top:none;padding-top:0}
+    .kicker{font:10px/1.3 var(--sans);text-transform:uppercase;letter-spacing:.1em;color:var(--accent-2);font-weight:800;margin-bottom:5px}
+    .headline{margin:0 0 7px;font-size:clamp(24px,2.5vw,38px);line-height:1.02;font-weight:900}
+    .headline.small{font-size:23px;line-height:1.08}
+    .dek{margin:0 0 10px;font-size:15px;line-height:1.45;color:#25201b}
+    .meta{margin-bottom:10px;font:11px/1.45 var(--sans);color:var(--muted)}
+    .body{font-size:14.5px;line-height:1.6;text-align:justify;column-count:2;column-gap:18px}
+    .body.single{column-count:1}
+    .body p{margin:0 0 10px}
+    .side-stack{display:grid;gap:12px}
+    .briefs{display:grid;gap:10px}
+    .brief{border-left:3px solid var(--rule);padding-left:10px;font-size:12.5px;line-height:1.52}
+    .brief b{display:block;font:700 11px/1.3 var(--sans);letter-spacing:.06em;text-transform:uppercase;margin-bottom:4px}
+    .box{border:1px solid rgba(0,0,0,.75);background:rgba(255,255,255,.28);padding:10px 11px}
+    .box h3{margin:0 0 8px;font:800 13px/1.35 var(--sans);text-transform:uppercase;letter-spacing:.07em}
+    .list{margin:0;padding-left:18px;font-size:12.5px;line-height:1.5}
+    .list li{margin-bottom:6px}
+    .quote{font-size:16px;line-height:1.32;font-weight:700;padding:10px 0;border-top:1px dashed rgba(0,0,0,.5);border-bottom:1px dashed rgba(0,0,0,.5)}
+    .tags{margin-top:4px}
+    .tag{display:inline-block;padding:1px 6px;border:1px solid rgba(0,0,0,.6);font:10px/1.35 var(--sans);margin:0 5px 5px 0}
+    .footer{margin-top:14px;padding-top:10px;border-top:3px double var(--rule);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font:10px/1.5 var(--sans);color:var(--muted)}
+    code{font-family:"Iosevka","JetBrains Mono",monospace;font-size:.92em;background:rgba(0,0,0,.05);padding:1px 4px;border-radius:4px}
+    @media (max-width:1024px){.grid{grid-template-columns:1fr}.lead-banner{grid-template-columns:1fr}.body{column-count:1}}
+    @media (max-width:760px){.page{margin:0;min-height:100vh}.title{grid-template-columns:1fr}.edition{text-align:left}}
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="masthead">
+      <div class="topline">
+        <span>Staro Brief · Morning Project Edition</span>
+        <span>Bio × AI Morning Brief · 2026-03-08</span>
+        <span>Issue 002 / Editorial Edition</span>
+      </div>
+      <div class="title">
+        <h1>BIO × AI 晨报</h1>
+        <div class="edition">从样刊走向持续出刊<br/>第 002 期 / Working Edition</div>
+      </div>
+      <div class="strap">
+        <span>先给判断</span>
+        <span>再补解释</span>
+        <span>最后翻成今天能做的动作</span>
+      </div>
+    </header>
+
+    <section class="lead-banner">
+      <div>
+        <div class="kicker">Lead Judgment</div>
+        <h2>Bio × AI 晨报现在最缺的不是更多新闻，而是一个能持续出刊的小型编辑系统。</h2>
+        <p>样刊已经证明“这类内容可以被排成真正可读的报纸页”，但那只是起点。今天这版真正要回答的问题不是“再讲一个交叉热点”，而是：如果这条线要继续活下去，它该靠什么节奏、什么栏目、什么来源结构去维持。换句话说，今天这一版是在给 Bio × AI 晨报立编辑部骨架，而不是再做一张漂亮海报。</p>
+      </div>
+      <aside class="summary-card">
+        <small>本期主编摘要</small>
+        <b>样刊已经成立，接下来该补的是选题流、栏目模板、来源结构和出刊节奏。</b>
+        <p>如果这四样东西不立起来，Bio × AI 晨报就永远只是一张偶尔好看的页面；如果这四样东西立住了，它才会变成一个能长期追更、能持续产生判断力的项目位。</p>
+      </aside>
+    </section>
+
+    <section class="grid">
+      <div>
+        <article class="story lead">
+          <div class="kicker">编辑部版 · Front Page</div>
+          <h2 class="headline">现在别急着追更多资讯，先把“每天怎么出一版”这件事做成流程。</h2>
+          <p class="dek">Bio × AI 最容易掉进的坑，是看起来信息很多，实际上每天都在重新发明内容组织方式。真正的编辑系统应该先稳定输入和结构，再追求规模。</p>
+          <div class="meta">头版判断 · 项目推进视角 · 今日主结论</div>
+          <div class="body">
+            <p>今天这一版最值得压到头版的结论很简单：Bio × AI 晨报已经不缺“能不能做一张报纸页”的证明，它现在缺的是“明天还能不能稳定再做一版”。如果每天都靠临场发挥、临时找选题、临时想栏目，它就会慢慢退回一次性产物，失去连续追更的意义。</p>
+            <p>所以今天真正该补的是编辑部骨架。第一层是来源结构，要把生物新闻源、Bio × AI 交叉源、AI 方法源、开源项目源分开。第二层是栏目结构，要固定“头版判断、解释区、今日可玩”这样的稳定骨架。第三层是出刊节奏，一开始不要贪日更，先按周一、周三、周五试运营两周更稳。</p>
+            <p>为什么这比继续追一条外部热点更重要？因为这决定了项目是“内容偶发”还是“系统可持续”。一个真正能用的晨报项目，不是偶尔做得漂亮，而是能持续帮读者完成每天的第一轮判断：今天什么值得看，为什么重要，接下来能做什么。</p>
+            <p>因此今天的头版不是在讲某篇论文或某个模型，而是在讲这个项目自己的方法论分水岭：从样刊状态，进入小型编辑系统状态。只有越过这一步，Bio × AI 晨报后面才值得接自动化、接来源池、接选题面板和项目位持续归档。</p>
+          </div>
+        </article>
+
+        <article class="story">
+          <div class="kicker">老师版 · Explain It</div>
+          <h2 class="headline small">为什么交叉晨报最先该补的是“编辑结构”，不是“信息规模”？</h2>
+          <p class="dek">交叉学科内容最怕的不是不够多，而是多了以后变脏、变乱、变失真。老师版要解释的是：为什么稳定骨架比资讯洪流更值钱。</p>
+          <div class="meta">概念拆解 · 默认读者：半入门 / 想长期看的人</div>
+          <div class="body single">
+            <p>Bio × AI 这类项目天然有一个诱惑：每天都有新论文、新模型、新应用、新新闻，于是很容易误以为“只要多抓多收，就能做出晨报”。但现实往往相反。信息越多，如果没有固定结构，读者越不知道今天该先看什么、为什么该看、以及看完之后能做什么。</p>
+            <p>这也是为什么编辑结构先于信息规模。一个稳定晨报项目至少需要四根骨架：来源、栏目、节奏、风格。来源决定你每天看到的信息是不是足够稳；栏目决定你如何把复杂内容压成固定可读结构；节奏决定项目能不能长跑；风格决定读者会不会愿意反复回来。</p>
+            <p>对 Bio × AI 来说，这四根骨架尤其重要，因为它天然横跨两个噪音都很高的领域。生物信息容易被讲成黑话瀑布，AI 信息容易被讲成性能竞赛。晨报如果不主动做“头版判断 + 解释层 + 动作入口”这种分层，最终就会变成一份两边都不讨好的内容堆。</p>
+            <p>所以今天更成熟的推进顺序不是“再做一版更丰富的晨报”，而是先把一个足够小、但足够稳的编辑系统立起来。之后再把来源池、自动抓取、栏目扩展慢慢接进去，这样项目才不会一开始就被自己的 ambition 压垮。</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="side-stack">
+        <article class="story lead">
+          <div class="kicker">朋友版 · What To Do Next</div>
+          <h2 class="headline small">如果今天只做一件事，就先把未来晨报要读的来源分成三堆。</h2>
+          <p class="dek">朋友版不继续讲大逻辑，而是把今天的结论翻成轻动作：先把输入收干净，后面晨报才会越做越顺。</p>
+          <div class="meta">行动入口 · 今天就能开始</div>
+          <div class="briefs">
+            <div class="brief"><b>第一堆</b> 建 Bio 新闻源清单，只收你愿意每天快速扫一眼的生命科学新闻源。</div>
+            <div class="brief"><b>第二堆</b> 建 Bio × AI 工具/项目清单，专收开源项目、工具链、工作流平台。</div>
+            <div class="brief"><b>第三堆</b> 建 AI 方法观察清单，只收那些真的会改变你看 biology 方式的方法，而不是所有模型名字。</div>
+            <div class="brief"><b>今天的目标</b> 不是把三堆都填满，而是先把未来晨报的输入口径固定下来。</div>
+          </div>
+        </article>
+
+        <div class="box">
+          <h3>今日可玩</h3>
+          <ol class="list">
+            <li>先列 5 个未来可能长期追的 Bio 新闻源。</li>
+            <li>再列 5 个你真正想长期跟踪的 Bio × AI 工具或项目。</li>
+            <li>最后只留 3 个你愿意每周反复看的 AI 方法源。</li>
+          </ol>
+        </div>
+
+        <div class="box">
+          <h3>最小出刊建议</h3>
+          <ul class="list">
+            <li>不要先追日更，先跑周一 / 周三 / 周五。</li>
+            <li>每期只保证一个主判断、一个解释区、一个可玩入口。</li>
+            <li>连续跑两周，比一开始追自动化更重要。</li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h3>当前已成立</h3>
+          <ul class="list">
+            <li>项目位已在报纸系统里。</li>
+            <li>样刊已存在，可持续引用。</li>
+            <li>报纸阅读版式已成立。</li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h3>当前最大缺口</h3>
+          <ul class="list">
+            <li>来源池还没固定。</li>
+            <li>栏目模板还没真正沉淀成 daily SOP。</li>
+            <li>出刊节奏还没进入试运营。</li>
+          </ul>
+        </div>
+
+        <div class="quote">“晨报真正值钱的地方，不是替人看完世界，而是替人先完成第一轮判断。”</div>
+
+        <div class="box">
+          <h3>下一步最值钱的文档</h3>
+          <ul class="list">
+            <li><code>bio-ai-morning-brief-sourcebook.md</code></li>
+            <li><code>bio-ai-morning-brief-issue-template.md</code></li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h3>标签</h3>
+          <div class="tags">
+            <span class="tag">Bio × AI</span>
+            <span class="tag">Morning Brief</span>
+            <span class="tag">Editorial</span>
+            <span class="tag">Working Edition</span>
+            <span class="tag">Sustainable Plan</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div>Generated for project slot <code>Bio-AI-Morning-Brief</code></div>
+      <div>Path: <code>/projects/Bio-AI-Morning-Brief/bio-ai-晨报-2026-03-08.html</code></div>
+      <div>Basis: sustainability push / editorial working edition</div>
+    </footer>
+  </main>
+</body>
+</html>

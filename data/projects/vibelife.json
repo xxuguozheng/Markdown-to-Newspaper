@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "2026-03-08.minimal-v1",
+  "kind": "Project",
+  "id": "vibelife",
+  "slug": "VibeLife",
+  "label": "VibeLife",
+  "description": "更适合承接 VibeLife 的定位、栏目、体验方案与后续版次沉淀。",
+  "summary": "VibeLife 是当前主推项目，正在从 Study-suit/FlowStudy 的学习母体向成人版人生/项目/行动中枢演化。",
+  "stage": "混合阶段 / 叙事与入口待收口",
+  "blockers": "新叙事与旧品牌残留并存。",
+  "next": "统一产品定义、默认入口与命名迁移策略。",
+  "status": "active",
+  "aggregateUrl": "/projects/VibeLife/index.html",
+  "updatedAt": "2026-03-08T07:38:00+08:00",
+  "latestEditionId": "edition_vibelife_ai_website_positioning_2026_03_07",
+  "editionCount": 1,
+  "source": {
+    "importedFrom": "/site/data/portal-index.json",
+    "portalKey": "VibeLife"
+  }
+}

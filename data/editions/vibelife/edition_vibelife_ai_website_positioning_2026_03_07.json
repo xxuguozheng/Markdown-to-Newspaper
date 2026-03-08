@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "2026-03-08.minimal-v1",
+  "kind": "Edition",
+  "id": "edition_vibelife_ai_website_positioning_2026_03_07",
+  "projectId": "vibelife",
+  "projectSlug": "VibeLife",
+  "slug": "ai-website-positioning-2026-03-07",
+  "fileName": "ai-website-positioning-2026-03-07.html",
+  "title": "AI 爆点首页方案",
+  "rawTitle": "ai-website-positioning-2026-03-07",
+  "summary": "AI 爆点首页方案 — 晨报版 Staro Brief / Website Positioning Edition AI Landing Page / 2026-03-07 你的网站需要爆点入口，但不能靠虚火 第 1 版…",
+  "density": "longform",
+  "densityLabel": "长分析 / 方案稿",
+  "htmlUrl": "/projects/VibeLife/ai-website-positioning-2026-03-07.html",
+  "publishedAt": "2026-03-07T17:42:55.653402",
+  "size": 10860,
+  "tags": [],
+  "source": {
+    "importedFrom": "/site/data/portal-index.json",
+    "artifactPath": "projects/VibeLife/ai-website-positioning-2026-03-07.html",
+    "artifactExists": true
+  }
+}

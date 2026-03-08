@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "2026-03-08.minimal-v1",
+  "kind": "Project",
+  "id": "byoc-openclaw-ui",
+  "slug": "BYOC-OpenClaw-UI",
+  "label": "BYOC × OpenClaw UI",
+  "description": "把 BYOC 相关日报、界面实验、交互提案集中到一个连续工作区里。",
+  "summary": "围绕“网站负责 UI / 协议层 / 分发层，OpenClaw 负责本地执行与 skill runtime”的方向展开调研与原型推进。",
+  "stage": "待补充",
+  "blockers": "外部参照系与 schema 收敛仍待继续整理。",
+  "next": "继续做协议收敛与页面级 PRD。",
+  "status": "active",
+  "aggregateUrl": "/projects/BYOC-OpenClaw-UI/index.html",
+  "updatedAt": "2026-03-08T07:38:00+08:00",
+  "latestEditionId": "edition_byoc_openclaw_ui_byoc_morning_brief_2026_03_07",
+  "editionCount": 1,
+  "source": {
+    "importedFrom": "/site/data/portal-index.json",
+    "portalKey": "BYOC-OpenClaw-UI"
+  }
+}

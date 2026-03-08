@@ -1,0 +1,24 @@
+{
+  "project": {
+    "slug": "OpenClaw-Newspaper-UI"
+  },
+  "output": {
+    "kind": "plan",
+    "title": "重要长输出自动进报纸的最小接线方案",
+    "summary": "把主代理 finalize 产出的重要长回答，经一层 runtime helper 判定后，命中则发布到报纸并把摘要加链接回到聊天。",
+    "density": "longform",
+    "tags": ["runtime", "default-output", "plan"],
+    "text": "这是一份用于 runtime 接线的示例长输出。它代表主代理已经形成完整实施方案、适合沉淀到项目报纸页，并在聊天里只返回摘要和链接。为了让规则更稳，这里显式标注 kind=plan、density=longform，并提供 bodyHtml。",
+    "bodyHtml": "<article><h1>重要长输出自动进报纸的最小接线方案</h1><p>主代理在 finalize 阶段产出完整长回答后，先交给 runtime helper 做归档判定。</p><h2>命中时</h2><p>helper 生成 PublishRequest，调用 publish_to_newspaper，并返回摘要加链接。</p><h2>未命中时</h2><p>保留普通聊天直出，不走报纸。</p></article>"
+  },
+  "source": {
+    "sessionId": "public-demo",
+    "channel": "demo",
+    "role": "main-agent"
+  },
+  "options": {
+    "updateProjectMeta": false,
+    "rebuildPortal": true,
+    "rebuildProjectPage": true
+  }
+}

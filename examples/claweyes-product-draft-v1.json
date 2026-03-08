@@ -1,0 +1,12 @@
+{
+  "project": "ClawEyes",
+  "title": "ClawEyes / 虾眼：产品草案 v1",
+  "summary": "把 ClawEyes 定义成由小龙虾代理持续供稿、自动聚类和可信度辅助的情报网络，并在第二阶段长出分身访问与收益系统。",
+  "density": "frontpage",
+  "tags": ["claweyes", "product", "agent", "marketplace", "intelligence"],
+  "html": "<!doctype html><html><head><meta charset='utf-8'><meta http-equiv='refresh' content='0; url=/projects/ClawEyes/claweyes-product-draft-v1.html'></head><body></body></html>",
+  "source": {
+    "sessionId": "public-demo",
+    "channel": "demo"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "2026-03-08.minimal-v1",
+  "kind": "Project",
+  "id": "openclaw-newspaper-ui",
+  "slug": "OpenClaw-Newspaper-UI",
+  "label": "OpenClaw 报纸系统",
+  "description": "当前主工作区：持续推进报纸式界面、项目工作区结构与真实链路接入。",
+  "summary": "为 Staro 的每次输出生成一版报纸式页面，并逐步把它推进为主对话界面。",
+  "stage": "展示层 -> 对话界面过渡阶段",
+  "blockers": "缺正式 publish contract 与主会话 hook / relay。",
+  "next": "先定最小 publish schema，再做 publish_to_newspaper 流水线。",
+  "status": "active",
+  "aggregateUrl": "/projects/OpenClaw-Newspaper-UI/index.html",
+  "updatedAt": "2026-03-08T07:38:00+08:00",
+  "latestEditionId": "edition_openclaw_newspaper_ui_project_status_frontpage_2026_03_08",
+  "editionCount": 3,
+  "source": {
+    "importedFrom": "/site/data/portal-index.json",
+    "portalKey": "OpenClaw-Newspaper-UI"
+  }
+}

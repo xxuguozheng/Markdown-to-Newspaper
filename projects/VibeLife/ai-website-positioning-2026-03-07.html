@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI 爆点首页方案 — 晨报版</title>
+  <style>
+    :root {
+      --paper: #f5f1e8;
+      --ink: #171717;
+      --muted: #666;
+      --rule: #1f1f1f;
+      --accent: #7f1111;
+      --sans: "Inter", "PingFang SC", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif;
+      --serif: "Source Han Serif SC", "Songti SC", "STSong", serif;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #ddd6c8; color: var(--ink); font-family: var(--serif); }
+    .page { max-width: 1280px; margin: 24px auto; background: var(--paper); box-shadow: 0 12px 36px rgba(0,0,0,.18); border: 1px solid rgba(0,0,0,.18); padding: 18px 24px 30px; }
+    .masthead { border-bottom: 4px double var(--rule); padding-bottom: 8px; margin-bottom: 12px; }
+    .topline { display:flex; justify-content:space-between; gap:12px; font:10px/1.35 var(--sans); letter-spacing:.09em; text-transform:uppercase; color:var(--muted); margin-bottom:6px; }
+    .title { display:grid; grid-template-columns:1fr auto; align-items:end; gap:12px; }
+    .title h1 { margin:0; font-size:clamp(30px,4vw,54px); line-height:.96; letter-spacing:-.01em; font-weight:900; }
+    .edition { text-align:right; font:10px/1.3 var(--sans); color:var(--muted); }
+    .strap { margin-top:6px; font:11px/1.35 var(--sans); color:#222; display:flex; flex-wrap:wrap; gap:4px 10px; }
+    .strap span::before { content:"◆ "; color:var(--accent); }
+    .grid { display:grid; grid-template-columns:2.15fr 1.1fr 1.05fr; gap:18px; }
+    .story { break-inside:avoid; border-top:1px solid rgba(0,0,0,.7); padding-top:10px; margin-bottom:16px; }
+    .story.lead { border-top:none; padding-top:0; }
+    .kicker { font:10px/1.3 var(--sans); color:var(--accent); text-transform:uppercase; letter-spacing:.09em; margin-bottom:5px; font-weight:700; }
+    .headline { font-size:clamp(25px,2.9vw,46px); line-height:.98; margin:0 0 8px; font-weight:900; }
+    .headline.small { font-size:21px; line-height:1.08; }
+    .dek { font-size:15px; line-height:1.42; color:#222; margin:0 0 10px; }
+    .meta { font:11px/1.45 var(--sans); color:var(--muted); margin-bottom:10px; }
+    .body { column-count:2; column-gap:18px; font-size:14.5px; line-height:1.58; text-align:justify; hyphens:auto; }
+    .body.single { column-count:1; }
+    .body p { margin:0 0 10px; }
+    .box { border:1px solid rgba(0,0,0,.75); padding:10px 11px; background:rgba(255,255,255,.28); margin-bottom:16px; }
+    .box h3 { margin:0 0 8px; font:800 13px/1.3 var(--sans); text-transform:uppercase; letter-spacing:.07em; }
+    .list { margin:0; padding-left:18px; font-size:12.5px; line-height:1.48; }
+    .list li { margin-bottom:6px; }
+    .briefs { display:grid; gap:10px; }
+    .brief { border-left:3px solid var(--rule); padding-left:10px; font-size:12.5px; line-height:1.48; }
+    .brief b { display:block; font:700 11px/1.3 var(--sans); text-transform:uppercase; letter-spacing:.06em; margin-bottom:4px; }
+    .quote { font-size:16px; line-height:1.32; font-weight:700; padding:9px 0; border-top:1px dashed rgba(0,0,0,.5); border-bottom:1px dashed rgba(0,0,0,.5); margin:8px 0 10px; }
+    .footer { margin-top:14px; padding-top:10px; border-top:3px double var(--rule); font:10px/1.5 var(--sans); color:var(--muted); display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; }
+    @media (max-width: 1024px) { .grid { grid-template-columns:1.5fr 1fr; } .grid > div:last-child { grid-column:1 / -1; } }
+    @media (max-width: 760px) { .page { margin:0; min-height:100vh; } .grid { grid-template-columns:1fr; } .body { column-count:1; } .title { grid-template-columns:1fr; } .edition { text-align:left; } }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="masthead">
+      <div class="topline">
+        <div>Staro Brief / Website Positioning Edition</div>
+        <div>AI Landing Page / 2026-03-07</div>
+      </div>
+      <div class="title">
+        <h1>你的网站需要爆点入口，但不能靠虚火</h1>
+        <div class="edition">
+          第 1 版 / Positioning Brief<br>
+          时间：10:14 / Saturday / Asia-Shanghai
+        </div>
+      </div>
+      <div class="strap">
+        <span>情绪入口</span>
+        <span>能力自证</span>
+        <span>真实爆点</span>
+        <span>信任放大</span>
+      </div>
+    </header>
+
+    <section class="grid">
+      <div>
+        <article class="story lead">
+          <div class="kicker">Lead Story</div>
+          <h2 class="headline">真正该做的不是炒虚火，而是把真实能力包装成高冲击入口</h2>
+          <p class="dek">你的网站确实需要更强的爆点、更强的情绪入口和更直观的 AI 能力界面，但这套东西不能靠虚假承诺去炒。更稳也更长久的打法，是让 AI 帮你把真实能力翻译成普通人一眼能懂、愿意点进去、看完会信的高冲击表达。</p>
+          <div class="meta">Staro Desk • 主题：个人网站 × AI 能力展示 × 情绪入口设计</div>
+          <div class="body">
+            <p>你刚才那个判断里有个很准的点：这时代很多东西确实先靠“信”滚起来，形成一种自证预言。网站也一样。如果别人三秒钟内感受到你这套东西真的猛、真的新、真的能解决问题，他就会愿意继续往下看；而一旦愿意往下看，就会开始接受你这个人和你这套系统本身的能力设定。所以网站不能只是放项目列表和个人介绍，它必须先给出几个会击中情绪的入口。</p>
+            <p>但这里要分清楚两件事。第一件是“把真实能力包装得更有冲击力”，这是对的，也是必须做的。第二件是“靠虚假承诺和伪能力去炒”，这就不行。比如金融预测、稳赚理财、神化 AI、伪装万能，这些都可能短期吸睛，但会快速把信任打穿。更稳的路子是：你本来就已经有很强的真实能力，只是还没有被翻译成普通人能秒懂的爆点页面。</p>
+            <p>这些真实能力其实已经足够猛了：你有自己的 OpenClaw、本地能力层、报纸式输出、长线记忆、子代理并发推进、网页控制、本地工具接入、项目工作台、自动归档与 portal。这些东西如果只是技术说明，看起来像工程笔记；但一旦被包装成“我能替你多线程推进项目”“我有自己的 AI 中枢”“我能把碎念头接成系统”“我能在网页里直接和你协作”，它就会突然变成高冲击力入口。</p>
+            <p>所以网站的核心不是“制造一个热闹的首页”，而是建立三层结构：第一层打情绪入口，第二层做能力自证，第三层做信任放大。情绪入口负责让人愿意停下来；能力自证负责让人觉得你不是吹；信任放大负责让用户从信你的项目，慢慢变成信你这个人和你这只龙虾系统本身。这样滚起来的东西才会稳，不会一戳就漏气。</p>
+          </div>
+        </article>
+
+        <article class="story">
+          <div class="kicker">Structure</div>
+          <h2 class="headline small">首页最适合做成三层结构</h2>
+          <div class="body single">
+            <p>第一层是情绪入口，按“赚钱 / 效率 / 掌控感 / 成长 / 拥有自己的 AI”这类高情绪关键词切用户。第二层是 AI 专属能力界面，不再泛泛列功能，而是直接展示：多项目推进、报纸式输出、本地自动化、网页协作、长期记忆这些真正的能力。第三层是案例和自证，把你已经做出来的东西直接摆出来，让人不是靠听你说，而是靠看你已经做成了什么开始相信。</p>
+          </div>
+        </article>
+      </div>
+
+      <div>
+        <div class="box">
+          <h3>快扫区 / 情绪入口</h3>
+          <ul class="list">
+            <li>我想赚钱</li>
+            <li>我想提效</li>
+            <li>我想搞项目</li>
+            <li>我想拥有自己的 AI</li>
+            <li>我想看它真实能干嘛</li>
+          </ul>
+        </div>
+
+        <article class="story">
+          <div class="kicker">Briefs</div>
+          <h2 class="headline small">AI 可以自动生成的不是假热点，而是爆点表达</h2>
+          <div class="briefs">
+            <div class="brief"><b>Headlines</b> 把一项真实能力改写成更像首页 hero 的强标题。</div>
+            <div class="brief"><b>Scene Mapping</b> 把同一能力翻译成不同人群能听懂的话术。</div>
+            <div class="brief"><b>Entry Blocks</b> 自动生成“今日最强能力 / 最近打通了什么 / 你能拿它做什么”这类首页模块。</div>
+            <div class="brief"><b>Emotion Match</b> 把真实能力映射到焦虑、效率、赚钱、掌控感这些大众情绪入口上。</div>
+          </div>
+        </article>
+
+        <article class="story">
+          <div class="kicker">Truth</div>
+          <h2 class="headline small">你最该卖的其实是“我有自己的 AI 中枢”</h2>
+          <div class="body single">
+            <p>不是普通 chatbot，不是云端 SaaS 黑盒，而是一套真正接在你生活和工作流里的个人 AI 系统。这件事本身就已经足够有冲击力了，不需要再硬造假爆点。</p>
+          </div>
+        </article>
+      </div>
+
+      <div>
+        <div class="box">
+          <h3>不能碰的东西</h3>
+          <ul class="list">
+            <li>伪金融承诺</li>
+            <li>稳赚理财神话</li>
+            <li>假装 AI 什么都能秒杀</li>
+            <li>靠虚构能力制造信仰</li>
+          </ul>
+        </div>
+
+        <article class="story">
+          <div class="kicker">Quote</div>
+          <div class="quote">不是让 AI 去虚构爆点，而是让 AI 去把真实能力包装成高冲击、高情绪价值、高信服力的入口。</div>
+          <div class="meta">这句可以直接当首页策划总原则。</div>
+        </article>
+
+        <article class="story">
+          <div class="kicker">Next Step</div>
+          <h2 class="headline small">下一步该做 AI 爆点首页方案</h2>
+          <div class="body.single"><p>最合适的下一步不是继续抽象讨论，而是直接出一版首页结构：hero 文案、情绪入口、能力模块、自证案例和视觉层级。那样你的网站才会从“项目列表”切到“势能入口”。</p></div>
+        </article>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div>Generated for: AI website positioning / emotional hooks / capability landing</div>
+      <div>Archive target: Documents/OpenClaw-Newspaper/general or VibeLife-related strategy</div>
+    </footer>
+  </main>
+</body>
+</html>

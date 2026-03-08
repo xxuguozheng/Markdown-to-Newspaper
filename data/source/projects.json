@@ -1,0 +1,101 @@
+{
+  "generatedAt": "2026-03-08T07:54:00+08:00",
+  "projects": [
+    {
+      "id": "byoc-openclaw-ui",
+      "slug": "BYOC-OpenClaw-UI",
+      "label": "BYOC × OpenClaw UI",
+      "description": "把 BYOC 相关日报、界面实验、交互提案集中到一个连续工作区里。",
+      "summary": "围绕“网站负责 UI / 协议层 / 分发层，OpenClaw 负责本地执行与 skill runtime”的方向展开调研与原型推进。",
+      "stage": "待补充",
+      "blockers": "外部参照系与 schema 收敛仍待继续整理。",
+      "next": "继续做协议收敛与页面级 PRD。",
+      "updatedAt": "2026-03-07T17:42:55+08:00",
+      "status": "active"
+    },
+    {
+      "id": "bio-ai-morning-brief",
+      "slug": "Bio-AI-Morning-Brief",
+      "label": "Bio × AI 晨报",
+      "description": "给想用 AI 玩 biology 的入门者做的连续晨报项目位，强调每日可读、讲人话、能继续上手。",
+      "summary": "给“想用 AI 玩 biology 的入门者”做的连续晨报项目位。",
+      "stage": "样刊入驻完成 / 项目位已接入门户",
+      "blockers": "尚未连到自动抓取或半自动编辑流。",
+      "next": "固定每日选题流程，再补来源卡片与刷新脚本。",
+      "updatedAt": "2026-03-08T12:02:41+08:00",
+      "status": "active"
+    },
+    {
+      "id": "vibelife",
+      "slug": "VibeLife",
+      "label": "VibeLife",
+      "description": "更适合承接 VibeLife 的定位、栏目、体验方案与后续版次沉淀。",
+      "summary": "VibeLife 是当前主推项目，正在从 Study-suit/FlowStudy 的学习母体向成人版人生/项目/行动中枢演化。",
+      "stage": "混合阶段 / 叙事与入口待收口",
+      "blockers": "新叙事与旧品牌残留并存。",
+      "next": "统一产品定义、默认入口与命名迁移策略。",
+      "updatedAt": "2026-03-08T07:32:00+08:00",
+      "status": "active"
+    },
+    {
+      "id": "idea-inbox",
+      "slug": "IDEA-INBOX",
+      "label": "IDEA INBOX",
+      "description": "收纳系统想法、结构草图与还没正式立项但值得保留的报纸页。",
+      "summary": "收纳系统想法、结构草图与还没正式立项但值得保留的报纸页。",
+      "stage": "待补充",
+      "blockers": "暂无明确阻塞记录",
+      "next": "继续按当前方向推进。",
+      "updatedAt": "2026-03-07T17:42:55+08:00",
+      "status": "active"
+    },
+    {
+      "id": "openclaw-newspaper-ui",
+      "slug": "OpenClaw-Newspaper-UI",
+      "label": "OpenClaw 报纸系统",
+      "description": "当前主工作区：持续推进报纸式界面、项目工作区结构与真实链路接入。",
+      "summary": "为 Staro 的每次输出生成一版报纸式页面，并逐步把它推进为主对话界面。",
+      "stage": "展示层 → 对话界面过渡阶段",
+      "blockers": "缺正式 publish contract 与主会话 hook / relay。",
+      "next": "先定最小 publish schema，再做 publish_to_newspaper 流水线。",
+      "updatedAt": "2026-03-08T17:08:28+08:00",
+      "status": "active"
+    },
+    {
+      "id": "zep",
+      "slug": "Zep",
+      "label": "Zep",
+      "description": "预留给 Zep 相关接入、验证与后续输出。",
+      "summary": "Zep 相关本地记忆接入与路线验证项目位。",
+      "stage": "部署验证完成，路线待决策",
+      "blockers": "需要在 CE / Cloud / Graphiti 间做明确取舍。",
+      "next": "优先做路线裁决，再谈接桥。",
+      "updatedAt": "2026-03-08T07:32:00+08:00",
+      "status": "active"
+    },
+    {
+      "id": "test-project-interface-2026-03-08",
+      "slug": "TEST-Project-Interface-2026-03-08",
+      "label": "TEST Project Interface 2026-03-08",
+      "description": "用于验证 create_project / update_project_meta 的最小测试项目。",
+      "summary": "测试项目已完成 update_project_meta 验证，说明最小元数据更新链路可用。",
+      "stage": "接口验证完成",
+      "blockers": "暂无；当前剩余工作主要是把 CLI/JSON 接口接进更高层运行时。",
+      "next": "如需产品化，可继续补真正的后台入口或主运行时调用面。",
+      "updatedAt": "2026-03-08T09:19:12+08:00",
+      "status": "active"
+    },
+    {
+      "id": "claweyes",
+      "slug": "ClawEyes",
+      "label": "ClawEyes / 虾眼",
+      "description": "由小龙虾代理持续供稿、系统自动聚类、比对、评估可信度，再生成可读情报流的 AI 时代信息网络。",
+      "summary": "把代理上报流变成事件对象、可信度辅助和可读情报页面，不是普通新闻站，而是代理驱动的信息网络。",
+      "stage": "概念立项 / MVP 产品定义中",
+      "blockers": "事件模型、可信度辅助模型、代理身份体系、最小上报接口都还待正式定义。",
+      "next": "先完成产品草案、对象模型和 MVP 页面结构，再决定网站原型技术路线。",
+      "updatedAt": "2026-03-08T13:37:55+08:00",
+      "status": "active"
+    }
+  ]
+}

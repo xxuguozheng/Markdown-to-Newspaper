@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IDEA INBOX — 鬼点子收件箱</title>
+  <style>
+    :root {
+      --paper: #f5f1e8;
+      --ink: #171717;
+      --muted: #666;
+      --rule: #1f1f1f;
+      --soft-rule: rgba(0,0,0,.18);
+      --accent: #7f1111;
+      --sans: "Inter", "PingFang SC", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif;
+      --serif: "Source Han Serif SC", "Songti SC", "STSong", serif;
+      --done: #1f6f43;
+      --now: #9a3412;
+      --project: #1d4ed8;
+      --queued: #7c3aed;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #ddd6c8;
+      color: var(--ink);
+      font-family: var(--serif);
+      line-height: 1.45;
+    }
+    .page {
+      max-width: 1320px;
+      margin: 20px auto;
+      background: var(--paper);
+      box-shadow: 0 12px 36px rgba(0,0,0,.18);
+      border: 1px solid rgba(0,0,0,.18);
+      padding: 18px 24px 26px;
+    }
+    .masthead {
+      border-bottom: 4px double var(--rule);
+      padding-bottom: 8px;
+      margin-bottom: 12px;
+    }
+    .topline {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      font: 10px/1.35 var(--sans);
+      letter-spacing: .09em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+    .title {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: end;
+      gap: 12px;
+    }
+    .title h1 {
+      margin: 0;
+      font-size: clamp(30px, 4vw, 52px);
+      line-height: .96;
+      letter-spacing: -.01em;
+      font-weight: 900;
+      font-family: var(--serif);
+    }
+    .edition {
+      text-align: right;
+      font: 10px/1.3 var(--sans);
+      color: var(--muted);
+    }
+    .strap {
+      margin-top: 6px;
+      font: 11px/1.35 var(--sans);
+      color: #222;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px 10px;
+    }
+    .strap span::before { content: "◆ "; color: var(--accent); }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 1.65fr 1.1fr;
+      gap: 22px;
+      align-items: start;
+    }
+    .left-col {
+      min-width: 0;
+      border-right: 1px solid var(--soft-rule);
+      padding-right: 18px;
+    }
+    .right-col {
+      min-width: 0;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+    .story {
+      border-top: 1px solid rgba(0,0,0,.72);
+      padding-top: 10px;
+      margin-bottom: 16px;
+    }
+    .story.lead { border-top: none; padding-top: 0; }
+    .kicker {
+      font: 10px/1.3 var(--sans);
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: .09em;
+      margin-bottom: 5px;
+      font-weight: 700;
+    }
+    .headline {
+      font-size: clamp(24px, 2.7vw, 42px);
+      line-height: .98;
+      margin: 0 0 8px;
+      font-weight: 900;
+    }
+    .headline.small {
+      font-size: 20px;
+      line-height: 1.08;
+    }
+    .dek {
+      font-size: 15px;
+      line-height: 1.42;
+      color: #222;
+      margin: 0 0 10px;
+    }
+    .meta {
+      font: 11px/1.45 var(--sans);
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+    .body {
+      column-count: 2;
+      column-gap: 18px;
+      font-size: 14.5px;
+      line-height: 1.58;
+      text-align: justify;
+      hyphens: auto;
+    }
+    .body.single { column-count: 1; }
+    .body p { margin: 0 0 10px; }
+
+    .panel {
+      border-top: 3px solid var(--rule);
+      padding-top: 8px;
+    }
+    .panel h3 {
+      margin: 0 0 8px;
+      font: 800 13px/1.3 var(--sans);
+      text-transform: uppercase;
+      letter-spacing: .07em;
+    }
+    .list {
+      margin: 0;
+      padding-left: 18px;
+      font-size: 12.5px;
+      line-height: 1.48;
+    }
+    .list li { margin-bottom: 6px; }
+
+    .stack {
+      display: grid;
+      gap: 10px;
+    }
+    .item {
+      border-left: 3px solid rgba(0,0,0,.65);
+      padding-left: 10px;
+      font-size: 12.5px;
+      line-height: 1.48;
+    }
+    .item .top {
+      display: flex;
+      gap: 6px;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 4px;
+      font-family: var(--sans);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      font-weight: 700;
+    }
+    .item .title {
+      display: block;
+      font-family: var(--serif);
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 1.25;
+      margin-bottom: 4px;
+    }
+    .item .next {
+      color: #222;
+    }
+    .item.done { border-left-color: var(--done); }
+    .item.now { border-left-color: var(--now); }
+    .item.project { border-left-color: var(--project); }
+    .item.queued { border-left-color: var(--queued); }
+
+    .quote {
+      font-size: 16px;
+      line-height: 1.32;
+      font-weight: 700;
+      padding: 9px 0;
+      border-top: 1px dashed rgba(0,0,0,.5);
+      border-bottom: 1px dashed rgba(0,0,0,.5);
+      margin: 8px 0 10px;
+    }
+    code {
+      font-family: "Iosevka", "JetBrains Mono", monospace;
+      font-size: .92em;
+      background: rgba(0,0,0,.05);
+      padding: 1px 4px;
+      border-radius: 4px;
+    }
+    .footer {
+      margin-top: 14px;
+      padding-top: 10px;
+      border-top: 3px double var(--rule);
+      font: 10px/1.5 var(--sans);
+      color: var(--muted);
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    @media (max-width: 1024px) {
+      .layout { grid-template-columns: 1fr; }
+      .left-col { border-right: none; padding-right: 0; }
+    }
+    @media (max-width: 760px) {
+      .page { margin: 0; min-height: 100vh; }
+      .body { column-count: 1; }
+      .title { grid-template-columns: 1fr; }
+      .edition { text-align: left; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="masthead">
+      <div class="topline">
+        <div>Staro Desk / Idea Inbox</div>
+        <div>Working Surface · 2026-03-07</div>
+      </div>
+      <div class="title">
+        <h1>鬼点子收件箱已经开始承接真实工作</h1>
+        <div class="edition">
+          第 2 版 / Working Surface<br>
+          时间：09:09 / Saturday / Asia-Shanghai
+        </div>
+      </div>
+      <div class="strap">
+        <span>左深读</span>
+        <span>右快扫</span>
+        <span>长队列进边栏</span>
+        <span>页面按内容重排</span>
+      </div>
+    </header>
+
+    <section class="layout">
+      <section class="left-col">
+        <article class="story lead">
+          <div class="kicker">Lead Story</div>
+          <h2 class="headline">这页现在更接近工作台，不再只是说明海报</h2>
+          <p class="dek">以后这类页面不能继续套死模板。真正值得深读的机制判断留在左侧，长队列、长状态、已完成项和未来增强项都往右侧快扫区走。页面形状应该跟内容走，而不是让内容反过来迁就模板。</p>
+          <div class="meta">当前入口：<code>IDEA_INBOX.md</code> · 当前数据源：<code>idea-inbox-data.json</code></div>
+          <div class="body">
+            <p>这套鬼点子承接机制现在已经不只是一个概念说明，而开始变成真的收件箱工作台。最大的变化不是又多了一些文件，而是今天已经发生的真实方向被正式写进 inbox，系统因此第一次有了“真实条目池”。这意味着后面你再抛新点子过来，它们不需要再重新找机制解释，而可以直接进入现成的入口、状态和分流流程。</p>
+            <p>如果这个页面以后要长期用，它就不能继续按一次性晨报的思路来排。说明型正文、当前判断、设计原则，这些值得深读，就应该留在左侧主阅读区；长队列、状态枚举、未来增强项、已经完成项，则应该更多进入右侧的快扫区。你刚才提的那个点很准：长而不断增长的东西，不该继续压在主栏里撑页面，而应该被更聪明地放到边栏、次级区或更轻的结构里。</p>
+            <p>所以这次重排的关键不是美术层面，而是阅读职责重分配。左边负责回答“这套机制现在到底到了哪一步，它真正解决了什么问题”；右边负责回答“现在箱子里有什么、哪些已经做完、哪些还在排队、接下来最值得补哪几刀”。这样页面就既能给你深读价值，也不会让快扫区被大段正文堵死。</p>
+            <p>再往下一步走，这页最合理的方向其实不是继续手写 HTML，而是让它变成一个会读 <code>idea-inbox-data.json</code> 的活页面。那时长队列就不只是能被放进右栏，而是能随着真实条目变化自动重排：越长的清单越应该自动挪进边栏、折叠区或次级层，而不是一直往左栏主正文里堆。</p>
+          </div>
+        </article>
+
+        <article class="story">
+          <div class="kicker">Deep Read</div>
+          <h2 class="headline small">这套机制现在真正解决的是不断线</h2>
+          <div class="body single">
+            <p>它解决的不是抽象的“任务管理”，而是你一冒新点子时，系统能不能立刻接住并给出落点。现在主会话已经被收紧为接、识别、归类、分流和汇报；子代理负责吃执行；项目文档负责吃复杂度；inbox 负责承接“现在不该做但绝不能丢”的灵感。这让系统不再只有“做 / 不做”两种状态，而有了更适合你工作方式的中间层。</p>
+          </div>
+        </article>
+      </section>
+
+      <aside class="right-col">
+        <section class="panel">
+          <h3>当前队列 / 快扫</h3>
+          <div class="stack">
+            <div class="item done">
+              <div class="top">idea-001 · done · p0</div>
+              <div class="title">鬼点子承接机制 / idea inbox 工作流</div>
+              <div class="next">下一步：已落成最小可运行版本</div>
+            </div>
+            <div class="item done">
+              <div class="top">idea-002 · done · p0</div>
+              <div class="title">报纸式长回复写法规则沉淀</div>
+              <div class="next">下一步：已固化到 skill 与记忆</div>
+            </div>
+            <div class="item done">
+              <div class="top">idea-003 · done · p0</div>
+              <div class="title">newspaper-editorial-layout skill 发布</div>
+              <div class="next">下一步：已发布到 GitHub</div>
+            </div>
+            <div class="item project">
+              <div class="top">idea-004 · project · p1</div>
+              <div class="title">OpenClaw Newspaper UI 默认化接入</div>
+              <div class="next">下一步：继续补主会话 relay / host hook</div>
+            </div>
+            <div class="item done">
+              <div class="top">idea-005 · done · p0</div>
+              <div class="title">CSGO_ITERATE_CHECK 源头清理</div>
+              <div class="next">下一步：已删除 cron</div>
+            </div>
+            <div class="item now">
+              <div class="top">idea-006 · now · p1</div>
+              <div class="title">IDEA_INBOX 报纸视图</div>
+              <div class="next">下一步：补结构化数据与持续更新入口</div>
+            </div>
+            <div class="item queued">
+              <div class="top">idea-007 · queued · p2</div>
+              <div class="title">parked 灵感定期捞起机制</div>
+              <div class="next">下一步：设计捞起触发条件</div>
+            </div>
+            <div class="item queued">
+              <div class="top">idea-008 · queued · p2</div>
+              <div class="title">delegated 点子自动挂接子代理 session</div>
+              <div class="next">下一步：设计点子→session 映射</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel">
+          <h3>状态枚举</h3>
+          <ul class="list">
+            <li><code>inbox</code>：刚进系统</li>
+            <li><code>now</code>：现在直接做</li>
+            <li><code>queued</code>：排队待办</li>
+            <li><code>project</code>：升级成项目</li>
+            <li><code>delegated</code>：已派子代理</li>
+            <li><code>parked</code>：灵感存档</li>
+            <li><code>done</code>：已完成</li>
+          </ul>
+        </section>
+
+        <section class="panel">
+          <h3>下一步增强</h3>
+          <ul class="list">
+            <li>让页面直接读取 <code>idea-inbox-data.json</code></li>
+            <li>给 inbox 做项目 / 优先级筛选</li>
+            <li>给 parked 灵感做定期捞起机制</li>
+            <li>给 delegated 点子自动挂接子代理 session</li>
+          </ul>
+        </section>
+
+        <section class="panel">
+          <h3>一句原则</h3>
+          <div class="quote">不是把所有鬼点子都立刻做掉，而是让所有鬼点子一进来就有地方去。</div>
+        </section>
+      </aside>
+    </section>
+
+    <footer class="footer">
+      <div>Source: <code>IDEA_INBOX.md</code> / <code>idea-inbox-data.json</code></div>
+      <div>关键词：idea inbox / queue / deep-read / quick-scan</div>
+    </footer>
+  </main>
+</body>
+</html>
