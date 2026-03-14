@@ -19,7 +19,7 @@ def project_id_from_slug(slug: str) -> str:
 
 def make_edition_id(project_id: str, date_hint: str, idx: int) -> str:
     compact = date_hint[:10].replace('-', '') if date_hint else 'unknown'
-    return f'edition_{project_id.replace('-', '_')}_{compact}_{idx:03d}'
+    return f"edition_{project_id.replace('-', '_')}_{compact}_{idx:03d}"
 
 
 def main() -> None:

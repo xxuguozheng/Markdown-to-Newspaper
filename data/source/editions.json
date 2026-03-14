@@ -2,232 +2,170 @@
   "generatedAt": "2026-03-08T07:54:00+08:00",
   "editions": [
     {
-      "id": "edition_claweyes_20260308_001",
+      "id": "edition_yunzhan_cps_qa_20260314_001",
+      "projectId": "yunzhan-cps-qa",
+      "projectSlug": "yunzhan-cps-qa",
+      "slug": "edition-01-business-model",
+      "title": "云瞻平台做什么业务？怎么赚钱？",
+      "rawTitle": "云瞻平台做什么业务？怎么赚钱？",
+      "summary": "深度解析云瞻开放平台的商业模式、盈利路径及同类平台对比",
+      "density": "longform",
+      "densityLabel": "长分析 / 方案稿",
+      "htmlUrl": "/projects/yunzhan-cps-qa/edition-01-business-model.html",
+      "publishedAt": "2026-03-14T10:00:00+08:00",
+      "updatedAt": "2026-03-14T10:00:00+08:00",
+      "size": 10000,
+      "tags": [
+        "商业模式",
+        "盈利方式"
+      ],
+      "source": {
+        "type": "manual",
+        "sessionId": "unknown",
+        "channel": "unknown"
+      }
+    },
+    {
+      "id": "edition_yunzhan_cps_qa_20260314_002",
+      "projectId": "yunzhan-cps-qa",
+      "projectSlug": "yunzhan-cps-qa",
+      "slug": "edition-02-why-disappeared",
+      "title": "早年优惠券号为什么消失？",
+      "rawTitle": "早年优惠券号为什么消失？",
+      "summary": "揭秘2015-2020年优惠券公众号/社群大规模消亡的深层原因",
+      "density": "longform",
+      "densityLabel": "长分析 / 方案稿",
+      "htmlUrl": "/projects/yunzhan-cps-qa/edition-02-why-disappeared.html",
+      "publishedAt": "2026-03-14T10:01:00+08:00",
+      "updatedAt": "2026-03-14T10:01:00+08:00",
+      "size": 10000,
+      "tags": [
+        "行业分析",
+        "历史演变"
+      ],
+      "source": {
+        "type": "manual",
+        "sessionId": "unknown",
+        "channel": "unknown"
+      }
+    },
+    {
+      "id": "edition_yunzhan_cps_qa_20260314_003",
+      "projectId": "yunzhan-cps-qa",
+      "projectSlug": "yunzhan-cps-qa",
+      "slug": "edition-03-self-test",
+      "title": "你适合做CPS副业吗？自测题",
+      "rawTitle": "你适合做CPS副业吗？自测题",
+      "summary": "8道自测题帮你评估资源禀赋，找到最适合的入局路径",
+      "density": "longform",
+      "densityLabel": "长分析 / 方案稿",
+      "htmlUrl": "/projects/yunzhan-cps-qa/edition-03-self-test.html",
+      "publishedAt": "2026-03-14T10:02:00+08:00",
+      "updatedAt": "2026-03-14T10:02:00+08:00",
+      "size": 10000,
+      "tags": [
+        "自测评估",
+        "入门指南"
+      ],
+      "source": {
+        "type": "manual",
+        "sessionId": "unknown",
+        "channel": "unknown"
+      }
+    },
+    {
+      "id": "edition_yunzhan_cps_qa_20260314_004",
+      "projectId": "yunzhan-cps-qa",
+      "projectSlug": "yunzhan-cps-qa",
+      "slug": "edition-04-route-evaluation",
+      "title": "根据自测答案，给出评估与路线",
+      "rawTitle": "根据自测答案，给出评估与路线",
+      "summary": "基于自测结果的完整画像分析与30天执行路线图",
+      "density": "longform",
+      "densityLabel": "长分析 / 方案稿",
+      "htmlUrl": "/projects/yunzhan-cps-qa/edition-04-route-evaluation.html",
+      "publishedAt": "2026-03-14T10:03:00+08:00",
+      "updatedAt": "2026-03-14T10:03:00+08:00",
+      "size": 10000,
+      "tags": [
+        "路线规划",
+        "执行指南"
+      ],
+      "source": {
+        "type": "manual",
+        "sessionId": "unknown",
+        "channel": "unknown"
+      }
+    },
+    {
+      "id": "edition_yunzhan_cps_qa_20260314_005",
+      "projectId": "yunzhan-cps-qa",
+      "projectSlug": "yunzhan-cps-qa",
+      "slug": "edition-05-how-it-grows",
+      "title": "云瞻平台是怎么做起来的？",
+      "rawTitle": "云瞻平台是怎么做起来的？",
+      "summary": "从自营淘客到开放平台的十年进化史，揭秘商业模式突围之路",
+      "density": "longform",
+      "densityLabel": "长分析 / 方案稿",
+      "htmlUrl": "/projects/yunzhan-cps-qa/edition-05-how-it-grows.html",
+      "publishedAt": "2026-03-14T10:04:00+08:00",
+      "updatedAt": "2026-03-14T10:04:00+08:00",
+      "size": 10000,
+      "tags": [
+        "平台历史",
+        "发展历程"
+      ],
+      "source": {
+        "type": "manual",
+        "sessionId": "unknown",
+        "channel": "unknown"
+      }
+    },
+    {
+      "id": "edition_yunzhan_cps_qa_20260314_006",
+      "projectId": "yunzhan-cps-qa",
+      "projectSlug": "yunzhan-cps-qa",
+      "slug": "edition-06-platform-comparison",
+      "title": "云瞻与同类平台对比，我最适合哪个？",
+      "rawTitle": "云瞻与同类平台对比，我最适合哪个？",
+      "summary": "全面对比6大主流CPS平台，基于你的资源画像给出最优选择建议",
+      "density": "longform",
+      "densityLabel": "长分析 / 方案稿",
+      "htmlUrl": "/projects/yunzhan-cps-qa/edition-06-platform-comparison.html",
+      "publishedAt": "2026-03-14T10:05:00+08:00",
+      "updatedAt": "2026-03-14T10:05:00+08:00",
+      "size": 10000,
+      "tags": [
+        "平台对比",
+        "选择指南"
+      ],
+      "source": {
+        "type": "manual",
+        "sessionId": "unknown",
+        "channel": "unknown"
+      }
+    },
+    {
+      "id": "edition_claweyes_20260313_002",
       "projectId": "claweyes",
       "projectSlug": "ClawEyes",
-      "slug": "claweyes-虾眼-产品草案-v1",
-      "title": "ClawEyes / 虾眼：产品草案 v1",
-      "rawTitle": "claweyes-虾眼-产品草案-v1",
-      "summary": "把 ClawEyes 定义成由小龙虾代理持续供稿、自动聚类和可信度辅助的情报网络，并在第二阶段长出分身访问与收益系统。",
-      "density": "frontpage",
-      "densityLabel": "头版 / 项目总况",
-      "htmlUrl": "/projects/ClawEyes/claweyes-虾眼-产品草案-v1.html",
-      "publishedAt": "2026-03-08T13:37:55+08:00",
-      "updatedAt": "2026-03-08T13:37:55+08:00",
-      "size": 1382,
+      "slug": "示例报纸",
+      "title": "示例报纸",
+      "rawTitle": "示例报纸",
+      "summary": "这是一个示例报纸",
+      "density": "detailed",
+      "densityLabel": "快报 / 小更新",
+      "htmlUrl": "/projects/ClawEyes/示例报纸.html",
+      "publishedAt": "2026-03-13T21:16:39+08:00",
+      "updatedAt": "2026-03-13T21:16:39+08:00",
+      "size": 1110,
       "tags": [
-        "claweyes",
-        "product",
-        "agent",
-        "marketplace",
-        "intelligence"
+        "示例",
+        "测试"
       ],
       "source": {
-        "sessionId": "public-demo",
-        "channel": "demo"
-      }
-    },
-    {
-      "id": "edition_bio_ai_morning_brief_20260308_003",
-      "projectId": "bio-ai-morning-brief",
-      "projectSlug": "Bio-AI-Morning-Brief",
-      "slug": "bio-ai-晨报-人物雷达版",
-      "title": "Bio × AI 晨报：人物雷达版",
-      "rawTitle": "bio-ai-晨报-人物雷达版",
-      "summary": "先把 Bio × AI 里最值得长期盯的人物和机构框出来：药物、蛋白、基因编辑、平台化研究各有谁在带方向。",
-      "density": "longform",
-      "densityLabel": "长分析 / 方案稿",
-      "htmlUrl": "/projects/Bio-AI-Morning-Brief/bio-ai-晨报-人物雷达版.html",
-      "publishedAt": "2026-03-08T12:02:41+08:00",
-      "updatedAt": "2026-03-08T12:02:41+08:00",
-      "size": 1380,
-      "tags": [
-        "bio",
-        "ai",
-        "people",
-        "radar",
-        "morning-brief"
-      ],
-      "source": {
-        "sessionId": "public-demo",
-        "channel": "demo"
-      }
-    },
-    {
-      "id": "edition_bio_ai_morning_brief_20260308_002",
-      "projectId": "bio-ai-morning-brief",
-      "projectSlug": "Bio-AI-Morning-Brief",
-      "slug": "bio-ai-晨报-2026-03-08",
-      "title": "Bio × AI 晨报：2026-03-08",
-      "rawTitle": "bio-ai-晨报-2026-03-08",
-      "summary": "今天先不追求外部新闻洪流，先把 Bio × AI 这条线的方向压清：从样刊走向可持续晨报，关键不是再堆一版页面，而是建立稳定的选题流、栏目模板、来源结构和出刊节奏。",
-      "density": "longform",
-      "densityLabel": "长分析 / 方案稿",
-      "htmlUrl": "/projects/Bio-AI-Morning-Brief/bio-ai-晨报-2026-03-08.html",
-      "publishedAt": "2026-03-08T11:20:18+08:00",
-      "updatedAt": "2026-03-08T11:20:18+08:00",
-      "size": 3153,
-      "tags": [
-        "bio",
-        "ai",
-        "morning-brief",
-        "strategy",
-        "editorial"
-      ],
-      "source": {
-        "sessionId": "public-demo",
-        "channel": "demo"
-      }
-    },
-    {
-      "id": "edition_openclaw_newspaper_ui_20260308_009",
-      "projectId": "openclaw-newspaper-ui",
-      "projectSlug": "OpenClaw-Newspaper-UI",
-      "slug": "报纸系统接口现状-项目创建与数据输入",
-      "title": "报纸系统接口现状：项目创建与数据输入",
-      "rawTitle": "报纸系统接口现状-项目创建与数据输入",
-      "summary": "回答当前报纸系统有没有完整的新建项目和输入数据接口：结论是发布链已经可用，但“完整项目创建 UI/API”还没有真正做完；现在更像是有数据层、发布接口和渲染链，而缺一个正式的项目管理入口。",
-      "density": "longform",
-      "densityLabel": "长分析 / 方案稿",
-      "htmlUrl": "/projects/OpenClaw-Newspaper-UI/报纸系统接口现状-项目创建与数据输入.html",
-      "publishedAt": "2026-03-08T09:10:58+08:00",
-      "updatedAt": "2026-03-08T09:10:58+08:00",
-      "size": 3726,
-      "tags": [
-        "newspaper",
-        "status",
-        "interface",
-        "project",
-        "publish"
-      ],
-      "source": {
-        "sessionId": "public-demo",
-        "channel": "demo"
-      }
-    },
-    {
-      "id": "edition_openclaw_newspaper_ui_20260308_008",
-      "projectId": "openclaw-newspaper-ui",
-      "projectSlug": "OpenClaw-Newspaper-UI",
-      "slug": "重要长输出自动进报纸的最小接线方案",
-      "title": "重要长输出自动进报纸的最小接线方案",
-      "rawTitle": "重要长输出自动进报纸的最小接线方案",
-      "summary": "把主代理 finalize 产出的重要长回答，经一层 runtime helper 判定后，命中则发布到报纸并把摘要加链接回到聊天。",
-      "density": "longform",
-      "densityLabel": "长分析 / 方案稿",
-      "htmlUrl": "/projects/OpenClaw-Newspaper-UI/重要长输出自动进报纸的最小接线方案.html",
-      "publishedAt": "2026-03-08T09:07:24+08:00",
-      "updatedAt": "2026-03-08T09:07:24+08:00",
-      "size": 1600,
-      "tags": [
-        "runtime",
-        "default-output",
-        "plan"
-      ],
-      "source": {
-        "sessionId": "public-demo",
-        "channel": "demo",
-        "role": "main-agent"
-      }
-    },
-    {
-      "id": "edition_openclaw_newspaper_ui_20260308_007",
-      "projectId": "openclaw-newspaper-ui",
-      "projectSlug": "OpenClaw-Newspaper-UI",
-      "slug": "项目总况更新版",
-      "title": "项目总况更新版",
-      "rawTitle": "项目总况更新版",
-      "summary": "把上午新增推进压成更新版头版：报纸完整发布链已实测通过，VibeLife 与 Resomate 进入可执行阶段，Zep 主路定为 Graphiti 直连，本地语音层与批量 SaaS 母框架也都有了现实主路线。",
-      "density": "longform",
-      "densityLabel": "长分析 / 方案稿",
-      "htmlUrl": "/projects/OpenClaw-Newspaper-UI/项目总况更新版.html",
-      "publishedAt": "2026-03-08T08:33:57+08:00",
-      "updatedAt": "2026-03-08T08:33:57+08:00",
-      "size": 2005,
-      "tags": [
-        "status",
-        "update",
-        "newspaper",
-        "voice",
-        "saas"
-      ],
-      "source": {
-        "sessionId": "public-demo",
-        "channel": "demo"
-      }
-    },
-    {
-      "id": "edition_openclaw_newspaper_ui_20260308_006",
-      "projectId": "openclaw-newspaper-ui",
-      "projectSlug": "OpenClaw-Newspaper-UI",
-      "slug": "默认输出实测-完整发布链验证",
-      "title": "默认输出实测：完整发布链验证",
-      "rawTitle": "默认输出实测-完整发布链验证",
-      "summary": "用当前对话真实内容验证 OpenClaw Newspaper 第一阶段完整流程：准备内容、经 bridge 构造 PublishRequest、调用 publish 流水线、刷新项目页与门户索引，并回给用户可打开的位置。",
-      "density": "longform",
-      "densityLabel": "长分析 / 方案稿",
-      "htmlUrl": "/projects/OpenClaw-Newspaper-UI/默认输出实测-完整发布链验证.html",
-      "publishedAt": "2026-03-08T08:28:28+08:00",
-      "updatedAt": "2026-03-08T08:28:28+08:00",
-      "size": 2600,
-      "tags": [
-        "test",
-        "publish",
-        "bridge",
-        "default-output",
-        "verification"
-      ],
-      "source": {
-        "sessionId": "public-demo",
-        "channel": "demo"
-      }
-    },
-    {
-      "id": "edition_openclaw_newspaper_ui_20260308_005",
-      "projectId": "openclaw-newspaper-ui",
-      "projectSlug": "OpenClaw-Newspaper-UI",
-      "slug": "默认输出落报纸示例",
-      "title": "默认输出落报纸示例",
-      "rawTitle": "默认输出落报纸示例",
-      "summary": "演示如何把一次长输出转成 PublishRequest 并交给最小发布入口。",
-      "density": "longform",
-      "densityLabel": "长分析 / 方案稿",
-      "htmlUrl": "/projects/OpenClaw-Newspaper-UI/默认输出落报纸示例.html",
-      "publishedAt": "2026-03-08T08:08:21+08:00",
-      "updatedAt": "2026-03-08T08:08:21+08:00",
-      "size": 1349,
-      "tags": [
-        "demo",
-        "bridge",
-        "publish"
-      ],
-      "source": {
-        "sessionId": "public-demo",
-        "channel": "demo"
-      }
-    },
-    {
-      "id": "edition_openclaw_newspaper_ui_20260308_004",
-      "projectId": "openclaw-newspaper-ui",
-      "projectSlug": "OpenClaw-Newspaper-UI",
-      "slug": "默认输出落报纸示例",
-      "title": "默认输出落报纸示例",
-      "rawTitle": "默认输出落报纸示例",
-      "summary": "演示如何把一次长输出转成 PublishRequest 并交给最小发布入口。",
-      "density": "longform",
-      "densityLabel": "长分析 / 方案稿",
-      "htmlUrl": "/projects/OpenClaw-Newspaper-UI/默认输出落报纸示例.html",
-      "publishedAt": "2026-03-08T08:03:04+08:00",
-      "updatedAt": "2026-03-08T08:03:04+08:00",
-      "size": 1349,
-      "tags": [
-        "demo",
-        "bridge",
-        "publish"
-      ],
-      "source": {
-        "sessionId": "public-demo",
-        "channel": "demo"
+        "sessionId": "test-session",
+        "channel": "test-channel"
       }
     },
     {
@@ -244,19 +182,57 @@
       "publishedAt": "2026-03-07T17:42:55+08:00",
       "updatedAt": "2026-03-07T17:42:55+08:00",
       "size": 11937,
-      "tags": [
-        "byoc",
-        "ui",
-        "brief"
-      ],
+      "tags": [],
       "source": {
         "type": "manual",
-        "sessionId": "public-demo",
+        "sessionId": "unknown",
         "channel": "unknown"
       }
     },
     {
-      "id": "edition_bio_ai_morning_brief_20260307_001",
+      "id": "edition_bio_ai_morning_brief_20260308_001",
+      "projectId": "bio-ai-morning-brief",
+      "projectSlug": "Bio-AI-Morning-Brief",
+      "slug": "bio-ai-晨报-人物雷达版",
+      "title": "Bio × AI 晨报：人物雷达版",
+      "rawTitle": "bio-ai-晨报-人物雷达版",
+      "summary": "先把 Bio × AI 里最值得长期盯的人物和机构框出来：药物、蛋白、基因编辑、平台化研究各有谁在带方向。",
+      "density": "longform",
+      "densityLabel": "长分析 / 方案稿",
+      "htmlUrl": "/projects/Bio-AI-Morning-Brief/bio-ai-晨报-人物雷达版.html",
+      "publishedAt": "2026-03-08T12:02:41+08:00",
+      "updatedAt": "2026-03-08T12:02:41+08:00",
+      "size": 1380,
+      "tags": [],
+      "source": {
+        "type": "manual",
+        "sessionId": "unknown",
+        "channel": "unknown"
+      }
+    },
+    {
+      "id": "edition_bio_ai_morning_brief_20260308_002",
+      "projectId": "bio-ai-morning-brief",
+      "projectSlug": "Bio-AI-Morning-Brief",
+      "slug": "bio-ai-晨报-2026-03-08",
+      "title": "Bio × AI 晨报：2026-03-08",
+      "rawTitle": "bio-ai-晨报-2026-03-08",
+      "summary": "今天先不追求外部新闻洪流，先把 Bio × AI 这条线的方向压清：从样刊走向可持续晨报，关键不是再堆一版页面，而是建立稳定的选题流、栏目模板、来源结构和出刊节奏。",
+      "density": "longform",
+      "densityLabel": "长分析 / 方案稿",
+      "htmlUrl": "/projects/Bio-AI-Morning-Brief/bio-ai-晨报-2026-03-08.html",
+      "publishedAt": "2026-03-08T11:20:18+08:00",
+      "updatedAt": "2026-03-08T11:20:18+08:00",
+      "size": 3153,
+      "tags": [],
+      "source": {
+        "type": "manual",
+        "sessionId": "unknown",
+        "channel": "unknown"
+      }
+    },
+    {
+      "id": "edition_bio_ai_morning_brief_20260307_003",
       "projectId": "bio-ai-morning-brief",
       "projectSlug": "Bio-AI-Morning-Brief",
       "slug": "bio-ai-morning-brief-2026-03-07",
@@ -269,14 +245,10 @@
       "publishedAt": "2026-03-07T23:45:00+08:00",
       "updatedAt": "2026-03-07T23:45:00+08:00",
       "size": 16596,
-      "tags": [
-        "bio",
-        "ai",
-        "morning-brief"
-      ],
+      "tags": [],
       "source": {
         "type": "manual",
-        "sessionId": "public-demo",
+        "sessionId": "unknown",
         "channel": "unknown"
       }
     },
@@ -294,14 +266,10 @@
       "publishedAt": "2026-03-07T17:42:55+08:00",
       "updatedAt": "2026-03-07T17:42:55+08:00",
       "size": 10860,
-      "tags": [
-        "vibelife",
-        "strategy",
-        "landing-page"
-      ],
+      "tags": [],
       "source": {
         "type": "manual",
-        "sessionId": "public-demo",
+        "sessionId": "unknown",
         "channel": "unknown"
       }
     },
@@ -319,19 +287,141 @@
       "publishedAt": "2026-03-07T17:42:55+08:00",
       "updatedAt": "2026-03-07T17:42:55+08:00",
       "size": 13279,
-      "tags": [
-        "ideas",
-        "inbox",
-        "brief"
-      ],
+      "tags": [],
       "source": {
         "type": "manual",
-        "sessionId": "public-demo",
+        "sessionId": "unknown",
         "channel": "unknown"
       }
     },
     {
       "id": "edition_openclaw_newspaper_ui_20260308_001",
+      "projectId": "openclaw-newspaper-ui",
+      "projectSlug": "OpenClaw-Newspaper-UI",
+      "slug": "报纸系统接口现状-项目创建与数据输入",
+      "title": "报纸系统接口现状：项目创建与数据输入",
+      "rawTitle": "报纸系统接口现状-项目创建与数据输入",
+      "summary": "回答当前报纸系统有没有完整的新建项目和输入数据接口：结论是发布链已经可用，但“完整项目创建 UI/API”还没有真正做完；现在更像是有数据层、发布接口和渲染链，而缺一个正式的项目管理入口。",
+      "density": "longform",
+      "densityLabel": "长分析 / 方案稿",
+      "htmlUrl": "/projects/OpenClaw-Newspaper-UI/报纸系统接口现状-项目创建与数据输入.html",
+      "publishedAt": "2026-03-08T09:10:58+08:00",
+      "updatedAt": "2026-03-08T09:10:58+08:00",
+      "size": 3726,
+      "tags": [],
+      "source": {
+        "type": "manual",
+        "sessionId": "unknown",
+        "channel": "unknown"
+      }
+    },
+    {
+      "id": "edition_openclaw_newspaper_ui_20260308_002",
+      "projectId": "openclaw-newspaper-ui",
+      "projectSlug": "OpenClaw-Newspaper-UI",
+      "slug": "重要长输出自动进报纸的最小接线方案",
+      "title": "重要长输出自动进报纸的最小接线方案",
+      "rawTitle": "重要长输出自动进报纸的最小接线方案",
+      "summary": "把主代理 finalize 产出的重要长回答，经一层 runtime helper 判定后，命中则发布到报纸并把摘要加链接回到聊天。",
+      "density": "longform",
+      "densityLabel": "长分析 / 方案稿",
+      "htmlUrl": "/projects/OpenClaw-Newspaper-UI/重要长输出自动进报纸的最小接线方案.html",
+      "publishedAt": "2026-03-08T09:07:24+08:00",
+      "updatedAt": "2026-03-08T09:07:24+08:00",
+      "size": 1600,
+      "tags": [],
+      "source": {
+        "type": "manual",
+        "sessionId": "unknown",
+        "channel": "unknown"
+      }
+    },
+    {
+      "id": "edition_openclaw_newspaper_ui_20260308_003",
+      "projectId": "openclaw-newspaper-ui",
+      "projectSlug": "OpenClaw-Newspaper-UI",
+      "slug": "项目总况更新版",
+      "title": "项目总况更新版",
+      "rawTitle": "项目总况更新版",
+      "summary": "把上午新增推进压成更新版头版：报纸完整发布链已实测通过，VibeLife 与 Resomate 进入可执行阶段，Zep 主路定为 Graphiti 直连，本地语音层与批量 SaaS 母框架也都有了现实主路线。",
+      "density": "longform",
+      "densityLabel": "长分析 / 方案稿",
+      "htmlUrl": "/projects/OpenClaw-Newspaper-UI/项目总况更新版.html",
+      "publishedAt": "2026-03-08T08:33:57+08:00",
+      "updatedAt": "2026-03-08T08:33:57+08:00",
+      "size": 2005,
+      "tags": [],
+      "source": {
+        "type": "manual",
+        "sessionId": "unknown",
+        "channel": "unknown"
+      }
+    },
+    {
+      "id": "edition_openclaw_newspaper_ui_20260308_004",
+      "projectId": "openclaw-newspaper-ui",
+      "projectSlug": "OpenClaw-Newspaper-UI",
+      "slug": "默认输出实测-完整发布链验证",
+      "title": "默认输出实测：完整发布链验证",
+      "rawTitle": "默认输出实测-完整发布链验证",
+      "summary": "用当前对话真实内容验证 OpenClaw Newspaper 第一阶段完整流程：准备内容、经 bridge 构造 PublishRequest、调用 publish 流水线、刷新项目页与门户索引，并回给用户可打开的位置。",
+      "density": "longform",
+      "densityLabel": "长分析 / 方案稿",
+      "htmlUrl": "/projects/OpenClaw-Newspaper-UI/默认输出实测-完整发布链验证.html",
+      "publishedAt": "2026-03-08T08:28:28+08:00",
+      "updatedAt": "2026-03-08T08:28:28+08:00",
+      "size": 2600,
+      "tags": [],
+      "source": {
+        "type": "manual",
+        "sessionId": "unknown",
+        "channel": "unknown"
+      }
+    },
+    {
+      "id": "edition_openclaw_newspaper_ui_20260308_005",
+      "projectId": "openclaw-newspaper-ui",
+      "projectSlug": "OpenClaw-Newspaper-UI",
+      "slug": "默认输出落报纸示例",
+      "title": "默认输出落报纸示例",
+      "rawTitle": "默认输出落报纸示例",
+      "summary": "演示如何把一次长输出转成 PublishRequest 并交给最小发布入口。",
+      "density": "longform",
+      "densityLabel": "长分析 / 方案稿",
+      "htmlUrl": "/projects/OpenClaw-Newspaper-UI/默认输出落报纸示例.html",
+      "publishedAt": "2026-03-08T08:08:21+08:00",
+      "updatedAt": "2026-03-08T08:08:21+08:00",
+      "size": 1349,
+      "tags": [],
+      "source": {
+        "type": "manual",
+        "sessionId": "unknown",
+        "channel": "unknown"
+      }
+    },
+    {
+      "id": "edition_openclaw_newspaper_ui_20260308_006",
+      "projectId": "openclaw-newspaper-ui",
+      "projectSlug": "OpenClaw-Newspaper-UI",
+      "slug": "默认输出落报纸示例",
+      "title": "默认输出落报纸示例",
+      "rawTitle": "默认输出落报纸示例",
+      "summary": "演示如何把一次长输出转成 PublishRequest 并交给最小发布入口。",
+      "density": "longform",
+      "densityLabel": "长分析 / 方案稿",
+      "htmlUrl": "/projects/OpenClaw-Newspaper-UI/默认输出落报纸示例.html",
+      "publishedAt": "2026-03-08T08:03:04+08:00",
+      "updatedAt": "2026-03-08T08:03:04+08:00",
+      "size": 1349,
+      "tags": [],
+      "source": {
+        "type": "manual",
+        "sessionId": "unknown",
+        "channel": "unknown"
+      }
+    },
+    {
+      "id": "edition_openclaw_newspaper_ui_20260308_007",
       "projectId": "openclaw-newspaper-ui",
       "projectSlug": "OpenClaw-Newspaper-UI",
       "slug": "project-status-frontpage-2026-03-08",
@@ -344,19 +434,15 @@
       "publishedAt": "2026-03-08T07:38:00+08:00",
       "updatedAt": "2026-03-08T07:38:00+08:00",
       "size": 10771,
-      "tags": [
-        "status",
-        "frontpage",
-        "project-edition"
-      ],
+      "tags": [],
       "source": {
         "type": "manual",
-        "sessionId": "public-demo",
-        "channel": "demo"
+        "sessionId": "unknown",
+        "channel": "unknown"
       }
     },
     {
-      "id": "edition_openclaw_newspaper_ui_20260307_002",
+      "id": "edition_openclaw_newspaper_ui_20260307_008",
       "projectId": "openclaw-newspaper-ui",
       "projectSlug": "OpenClaw-Newspaper-UI",
       "slug": "reply-style-newspaper-principles-v2-2026-03-07",
@@ -369,15 +455,32 @@
       "publishedAt": "2026-03-07T17:42:55+08:00",
       "updatedAt": "2026-03-07T17:42:55+08:00",
       "size": 11981,
-      "tags": [
-        "style",
-        "editorial",
-        "method"
-      ],
+      "tags": [],
       "source": {
         "type": "manual",
-        "sessionId": "public-demo",
-        "channel": "demo"
+        "sessionId": "unknown",
+        "channel": "unknown"
+      }
+    },
+    {
+      "id": "edition_claweyes_20260308_001",
+      "projectId": "claweyes",
+      "projectSlug": "ClawEyes",
+      "slug": "claweyes-虾眼-产品草案-v1",
+      "title": "ClawEyes / 虾眼：产品草案 v1",
+      "rawTitle": "claweyes-虾眼-产品草案-v1",
+      "summary": "把 ClawEyes 定义成由小龙虾代理持续供稿、自动聚类和可信度辅助的情报网络，并在第二阶段长出分身访问与收益系统。",
+      "density": "frontpage",
+      "densityLabel": "头版 / 项目总况",
+      "htmlUrl": "/projects/ClawEyes/claweyes-虾眼-产品草案-v1.html",
+      "publishedAt": "2026-03-08T13:37:55+08:00",
+      "updatedAt": "2026-03-08T13:37:55+08:00",
+      "size": 1382,
+      "tags": [],
+      "source": {
+        "type": "manual",
+        "sessionId": "unknown",
+        "channel": "unknown"
       }
     }
   ]

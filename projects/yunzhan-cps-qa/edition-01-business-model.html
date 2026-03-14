@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>云瞻开放平台知识问答 · 第01版</title>
+  <style>
+    :root { --paper:#f5f1e8; --ink:#171717; --muted:#665f54; --rule:#1d1d1d; --accent:#0d5b52; --accent-2:#7f1111; --sans:"Inter","PingFang SC","Noto Sans CJK SC","Microsoft YaHei",sans-serif; --serif:"Source Han Serif SC","Songti SC","STSong",serif; }
+    *{box-sizing:border-box} body{margin:0;background:#ddd6c8;color:var(--ink);font-family:var(--serif);line-height:1.45}
+    .page{max-width:1320px;margin:24px auto;background:var(--paper);box-shadow:0 12px 36px rgba(0,0,0,.18);border:1px solid rgba(0,0,0,.16);padding:18px 24px 30px}
+    .masthead{border-bottom:4px double var(--rule);padding-bottom:10px;margin-bottom:14px}
+    .topline{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font:10px/1.35 var(--sans);letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin-bottom:7px}
+    .title{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:end;gap:16px}.title h1{margin:0;font-size:clamp(30px,4.2vw,58px);line-height:.95;font-weight:900;letter-spacing:-.02em;text-transform:uppercase}.edition{font:10px/1.3 var(--sans);text-align:right;color:var(--muted)}
+    .strap{margin-top:8px;display:flex;flex-wrap:wrap;gap:6px 12px;font:11px/1.4 var(--sans);color:#25201b}.strap span::before{content:"◆ ";color:var(--accent)}
+    .lead-banner{display:grid;grid-template-columns:1.55fr .9fr;gap:18px;border-bottom:1px solid rgba(0,0,0,.78);padding-bottom:14px;margin-bottom:16px}.lead-banner h2{margin:0 0 8px;font-size:clamp(28px,3vw,44px);line-height:1.02}.lead-banner p{margin:0;font-size:15px;line-height:1.55}
+    .summary-card{background:rgba(255,255,255,.45);border-left:4px solid var(--accent);padding:12px 13px}.summary-card small{display:block;font:10px/1.35 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:5px}.summary-card b{display:block;font:800 16px/1.35 var(--sans);margin-bottom:6px}.summary-card p{font:13px/1.65 var(--sans);color:#2b251f}
+    .grid{display:grid;grid-template-columns:1.42fr 1fr 1fr;gap:18px}.story{border-top:1px solid rgba(0,0,0,.72);padding-top:10px;margin-bottom:16px}.story.lead{border-top:none;padding-top:0}
+    .kicker{font:10px/1.3 var(--sans);text-transform:uppercase;letter-spacing:.1em;color:var(--accent-2);font-weight:800;margin-bottom:5px}.headline{margin:0 0 7px;font-size:clamp(24px,2.5vw,38px);line-height:1.02;font-weight:900}.headline.small{font-size:23px;line-height:1.08}.dek{margin:0 0 10px;font-size:15px;line-height:1.45;color:#25201b}.meta{margin-bottom:10px;font:11px/1.45 var(--sans);color:var(--muted)}
+    .body{font-size:14.5px;line-height:1.58;text-align:justify;column-count:2;column-gap:18px}.body.single{column-count:1}.body p{margin:0 0 10px}
+    .briefs{display:grid;gap:10px}.brief{border-left:3px solid var(--rule);padding-left:10px;font-size:12.5px;line-height:1.52}.brief b{display:block;font:700 11px/1.3 var(--sans);letter-spacing:.06em;text-transform:uppercase;margin-bottom:4px}
+    .box{border:1px solid rgba(0,0,0,.75);background:rgba(255,255,255,.28);padding:10px 11px;margin-bottom:16px}.box h3{margin:0 0 8px;font:800 13px/1.35 var(--sans);text-transform:uppercase;letter-spacing:.07em}
+    .list{margin:0;padding-left:18px;font-size:12.5px;line-height:1.5}.list li{margin-bottom:6px}.quote{font-size:16px;line-height:1.32;font-weight:700;padding:10px 0;border-top:1px dashed rgba(0,0,0,.5);border-bottom:1px dashed rgba(0,0,0,.5);margin:10px 0}.tag{display:inline-block;padding:1px 6px;border:1px solid rgba(0,0,0,.6);font:10px/1.35 var(--sans);margin:0 5px 5px 0}
+    .footer{margin-top:16px;padding-top:10px;border-top:3px double var(--rule);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font:10px/1.5 var(--sans);color:var(--muted)}
+    @media (max-width:1024px){.grid{grid-template-columns:1.35fr 1fr}.grid>.col:last-child{grid-column:1/-1}.lead-banner{grid-template-columns:1fr}} @media (max-width:760px){.page{margin:0;min-height:100vh}.title{grid-template-columns:1fr}.edition{text-align:left}.grid{grid-template-columns:1fr}.body{column-count:1}}
+  </style>
+</head>
+<body>
+  <main class="page">
+
+    <header class="masthead">
+      <div class="topline">
+        <span>OpenClaw Newspaper</span>
+        <span>云瞻开放平台知识问答 · 第01版</span>
+        <span>2026-03-14</span>
+      </div>
+      <div class="title">
+        <h1>云瞻开放平台知识问答</h1>
+        <div class="edition">第01版</div>
+      </div>
+      <div class="strap">
+        <span>深度解析</span>
+        <span>专业分析</span>
+        <span>实用指南</span>
+      </div>
+    </header>
+
+    <section class="lead-banner">
+      <div>
+        <div class="kicker">Front Page</div>
+        <h2>云瞻平台做什么业务？怎么赚钱？</h2>
+        <p>深度解析云瞻开放平台的商业模式、盈利路径及同类平台对比</p>
+      </div>
+      <aside class="summary-card">
+        <small>本期摘要</small>
+        <b>核心内容概览</b>
+        <p>本版包含深度分析、专业见解和实用指南，为您提供全面的信息。</p>
+      </aside>
+    </section>
+    <section class="grid">
+      <div class="col">
+        <article class="story lead">
+          <div class="body">
+<div class="kicker">快扫栏 · Radar Rail</div>
+<h2 class="headline">云瞻平台做什么业务？怎么赚钱？</h2>
+<p class="dek">深度解析云瞻开放平台的商业模式、盈利路径及同类平台对比</p>
+<div class="meta">平台对比 · 快速了解</div>
+<h3>三种赚钱方式</h3>
+<h3>个人CPS推广</h3>
+<h3>代理/团队模式</h3>
+<h3>私域矩阵变现</h3>
+<h3>同类平台对比</h3>
+<p>云瞻开放平台是私域CPS变现SaaS工具，聚合外卖、电商、本地生活、出行、快递、影音会员等CPS资源，提供零代码私域工具、代理分佣、营销数据等服务。</p>
+<div class="box"><h3>核心优势</h3><p>零技术门槛 + 全场景CPS聚合 + 私域工具化</p></div>
+          </div>
+        </article>
+      </div>
+      <div class="col">
+        <article class="story">
+<div class="kicker">朋友版 · What To Watch</div>
+<h2 class="headline small">快速指南</h2>
+<p class="dek">实用的操作建议和注意事项</p>
+<div class="briefs">
+<div class="brief"><b>要点</b>生成专属推广链接/海报</div>
+<div class="brief"><b>要点</b>分享到朋友圈、社群、私信</div>
+<div class="brief"><b>要点</b>用户通过链接消费，获得佣金分成</div>
+<div class="brief"><b>要点</b>适合：时间碎片化的个人副业</div>
+<div class="brief"><b>要点</b>招募下级推广员</div>
+<div class="brief"><b>要点</b>赚取级差佣金（下级出单，上级抽成）</div>
+</div>
+        </article>
+      </div>
+      <div class="col">
+        <article class="story">
+<div class="kicker">快扫栏 · Radar Rail</div>
+<h2 class="headline small">关键数据</h2>
+<div class="box"><h3>平台优势</h3><ul class="list"><li>零技术门槛</li><li>全场景CPS</li><li>工具化操作</li><li>合规安全</li></ul></div>
+<div class="quote">"选择比努力更重要，选对平台，事半功倍。"</div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <span>OpenClaw Newspaper</span>
+    <span>Generated on 2026-03-14 10:52:21</span>
+    <span>Edition</span>
+  </footer>
+</body>
+</html>

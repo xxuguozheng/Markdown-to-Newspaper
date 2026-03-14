@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>云瞻开放平台知识问答 · 第05版</title>
+  <style>
+    :root { --paper:#f5f1e8; --ink:#171717; --muted:#665f54; --rule:#1d1d1d; --accent:#0d5b52; --accent-2:#7f1111; --sans:"Inter","PingFang SC","Noto Sans CJK SC","Microsoft YaHei",sans-serif; --serif:"Source Han Serif SC","Songti SC","STSong",serif; }
+    *{box-sizing:border-box} body{margin:0;background:#ddd6c8;color:var(--ink);font-family:var(--serif);line-height:1.45}
+    .page{max-width:1320px;margin:24px auto;background:var(--paper);box-shadow:0 12px 36px rgba(0,0,0,.18);border:1px solid rgba(0,0,0,.16);padding:18px 24px 30px}
+    .masthead{border-bottom:4px double var(--rule);padding-bottom:10px;margin-bottom:14px}
+    .topline{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font:10px/1.35 var(--sans);letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin-bottom:7px}
+    .title{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:end;gap:16px}.title h1{margin:0;font-size:clamp(30px,4.2vw,58px);line-height:.95;font-weight:900;letter-spacing:-.02em;text-transform:uppercase}.edition{font:10px/1.3 var(--sans);text-align:right;color:var(--muted)}
+    .strap{margin-top:8px;display:flex;flex-wrap:wrap;gap:6px 12px;font:11px/1.4 var(--sans);color:#25201b}.strap span::before{content:"◆ ";color:var(--accent)}
+    .lead-banner{display:grid;grid-template-columns:1.55fr .9fr;gap:18px;border-bottom:1px solid rgba(0,0,0,.78);padding-bottom:14px;margin-bottom:16px}.lead-banner h2{margin:0 0 8px;font-size:clamp(28px,3vw,44px);line-height:1.02}.lead-banner p{margin:0;font-size:15px;line-height:1.55}
+    .summary-card{background:rgba(255,255,255,.45);border-left:4px solid var(--accent);padding:12px 13px}.summary-card small{display:block;font:10px/1.35 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:5px}.summary-card b{display:block;font:800 16px/1.35 var(--sans);margin-bottom:6px}.summary-card p{font:13px/1.65 var(--sans);color:#2b251f}
+    .grid{display:grid;grid-template-columns:1.42fr 1fr 1fr;gap:18px}.story{border-top:1px solid rgba(0,0,0,.72);padding-top:10px;margin-bottom:16px}.story.lead{border-top:none;padding-top:0}
+    .kicker{font:10px/1.3 var(--sans);text-transform:uppercase;letter-spacing:.1em;color:var(--accent-2);font-weight:800;margin-bottom:5px}.headline{margin:0 0 7px;font-size:clamp(24px,2.5vw,38px);line-height:1.02;font-weight:900}.headline.small{font-size:23px;line-height:1.08}.dek{margin:0 0 10px;font-size:15px;line-height:1.45;color:#25201b}.meta{margin-bottom:10px;font:11px/1.45 var(--sans);color:var(--muted)}
+    .body{font-size:14.5px;line-height:1.58;text-align:justify;column-count:2;column-gap:18px}.body.single{column-count:1}.body p{margin:0 0 10px}
+    .briefs{display:grid;gap:10px}.brief{border-left:3px solid var(--rule);padding-left:10px;font-size:12.5px;line-height:1.52}.brief b{display:block;font:700 11px/1.3 var(--sans);letter-spacing:.06em;text-transform:uppercase;margin-bottom:4px}
+    .box{border:1px solid rgba(0,0,0,.75);background:rgba(255,255,255,.28);padding:10px 11px;margin-bottom:16px}.box h3{margin:0 0 8px;font:800 13px/1.35 var(--sans);text-transform:uppercase;letter-spacing:.07em}
+    .list{margin:0;padding-left:18px;font-size:12.5px;line-height:1.5}.list li{margin-bottom:6px}.quote{font-size:16px;line-height:1.32;font-weight:700;padding:10px 0;border-top:1px dashed rgba(0,0,0,.5);border-bottom:1px dashed rgba(0,0,0,.5);margin:10px 0}.tag{display:inline-block;padding:1px 6px;border:1px solid rgba(0,0,0,.6);font:10px/1.35 var(--sans);margin:0 5px 5px 0}
+    .footer{margin-top:16px;padding-top:10px;border-top:3px double var(--rule);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font:10px/1.5 var(--sans);color:var(--muted)}
+    @media (max-width:1024px){.grid{grid-template-columns:1.35fr 1fr}.grid>.col:last-child{grid-column:1/-1}.lead-banner{grid-template-columns:1fr}} @media (max-width:760px){.page{margin:0;min-height:100vh}.title{grid-template-columns:1fr}.edition{text-align:left}.grid{grid-template-columns:1fr}.body{column-count:1}}
+  </style>
+</head>
+<body>
+  <main class="page">
+
+    <header class="masthead">
+      <div class="topline">
+        <span>OpenClaw Newspaper</span>
+        <span>云瞻开放平台知识问答 · 第05版</span>
+        <span>2026-03-14</span>
+      </div>
+      <div class="title">
+        <h1>云瞻开放平台知识问答</h1>
+        <div class="edition">第05版</div>
+      </div>
+      <div class="strap">
+        <span>深度解析</span>
+        <span>专业分析</span>
+        <span>实用指南</span>
+      </div>
+    </header>
+
+    <section class="lead-banner">
+      <div>
+        <div class="kicker">Front Page</div>
+        <h2>云瞻平台是怎么做起来的？</h2>
+        <p>从自营淘客到开放平台的十年进化史，揭秘商业模式突围之路</p>
+      </div>
+      <aside class="summary-card">
+        <small>本期摘要</small>
+        <b>核心内容概览</b>
+        <p>本版包含深度分析、专业见解和实用指南，为您提供全面的信息。</p>
+      </aside>
+    </section>
+    <section class="grid">
+      <div class="col">
+        <article class="story lead">
+          <div class="body">
+<div class="kicker">快扫栏 · Radar Rail</div>
+<h2 class="headline">云瞻平台是怎么做起来的？</h2>
+<p class="dek">从自营淘客到开放平台的十年进化史，揭秘商业模式突围之路</p>
+<div class="meta">商业模式 · 成功要素</div>
+<h3>三阶段发展历程</h3>
+<h3>第一阶段：自营起家（2015-2020）</h3>
+<h3>第二阶段：转型开放平台（2021）</h3>
+<h3>第三阶段：突围增长（至今）</h3>
+<h3>成功因素分析</h3>
+<p>云瞻平台的崛起，是一个从0到1，再从1到N的经典案例。从最初的自营淘客，到如今的开放平台，每一步都踩准了行业发展的节奏。</p>
+<div class="box"><h3>发展阶段</h3><p>2015-2020：自营起家，积累用户 2021：转型开放平台，SaaS化 至今：全场景CPS，生态化运营</p></div>
+<div class="box"><h3>云瞻生态：三方共赢</h3><p>上游：官方联盟 → 中游：云瞻平台 → 下游：流量主 → 终端：消费者</p></div>
+          </div>
+        </article>
+      </div>
+      <div class="col">
+        <article class="story">
+<div class="kicker">朋友版 · What To Watch</div>
+<h2 class="headline small">快速指南</h2>
+<p class="dek">实用的操作建议和注意事项</p>
+<div class="briefs">
+<div class="brief"><b>要点</b>从自营淘客、公众号、社群做起</div>
+<div class="brief"><b>要点</b>验证私域+CPS可规模化盈利</div>
+<div class="brief"><b>要点</b>积累百万级用户</div>
+<div class="brief"><b>要点</b>月佣金过百万，验证商业模式</div>
+<div class="brief"><b>要点</b>将自营的技术、渠道、运营经验SaaS化</div>
+<div class="brief"><b>要点</b>面向个人/小B开放：零代码工具 + CPS聚合API</div>
+</div>
+        </article>
+      </div>
+      <div class="col">
+        <article class="story">
+<div class="kicker">快扫栏 · Radar Rail</div>
+<h2 class="headline small">关键数据</h2>
+<div class="box"><h3>平台优势</h3><ul class="list"><li>零技术门槛</li><li>全场景CPS</li><li>工具化操作</li><li>合规安全</li></ul></div>
+<div class="quote">"成功的平台，都是在正确的时间，做了正确的事情。"</div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <span>OpenClaw Newspaper</span>
+    <span>Generated on 2026-03-14 10:52:45</span>
+    <span>Edition</span>
+  </footer>
+</body>
+</html>

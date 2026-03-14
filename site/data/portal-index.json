@@ -1,29 +1,38 @@
 {
-  "generatedAt": "2026-03-08T07:54:00+08:00",
+  "generatedAt": "2026-03-14T10:05:00+08:00",
   "stats": {
-    "projectCount": 8,
-    "editionCount": 15,
-    "publishedProjectCount": 6,
+    "projectCount": 9,
+    "editionCount": 22,
+    "publishedProjectCount": 7,
     "waitingProjectCount": 2,
     "latestEdition": {
-      "projectSlug": "ClawEyes",
-      "title": "ClawEyes / 虾眼：产品草案 v1",
-      "publishedAt": "2026-03-08T13:37:55+08:00"
+      "projectSlug": "yunzhan-cps-qa",
+      "title": "云瞻与同类平台对比，我最适合哪个？",
+      "publishedAt": "2026-03-14T10:05:00+08:00"
     },
     "recentlyUpdatedProject": {
-      "slug": "OpenClaw-Newspaper-UI",
-      "label": "OpenClaw 报纸系统",
-      "updatedAt": "2026-03-08T17:08:28+08:00"
+      "slug": "yunzhan-cps-qa",
+      "label": "云瞻开放平台知识问答",
+      "updatedAt": "2026-03-14T10:05:00+08:00"
     }
   },
   "recentUpdates": [
     {
+      "projectSlug": "yunzhan-cps-qa",
+      "projectLabel": "云瞻开放平台知识问答",
+      "title": "云瞻与同类平台对比，我最适合哪个？",
+      "summary": "全面对比6大主流CPS平台，基于你的资源画像给出最优选择建议",
+      "kind": "长分析 / 方案稿",
+      "activityAt": "2026-03-14T10:05:00+08:00",
+      "aggregateUrl": "/projects/yunzhan-cps-qa/index.html"
+    },
+    {
       "projectSlug": "ClawEyes",
       "projectLabel": "ClawEyes / 虾眼",
-      "title": "ClawEyes / 虾眼：产品草案 v1",
-      "summary": "把 ClawEyes 定义成由小龙虾代理持续供稿、自动聚类和可信度辅助的情报网络，并在第二阶段长出分身访问与收益系统。",
-      "kind": "头版 / 项目总况",
-      "activityAt": "2026-03-08T13:37:55+08:00",
+      "title": "示例报纸",
+      "summary": "这是一个示例报纸",
+      "kind": "快报 / 小更新",
+      "activityAt": "2026-03-13T21:16:39+08:00",
       "aggregateUrl": "/projects/ClawEyes/index.html"
     },
     {
@@ -36,15 +45,6 @@
       "aggregateUrl": "/projects/Bio-AI-Morning-Brief/index.html"
     },
     {
-      "projectSlug": "TEST-Project-Interface-2026-03-08",
-      "projectLabel": "TEST Project Interface 2026-03-08",
-      "title": "尚无归档版次",
-      "summary": "如需产品化，可继续补真正的后台入口或主运行时调用面。",
-      "kind": "项目更新",
-      "activityAt": "2026-03-08T09:19:12+08:00",
-      "aggregateUrl": "/projects/TEST-Project-Interface-2026-03-08/index.html"
-    },
-    {
       "projectSlug": "OpenClaw-Newspaper-UI",
       "projectLabel": "OpenClaw 报纸系统",
       "title": "报纸系统接口现状：项目创建与数据输入",
@@ -54,12 +54,21 @@
       "aggregateUrl": "/projects/OpenClaw-Newspaper-UI/index.html"
     },
     {
+      "projectSlug": "TEST-Project-Interface-2026-03-08",
+      "projectLabel": "TEST Project Interface 2026-03-08",
+      "title": "尚无归档版次",
+      "summary": "如需产品化，可继续补真正的后台入口或主运行时调用面。",
+      "kind": "项目更新",
+      "activityAt": "2026-03-08 09:19",
+      "aggregateUrl": "/projects/TEST-Project-Interface-2026-03-08/index.html"
+    },
+    {
       "projectSlug": "Zep",
       "projectLabel": "Zep",
       "title": "尚无归档版次",
       "summary": "优先做路线裁决，再谈接桥。",
       "kind": "项目更新",
-      "activityAt": "2026-03-08T07:32:00+08:00",
+      "activityAt": "2026-03-08 07:32",
       "aggregateUrl": "/projects/Zep/index.html"
     },
     {
@@ -384,7 +393,7 @@
         "title": "尚无归档版次",
         "summary": "优先做路线裁决，再谈接桥。",
         "kind": "项目更新",
-        "activityAt": "2026-03-08T07:32:00+08:00",
+        "activityAt": "2026-03-08 07:32",
         "activityAtText": "2026-03-08 07:32",
         "url": "/projects/Zep/index.html"
       },
@@ -406,7 +415,7 @@
         "title": "尚无归档版次",
         "summary": "如需产品化，可继续补真正的后台入口或主运行时调用面。",
         "kind": "项目更新",
-        "activityAt": "2026-03-08T09:19:12+08:00",
+        "activityAt": "2026-03-08 09:19",
         "activityAtText": "2026-03-08 09:19",
         "url": "/projects/TEST-Project-Interface-2026-03-08/index.html"
       },
@@ -423,6 +432,18 @@
       "description": "由小龙虾代理持续供稿、系统自动聚类、比对、评估可信度，再生成可读情报流的 AI 时代信息网络。",
       "items": [
         {
+          "name": "示例报纸.html",
+          "title": "示例报纸",
+          "rawTitle": "示例报纸",
+          "summary": "这是一个示例报纸",
+          "url": "/projects/ClawEyes/示例报纸.html",
+          "publishedAt": "2026-03-13T21:16:39+08:00",
+          "updatedAt": "2026-03-13T21:16:39+08:00",
+          "size": 1110,
+          "density": "detailed",
+          "densityLabel": "快报 / 小更新"
+        },
+        {
           "name": "claweyes-虾眼-产品草案-v1.html",
           "title": "ClawEyes / 虾眼：产品草案 v1",
           "rawTitle": "claweyes-虾眼-产品草案-v1",
@@ -438,19 +459,41 @@
       "aggregateUrl": "/projects/ClawEyes/index.html",
       "recent": {
         "mode": "edition",
-        "title": "ClawEyes / 虾眼：产品草案 v1",
-        "summary": "把 ClawEyes 定义成由小龙虾代理持续供稿、自动聚类和可信度辅助的情报网络，并在第二阶段长出分身访问与收益系统。",
-        "kind": "头版 / 项目总况",
-        "activityAt": "2026-03-08T13:37:55+08:00",
-        "activityAtText": "2026-03-08 13:37",
-        "url": "/projects/ClawEyes/claweyes-虾眼-产品草案-v1.html"
+        "title": "示例报纸",
+        "summary": "这是一个示例报纸",
+        "kind": "快报 / 小更新",
+        "activityAt": "2026-03-13T21:16:39+08:00",
+        "activityAtText": "2026-03-13 21:16",
+        "url": "/projects/ClawEyes/示例报纸.html"
       },
       "info": {
         "summary": "把代理上报流变成事件对象、可信度辅助和可读情报页面，不是普通新闻站，而是代理驱动的信息网络。",
         "stage": "概念立项 / MVP 产品定义中",
         "blockers": "事件模型、可信度辅助模型、代理身份体系、最小上报接口都还待正式定义。",
-        "updated": "2026-03-08 13:37",
+        "updated": "2026-03-13 21:16",
         "next": "先完成产品草案、对象模型和 MVP 页面结构，再决定网站原型技术路线。"
+      }
+    },
+    "yunzhan-cps-qa": {
+      "label": "云瞻开放平台知识问答",
+      "description": "关于云瞻开放平台CPS业务的深度问答，涵盖业务模式、盈利方式、平台对比、自测评估等内容",
+      "items": [],
+      "aggregateUrl": "/projects/yunzhan-cps-qa/index.html",
+      "recent": {
+        "mode": "project",
+        "title": "尚无归档版次",
+        "summary": "根据读者反馈补充更多实操案例",
+        "kind": "项目更新",
+        "activityAt": "2026-03-14T09:59:26+08:00",
+        "activityAtText": "2026-03-14 09:59",
+        "url": "/projects/yunzhan-cps-qa/index.html"
+      },
+      "info": {
+        "summary": "云瞻开放平台CPS业务全解析：从入门到精通的6个核心问题",
+        "stage": "持续更新中",
+        "blockers": "",
+        "updated": "2026-03-14 09:59",
+        "next": "根据读者反馈补充更多实操案例"
       }
     }
   }

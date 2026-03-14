@@ -10,7 +10,7 @@
       "stage": "待补充",
       "blockers": "外部参照系与 schema 收敛仍待继续整理。",
       "next": "继续做协议收敛与页面级 PRD。",
-      "updatedAt": "2026-03-07T17:42:55+08:00",
+      "updatedAt": "2026-03-07 17:42",
       "status": "active"
     },
     {
@@ -22,7 +22,7 @@
       "stage": "样刊入驻完成 / 项目位已接入门户",
       "blockers": "尚未连到自动抓取或半自动编辑流。",
       "next": "固定每日选题流程，再补来源卡片与刷新脚本。",
-      "updatedAt": "2026-03-08T12:02:41+08:00",
+      "updatedAt": "2026-03-08 12:02",
       "status": "active"
     },
     {
@@ -34,7 +34,7 @@
       "stage": "混合阶段 / 叙事与入口待收口",
       "blockers": "新叙事与旧品牌残留并存。",
       "next": "统一产品定义、默认入口与命名迁移策略。",
-      "updatedAt": "2026-03-08T07:32:00+08:00",
+      "updatedAt": "2026-03-08 07:32",
       "status": "active"
     },
     {
@@ -46,7 +46,7 @@
       "stage": "待补充",
       "blockers": "暂无明确阻塞记录",
       "next": "继续按当前方向推进。",
-      "updatedAt": "2026-03-07T17:42:55+08:00",
+      "updatedAt": "2026-03-07 17:42",
       "status": "active"
     },
     {
@@ -58,7 +58,7 @@
       "stage": "展示层 → 对话界面过渡阶段",
       "blockers": "缺正式 publish contract 与主会话 hook / relay。",
       "next": "先定最小 publish schema，再做 publish_to_newspaper 流水线。",
-      "updatedAt": "2026-03-08T17:08:28+08:00",
+      "updatedAt": "2026-03-08 17:08",
       "status": "active"
     },
     {
@@ -70,7 +70,7 @@
       "stage": "部署验证完成，路线待决策",
       "blockers": "需要在 CE / Cloud / Graphiti 间做明确取舍。",
       "next": "优先做路线裁决，再谈接桥。",
-      "updatedAt": "2026-03-08T07:32:00+08:00",
+      "updatedAt": "2026-03-08 07:32",
       "status": "active"
     },
     {
@@ -82,7 +82,7 @@
       "stage": "接口验证完成",
       "blockers": "暂无；当前剩余工作主要是把 CLI/JSON 接口接进更高层运行时。",
       "next": "如需产品化，可继续补真正的后台入口或主运行时调用面。",
-      "updatedAt": "2026-03-08T09:19:12+08:00",
+      "updatedAt": "2026-03-08 09:19",
       "status": "active"
     },
     {
@@ -94,7 +94,19 @@
       "stage": "概念立项 / MVP 产品定义中",
       "blockers": "事件模型、可信度辅助模型、代理身份体系、最小上报接口都还待正式定义。",
       "next": "先完成产品草案、对象模型和 MVP 页面结构，再决定网站原型技术路线。",
-      "updatedAt": "2026-03-08T13:37:55+08:00",
+      "updatedAt": "2026-03-13T21:16:39+08:00",
+      "status": "active"
+    },
+    {
+      "id": "yunzhan-cps-qa",
+      "slug": "yunzhan-cps-qa",
+      "label": "云瞻开放平台知识问答",
+      "description": "关于云瞻开放平台CPS业务的深度问答，涵盖业务模式、盈利方式、平台对比、自测评估等内容",
+      "summary": "云瞻开放平台CPS业务全解析：从入门到精通的6个核心问题",
+      "stage": "持续更新中",
+      "blockers": "",
+      "next": "根据读者反馈补充更多实操案例",
+      "updatedAt": "2026-03-14T09:59:26+08:00",
       "status": "active"
     }
   ]
