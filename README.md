@@ -1,6 +1,6 @@
-# OpenClaw Newspaper Archive
+# Markdown-to-Newspaper
 
-这个目录用于归档 Staro 生成的报纸式网页输出。
+这个目录用于归档生成的报纸式网页输出。
 
 ## 当前阶段：第一阶段可用系统
 
